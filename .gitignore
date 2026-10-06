@@ -7,6 +7,9 @@ data/raw/
 # 构建产物（可由 npm run data:build 重新生成）
 public/data/
 
+# 上游派生的几何资产（本地保留，不随仓库分发）
+data/geo/antarctica.geojson
+
 # 本地 npm 缓存（如果启用了 .npmrc 的本地 cache）
 .npm-cache/
 
