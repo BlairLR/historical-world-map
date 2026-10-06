@@ -10,6 +10,10 @@ public/data/
 # 本地 npm 缓存（如果启用了 .npmrc 的本地 cache）
 .npm-cache/
 
+# 本机环境专用（换机无效 / 非应用代码，不随仓库分发）
+.npmrc
+scripts/sandbox-netuse-shim.mjs
+
 *.local
 .DS_Store
 
