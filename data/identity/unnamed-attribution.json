@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "_note": "无属性重复几何归并（D4 同年归并）：个别年份的上游快照同时给出同一个政权的粗细两份几何 —— 一份具名（进身份解析），一份 NAME/SUBJECTO 全空（只能落 UNNAMED 中性灰）。空属性那份在要素数组里排在有色要素之后，渲染时会用灰色细轮廓盖住有色粗轮廓，看起来像「两片不同颜色的同一块地重叠」。本配置声明「某年源文件的第 N 个要素」归并到同一快照里已有的同名政权：属性（name/abbrev/subject/partOf/precision）取同快照同政权的原生要素，几何保留空属性那份（更细的那份）。不新增、不删除要素，不改变任何实体的年份集合与颜色。",
+  "entries": [
+    {
+      "key": "taiwan",
+      "year": 1994,
+      "sourceFeatureIndex": 213,
+      "expectVertices": 254,
+      "note": "上游 world_1994 同时提供两份台湾岛：raw[7] 具名 Taiwan（29 顶点，BORDERPRECISION 3）与 raw[213] 无属性（NAME/SUBJECTO/ABBREVN/PARTOF 全 null，254 顶点）。raw[213] 的几何与 1945/1960/2000/2010 年的 auto:taiwan#2 逐顶点相同，是同一座岛；归并后 1994 年的台湾只剩一种颜色（auto:taiwan#2 #bad593），且保留 254 顶点的细几何。"
+    }
+  ]
+}

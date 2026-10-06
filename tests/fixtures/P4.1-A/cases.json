@@ -1,0 +1,317 @@
+{
+  "status": "DESIGN FIXTURE — 非生产数据，不可被构建流程读取",
+  "phase": "P4.1-A",
+  "note": "本文件只描述测试意图与断言，不含可执行 runner。所有历史值均为示意；标注 openQuestion 的位置本阶段不作裁决。",
+  "conventions": {
+    "placeholder": "形如 \"@identity:<DESC>\" 的字符串表示「由 identity resolver 决定的 polity entityId」，fixture 不断言其字面值，只断言它与其他取值的关系（相等 / 不等 / 不变）。",
+    "checkTypes": {
+      "invariant": "对现有 54 个快照产物即可判定的不变式",
+      "distinct-count-equals": "某集合的不同取值个数等于给定值",
+      "build-byte-identical": "两次构建的指定文件字节级相同（manifest.json 需先归一化 generatedAt）",
+      "must-fail": "给定输入必须导致构建失败（并报出指定信息）",
+      "must-be-unresolved": "给定证据单元的关系层必须是 unresolved 形状",
+      "equals": "字段等于给定值",
+      "not-equals": "两个字段不相等",
+      "matches-pattern": "字段匹配给定正则",
+      "set-unchanged": "给定集合在操作前后完全相同",
+      "signature-excludes": "静态检查：指定函数的签名/实现中不出现指定标识符",
+      "coverage-total": "分类结果覆盖全部证据单元，不允许静默跳过"
+    }
+  },
+  "cases": [
+    {
+      "id": "T1",
+      "name": "Entity color isolation",
+      "purpose": "确认颜色的唯一来源仍是 entityId；关系层不参与颜色。",
+      "kind": "production-invariant",
+      "input": { "scope": "public/data/years/*.json（54 个，17,438 个 feature）" },
+      "expect": [
+        { "check": "invariant", "statement": "∀ entityId: |{ properties.color }| === 1", "mapsTo": "AR1" },
+        { "check": "distinct-count-equals", "target": "properties.color 与 entities.json 同 entityId 颜色不一致的 feature 数", "value": 0 },
+        { "check": "signature-excludes", "target": "颜色分配函数（scripts/lib/identity.mjs 的 assignColors 路径）", "excludes": ["sovereignId", "authorityId", "relationship", "resolutionStatus"] }
+      ],
+      "forbidden": ["任一 entityId 出现两种颜色", "颜色函数接收关系层字段"],
+      "openQuestions": []
+    },
+    {
+      "id": "T2",
+      "name": "Sovereign isolation",
+      "purpose": "sovereignId 改变不得引起 entityId 或 color 改变。",
+      "kind": "isolation",
+      "input": {
+        "configA": "relations.json#A（sovereignId = UK-UNITED-KINGDOM）",
+        "configB": "relations.json#B（仅 sovereignId 改为 null）",
+        "sameInput": "全部 54 个快照"
+      },
+      "expect": [
+        { "check": "build-byte-identical", "files": ["public/data/entities.json", "public/data/years/*.json（54 个）"], "normalize": ["public/data/manifest.json#generatedAt"] },
+        { "check": "set-unchanged", "target": "每个 feature 的 properties.entityId 与 properties.color" }
+      ],
+      "forbidden": ["任一 entityId 因 sovereignId 变化而新增/消失/改名", "任一颜色变化"],
+      "openQuestions": []
+    },
+    {
+      "id": "T3",
+      "name": "Authority isolation",
+      "purpose": "authorityId 改变不得引起 entityId 或 color 改变（占领不改变被占领国的政权身份）。",
+      "kind": "isolation",
+      "input": {
+        "configA": "relations.json#A（1945 Japan (USA): authorityId = auth:SCAP）",
+        "configB": "relations.json#B（仅 authorityId 改为 auth:US）",
+        "sameInput": "全部 54 个快照"
+      },
+      "expect": [
+        { "check": "build-byte-identical", "files": ["public/data/entities.json", "public/data/years/*.json（54 个）"], "normalize": ["public/data/manifest.json#generatedAt"] },
+        { "check": "invariant", "statement": "1945 年 feature id=5（NAME=\"Japan (USA)\"）的 entityId 在两种配置下相同，且 ≠ US-USA" }
+      ],
+      "forbidden": ["被占领国的 entityId 变成占领方", "被占领国使用占领方的颜色"],
+      "resolvedBy": "OQ-2 ✅ 已冻结（authorityId = auth:<SLUG> | null，注册表 data/relations/authorities.json；controllerEntityId 不参与 identity/color）"
+    },
+    {
+      "id": "T4",
+      "name": "Relationship isolation",
+      "purpose": "relationship 改变不得引起 entityId 或 color 改变（Sierra Leone 的 colony → protectorate 不拆 polity）。",
+      "kind": "isolation",
+      "input": {
+        "configA": "relations.json#A（SL: 1808–1896 colony，1896–1960 colony）",
+        "configB": "relations.json#B（SL: 1896–1960 改为 protectorate）",
+        "sameInput": "全部 54 个快照"
+      },
+      "expect": [
+        { "check": "build-byte-identical", "files": ["public/data/entities.json", "public/data/years/*.json（54 个）"], "normalize": ["public/data/manifest.json#generatedAt"] },
+        { "check": "invariant", "statement": "SL-COLONY 在两种配置下都存在且颜色相同" }
+      ],
+      "forbidden": ["因 relationship 变化新建 polity", "因 relationship 变化改色"],
+      "openQuestions": []
+    },
+    {
+      "id": "T5",
+      "name": "Cross-key（UK / USA / USSR / Denmark-Norway / Sweden-Norway / Japan / Italy）",
+      "purpose": "确认 raw key 只是证据：同一 polity 的多个 raw key 在 identity 层归并，而殖民/占领 feature 不被并入宗主国。",
+      "kind": "cross-key",
+      "input": {
+        "evidenceCells": [
+          { "year": 1945, "key": "united kingdom", "name": "United Kingdom", "featureId": 4 },
+          { "year": 1945, "key": "united kingdom", "name": "Jamaica (UK)", "featureId": 21 },
+          { "year": 1945, "key": "united kingdom", "name": "Sierra Leone", "featureId": 27 },
+          { "year": 1945, "key": "united kingdom", "name": "Tanzania, United Republic of", "featureId": 33 },
+          { "year": 1945, "key": "united kingdom", "name": "Northern Rhodesia", "featureId": 37 },
+          { "year": 1945, "key": "united kingdom", "name": "Nyasaland", "featureId": 38 },
+          { "year": 1945, "key": "united kingdom", "name": "Hong Kong", "featureId": 226, "partOf": null },
+          { "year": 1945, "key": "usa", "name": "United States", "featureId": 178 },
+          { "year": 1945, "key": "usa", "name": "Japan (USA)", "featureId": 5 },
+          { "year": 1945, "key": "usa", "name": "Germany (USA)", "featureId": 144 },
+          { "year": 1945, "key": "usa", "name": "Korea (USA)", "featureId": 218 },
+          { "year": 1945, "key": "ussr", "name": "USSR", "featureId": 136 },
+          { "year": 1945, "key": "ussr", "name": "Korea (USSR)", "featureId": 3 },
+          { "year": 1945, "key": "ussr", "name": "Germany (Soviet)", "featureId": 137 },
+          { "year": 1878, "key": "great britain", "name": "Gold Coast (GB)" },
+          { "year": 1800, "key": "uk", "name": "Hanover" },
+          { "year": 1800, "key": "uk", "name": "Kingdom of Ireland" },
+          { "year": 1920, "key": "united kingdom of great britain and ireland", "name": "Dominion of Newfoundland" }
+        ],
+        "identityLayerReused": "UK-UNITED-KINGDOM（keys: UK / United Kingdom / United Kingdom of Great Britain and Ireland）、US-USA（keys: USA / United States / United States of America）、RU-RSFSR / RU-USSR"
+      },
+      "expect": [
+        { "check": "invariant", "statement": "每个 (year, key, name) 命中恰好 1 条关系规则" },
+        { "check": "invariant", "statement": "同一 polity 的多个 raw key 在 identity 层仍归并为同一 entityId（UK / US / USSR 三组已实现）" },
+        { "check": "invariant", "statement": "colonial / occupied feature 的 relationship ≠ sovereign-territory" },
+        { "check": "not-equals", "left": "1945 featureId=5 的 entityId", "right": "US-USA" },
+        { "check": "not-equals", "left": "1945 featureId=27 的 relationship", "right": "sovereign-territory" }
+      ],
+      "forbidden": [
+        "SUBJECTO = United Kingdom → entityId = UK-UNITED-KINGDOM 的直接推导",
+        "raw key = USA → entityId = US-USA",
+        "raw key = USSR → entityId = RU-USSR",
+        "DZ/DK/SE 的双元王国被写成另一方的 colony"
+      ],
+      "openQuestions": ["OQ-5", "OQ-6"],
+      "resolvedBy": "OQ-1 ✅ 已冻结（sovereignId = 既有 polity entityId | null，不用独立 sov: 命名空间，不得反向参与 entityId/color resolver）"
+    },
+    {
+      "id": "T6",
+      "name": "Occupation",
+      "purpose": "占领不得改变 polity 身份：sovereignId ≠ authorityId，且 entityId 为被占领国。",
+      "kind": "occupation",
+      "input": {
+        "cases": [
+          { "year": 1945, "featureId": 5, "name": "Japan (USA)", "currentEntityId": "US-USA" },
+          { "year": 1945, "featureId": 144, "name": "Germany (USA)", "currentEntityId": "US-USA" },
+          { "year": 1945, "featureId": 137, "name": "Germany (Soviet)", "currentEntityId": "RU-USSR" },
+          { "year": 1945, "featureId": 143, "name": "Germany (UK)", "currentEntityId": "UK-UNITED-KINGDOM" },
+          { "year": 1945, "featureId": 145, "name": "Germany (France)", "currentEntityId": "auto:france" },
+          { "year": 1945, "featureId": 218, "name": "Korea (USA)", "currentEntityId": "US-USA" },
+          { "year": 1945, "featureId": 3, "name": "Korea (USSR)", "currentEntityId": "RU-USSR" }
+        ]
+      },
+      "expect": [
+        { "check": "equals", "target": "relationship", "value": "occupied" },
+        { "check": "invariant", "statement": "sovereignId ≠ authorityId（或 sovereignId = null 时 authorityId 非空）" },
+        { "check": "invariant", "statement": "entityId ≠ 占领方 entityId" },
+        { "check": "invariant", "statement": "四个德国占领区在上游是 4 个独立 feature，因此单值 authorityId 足够（无需 array）" },
+        { "check": "invariant", "statement": "此处 sovereignId = null 必须是「情形 B」形状（relationship = occupied ≠ unknown 且 resolutionStatus = resolved）；与 1952–1962 厄立特里亚的「情形 A」形状（relationship = unknown 且 resolutionStatus = unresolved）不得混淆，且不得为此新增字段/第三态/枚举（报告 §4.4.1、§6.2）" }
+      ],
+      "forbidden": ["entityId 被写成占领方", "sovereignId = authorityId = 占领方"],
+      "openQuestions": ["OQ-8"],
+      "resolvedBy": "OQ-2 ✅ 已冻结（authorityId = auth:<SLUG> | null；注册表 data/relations/authorities.json；controllerEntityId 不参与 identity/color）"
+    },
+    {
+      "id": "T7",
+      "name": "Colonial relationship（Sierra Leone）",
+      "purpose": "关系可随年份变化而 polity 不变；且位于宗主国 key 下的 feature 也能命中规则。",
+      "kind": "colonial",
+      "input": {
+        "phases": [
+          { "years": [1808, 1896], "expectedRelationship": "colony" },
+          { "years": [1896, 1960], "expectedRelationship": "protectorate", "openQuestion": "海岸殖民地与腹地保护地的特征在同一年份可能并存；若同一 feature 无法用单值表达，必须上报（见 §7.2）" }
+        ],
+        "evidence": [
+          { "year": 1938, "key": "united kingdom", "name": "Sierra Leone", "subject": "United Kingdom", "partOf": "Sierra Leone", "currentEntityId": "UK-UNITED-KINGDOM" },
+          { "year": 1945, "key": "united kingdom", "name": "Sierra Leone", "featureId": 27, "currentEntityId": "UK-UNITED-KINGDOM" },
+          { "year": 1960, "key": "sierra leone", "currentEntityId": "SL-COLONY" }
+        ]
+      },
+      "expect": [
+        { "check": "equals", "target": "sovereignId", "value": "UK-UNITED-KINGDOM" },
+        { "check": "equals", "target": "authorityId", "value": "auth:UK" },
+        { "check": "invariant", "statement": "entityId = SL-COLONY 全程不变（第一版不因 colony/protectorate 差异拆 polity）" },
+        { "check": "invariant", "statement": "1938/1945 位于 `united kingdom` key 的 feature 也能被同一规则命中" }
+      ],
+      "forbidden": ["按 relationship 拆出两个 polity", "relationship 变化导致换色"],
+      "openQuestions": ["OQ-3"]
+    },
+    {
+      "id": "T8",
+      "name": "Eritrea 三阶段",
+      "purpose": "验证 schema 能表达什么、并明确拒绝表达什么（不代表历史裁决已完成）。",
+      "kind": "capability",
+      "input": {
+        "phases": [
+          { "phase": "1941–1952", "snapshotYears": [1945], "evidence": { "year": 1945, "featureId": 113, "name": "Eritrea", "subject": "United Kingdom", "partOf": "Eritrea", "currentEntityId": "UK-UNITED-KINGDOM" } },
+          { "phase": "1952–1962", "snapshotYears": [1960], "evidence": { "year": 1960, "key": "eritrea", "currentEntityId": "ER-ETHIOPIA" } },
+          { "phase": "1962+（实际只有独立后的快照 1994/2000/2010；1962–1993 无任何快照，该区间不在关系层建模）", "snapshotYears": [1994, 2000, 2010], "evidence": { "key": "eritrea", "currentEntityId": "ER-ERITREA" } }
+        ]
+      },
+      "expect": [
+        { "check": "equals", "target": "1941–1952.relationship", "value": "administered" },
+        { "check": "equals", "target": "1941–1952.sovereignId", "value": null },
+        { "check": "equals", "target": "1941–1952.authorityId", "value": "auth:UK-BMA" },
+        { "check": "must-be-unresolved", "target": "1952–1962", "reason": "11 项枚举中没有 federation；不得自选 autonomous 近似；federation 不在 P4.1-A / P4.1-B 加入，ER-ETHIOPIA.periods 不得修改 —— 保持 OQ-4 为 OPEN QUESTION，留待 P4.1-C 历史裁决" },
+        { "check": "equals", "target": "1994+（独立后第一个快照）.relationship", "value": "sovereign-territory" },
+        { "check": "invariant", "statement": "1962–1993 之间没有任何快照，因此该区间不在关系层中建模" }
+      ],
+      "forbidden": [
+        "1952–1962 被静默赋成 autonomous",
+        "1941–1952 被写成 sovereignId = UK-UNITED-KINGDOM（英国军管 ≠ 厄立特里亚属于英国）",
+        "把 Eritrea 自动改成 Ethiopia 的 entityId"
+      ],
+      "openQuestions": ["OQ-4", "OQ-13"],
+      "note": "OQ-4 保持 OPEN QUESTION：不倾向任何候选、不新增 federation 枚举、不用 autonomous 偷换、不修改 ER-ETHIOPIA.periods，留待 P4.1-C 历史裁决"
+    },
+    {
+      "id": "T9",
+      "name": "Conservatism（UNNAMED 与证据不足）",
+      "purpose": "确认不做任何猜测，且解析器不具备猜测所需的输入。",
+      "kind": "conservatism",
+      "input": {
+        "noKeyFeatures": 7046,
+        "keyedButNameless": 12,
+        "noKeyByYearSample": { "1492": 625, "300": 330, "-1": 305, "100": 296, "400": 261, "200": 258, "-5000": 250 },
+        "keyedButNamelessByYear": { "-5000": 1, "-2000": 1, "100": 1, "700": 1, "1783": 1, "1815": 7 }
+      },
+      "expect": [
+        { "check": "equals", "target": "sovereignId", "value": null },
+        { "check": "equals", "target": "authorityId", "value": null },
+        { "check": "equals", "target": "relationship", "value": "unknown" },
+        { "check": "equals", "target": "resolutionStatus", "value": "unresolved" },
+        { "check": "signature-excludes", "target": "三个 relation resolver", "excludes": ["geometry", "coordinates", "bbox", "neighbours", "entityId"] }
+      ],
+      "forbidden": ["为 UNNAMED feature 生成任何具体 polity 或关系", "解析器接收几何输入"],
+      "openQuestions": ["OQ-9"]
+    },
+    {
+      "id": "T10",
+      "name": "Determinism（AR5 首次落地）",
+      "purpose": "同输入两次构建必须字节级一致。",
+      "kind": "determinism",
+      "input": { "runs": 2, "sameInputs": true },
+      "expect": [
+        { "check": "build-byte-identical", "files": ["public/data/entities.json", "public/data/years/*.json（54 个）", "public/data/relations/*.json（实施后）"], "normalize": ["public/data/manifest.json#generatedAt"] }
+      ],
+      "forbidden": ["任一次构建出现颜色漂移"],
+      "openQuestions": []
+    },
+    {
+      "id": "T11",
+      "name": "Production file protection",
+      "purpose": "关系层工具运行前后，生产产物必须逐字节不变。",
+      "kind": "gate",
+      "input": {
+        "baseline": [
+          { "file": "data/identity/aliases.json", "bytes": 12667, "sha256": "8529D502DB680C41200120F9BBA72495B601CEA921542FD781A3EE7A75D8A36D" },
+          { "file": "data/identity/colors.json", "bytes": 109721, "sha256": "50B596BAC4B923CBFFCB3709DC334EC107ADAAD9F7E05D4951C556D98FD831F7" },
+          { "file": "public/data/entities.json", "bytes": 462313, "sha256": "6D902E782C7EFA7525FB02A3C54518ABB64B26E9B62420F6CE23AE9950EA75B0" },
+          { "file": "public/data/manifest.json", "bytes": 15479, "sha256": "6B99C48834DBE88E4241A9310DD8CE9797B14420B07BCC9D5A041201F7015120", "sha256NormalizedGeneratedAt": "71bd1d7314b9fd9876791c35e6ac508f9bec1fe797d982d79836e79db6d68bed" },
+          { "file": "public/data/years/*.json（54 个）", "bytes": 43512416 }
+        ]
+      },
+      "expect": [
+        { "check": "set-unchanged", "target": "上述全部文件的字节数与 SHA-256" },
+        { "check": "invariant", "statement": "新增产物只允许出现在白名单目录：docs/design/**、tests/fixtures/**、（实施期）public/data/relations/**、data/relations/relations.json、data/relations/authorities.json；且不得新增或修改 data/identity/** 下任何文件" }
+      ],
+      "forbidden": ["任何生产产物被改写", "git init（未授权时）"],
+      "openQuestions": ["OQ-14"]
+    },
+    {
+      "id": "T12",
+      "name": "Coverage & audit",
+      "purpose": "每个证据单元都必须被明确分类，不允许静默跳过。",
+      "kind": "audit",
+      "input": { "evidenceCells": 10095, "yearKeyCells": 9713, "features": 17438, "noKeyFeatures": 7046 },
+      "expect": [
+        { "check": "coverage-total", "statement": "resolved 单元数 + unresolved 单元数 === 10095" },
+        { "check": "invariant", "statement": "unresolved 清单可导出（工作队列）" },
+        { "check": "invariant", "statement": "至少 7046 + 12 = 7058 个 feature 必然 unresolved（40.5%）" }
+      ],
+      "forbidden": ["证据单元既不在 resolved 也不在 unresolved 清单中"],
+      "openQuestions": []
+    },
+    {
+      "id": "T13",
+      "name": "Rule conflict → build failure",
+      "purpose": "配置缺陷必须显式失败，不得静默取第一条。",
+      "kind": "negative",
+      "input": {
+        "rules": [
+          { "id": "CONFLICT-A", "match": { "key": "sierra leone", "years": [1896, 1960] }, "output": { "relationship": "colony" } },
+          { "id": "CONFLICT-B", "match": { "key": "sierra leone", "years": [1896, 1960] }, "output": { "relationship": "protectorate" } }
+        ]
+      },
+      "expect": [
+        { "check": "must-fail", "messageContains": ["CONFLICT-A", "CONFLICT-B", "sierra leone"], "mapsTo": "scripts/lib/identity.mjs:169-171（既有冲突抛错惯例）" }
+      ],
+      "forbidden": ["静默取第一条规则"],
+      "openQuestions": []
+    },
+    {
+      "id": "T14",
+      "name": "Namespace guard",
+      "purpose": "结构性隔离 polity 命名空间与 authority 命名空间；并禁止 output 携带 entityId。",
+      "kind": "negative",
+      "input": { "scope": "全部关系记录与全部规则" },
+      "expect": [
+        { "check": "matches-pattern", "target": "authorityId", "pattern": "^auth:[A-Z0-9][A-Z0-9-]*$", "orNull": true },
+        { "check": "invariant", "statement": "sovereignId 为 null，或存在于 public/data/entities.json" },
+        { "check": "must-fail", "messageContains": ["entityId", "output"], "reason": "规则 output 中出现 entityId" }
+      ],
+      "forbidden": [
+        "authorityId = \"US-USA\"（未加 auth: 前缀）",
+        "sovereignId = \"auth:UK\"（authority 写入 polity 命名空间）",
+        "规则 output 中出现 entityId",
+        "任何字段取值为 \"unknown\" 之类的伪造 id"
+      ],
+      "openQuestions": [],
+      "resolvedBy": "OQ-1 ✅ 与 OQ-2 ✅ 均已冻结：sovereignId = 既有 polity entityId | null（不开独立 sov: 命名空间）；authorityId = auth:<SLUG> | null。两条规则自 v3 起为硬门禁，不再是待决问题。"
+    }
+  ]
+}

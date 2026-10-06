@@ -1,0 +1,430 @@
+:root {
+  --chrome-bg: #12161d;
+  --chrome-fg: #e8edf4;
+  --chrome-muted: #8d9aab;
+  --chrome-border: #262d38;
+  --accent: #d9a441;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+  background: var(--chrome-bg);
+  color: var(--chrome-fg);
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.map-wrap {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.map {
+  position: absolute;
+  inset: 0;
+}
+
+/* ---------- 悬浮提示 ---------- */
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  max-width: 280px;
+  padding: 8px 10px;
+  border: 1px solid var(--chrome-border);
+  border-radius: 8px;
+  background: rgba(18, 22, 29, 0.94);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  line-height: 1.5;
+  pointer-events: none;
+}
+
+.tooltip[hidden] {
+  display: none;
+}
+
+.tip-head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tip-swatch {
+  flex: 0 0 auto;
+  width: 11px;
+  height: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 3px;
+}
+
+.tip-name.is-muted {
+  color: var(--chrome-muted);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.tip-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 3px;
+  color: var(--chrome-fg);
+}
+
+.tip-key {
+  /* P4.3-1：固定为 4 个全角字宽（最长标签「治理主体」），使各行取值的左边缘对齐 */
+  flex: 0 0 48px;
+  color: var(--chrome-muted);
+}
+
+.tip-value {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.tip-icon {
+  /* P4.3-1：图标独立槽位，保证 5 类 relationship 的中文标签起点一致 */
+  display: inline-block;
+  width: 14px;
+  margin-right: 4px;
+  text-align: center;
+}
+
+.tip-enum {
+  /* P4.3-1：枚举名弱化为尾注（复用既有 muted 变量，不新增颜色） */
+  margin-left: 5px;
+  font-size: 11px;
+  color: var(--chrome-muted);
+}
+
+/* ---------- 覆盖层与提示条 ---------- */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 22, 29, 0.55);
+  color: var(--chrome-fg);
+  font-size: 14px;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 4;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(18, 22, 29, 0.86);
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.banner {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  z-index: 7;
+  max-width: min(680px, calc(100% - 24px));
+  padding: 10px 14px;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.banner.error {
+  border: 1px solid #7f1d1d;
+  background: rgba(69, 10, 10, 0.94);
+  color: #fee2e2;
+}
+
+.banner-hint {
+  margin-top: 4px;
+  color: #fca5a5;
+  font-size: 12px;
+}
+
+.banner code {
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.35);
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+/* ---------- 底部控制条（P2：时间轴 + 播放 + 速度 + 年份输入） ---------- */
+.timebar {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 22px 12px;
+  border-top: 1px solid var(--chrome-border);
+  background: var(--chrome-bg);
+  user-select: none;
+}
+
+.timebar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.ctl-btn {
+  padding: 7px 13px;
+  border: 1px solid var(--chrome-border);
+  border-radius: 8px;
+  background: #1b222c;
+  color: var(--chrome-fg);
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.ctl-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: #232c38;
+}
+
+.ctl-btn:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.icon-btn {
+  width: 36px;
+  padding: 7px 0;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.play-btn {
+  min-width: 88px;
+}
+
+.go-btn {
+  white-space: nowrap;
+}
+
+/* 播放速度档位：0.5× / 1× / 2× / 4× */
+.speed-group {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid var(--chrome-border);
+  border-radius: 8px;
+}
+
+.speed-btn {
+  padding: 7px 10px;
+  border: 0;
+  border-right: 1px solid var(--chrome-border);
+  background: #1b222c;
+  color: var(--chrome-muted);
+  font-size: 12px;
+  font-family: inherit;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.speed-btn:last-child {
+  border-right: 0;
+}
+
+.speed-btn:hover {
+  background: #232c38;
+  color: var(--chrome-fg);
+}
+
+.speed-btn.is-active {
+  background: var(--accent);
+  color: #12161d;
+  font-weight: 600;
+}
+
+/* 年份输入 */
+.year-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.year-form-label {
+  color: var(--chrome-muted);
+  font-size: 12px;
+}
+
+.year-input {
+  width: 104px;
+  padding: 7px 9px;
+  border: 1px solid var(--chrome-border);
+  border-radius: 8px;
+  background: #1b222c;
+  color: var(--chrome-fg);
+  font-size: 13px;
+  font-family: inherit;
+  font-variant-numeric: tabular-nums;
+}
+
+.year-input::placeholder {
+  color: #5d6878;
+}
+
+.year-input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.snap-hint {
+  color: var(--accent);
+  font-size: 11px;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.snap-hint.is-hidden {
+  opacity: 0;
+}
+
+/* 当前年份 */
+.year-block {
+  display: flex;
+  min-width: 150px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.year-label {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.year-sub {
+  color: var(--chrome-muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 时间轴 ----------
+   刻度位置恒为 i / (total - 1)，即 snapshot index 空间等距，
+   与真实年份跨度无关（上游最大间隔 113000 年、最小 2 年）。 */
+.timeline {
+  position: relative;
+}
+
+.tl-track {
+  position: relative;
+  height: 30px;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.tl-track:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+.tl-rail {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  border-radius: 999px;
+  background: #232c38;
+  transform: translateY(-50%);
+}
+
+.tl-fill {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--accent);
+  transform: translateY(-50%);
+}
+
+.tl-tick {
+  position: absolute;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #12161d;
+  border-radius: 50%;
+  background: #3a4553;
+  transform: translate(-50%, -50%);
+}
+
+.tl-tick.is-past {
+  background: #b98a2e;
+}
+
+.tl-tick.is-active {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(217, 164, 65, 0.28);
+}
+
+.tl-thumb {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.tl-labels {
+  position: relative;
+  height: 15px;
+}
+
+.tl-tick-label {
+  position: absolute;
+  top: 0;
+  color: var(--chrome-muted);
+  font-size: 11px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-tick-label.is-active {
+  color: var(--chrome-fg);
+  font-weight: 600;
+}

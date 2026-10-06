@@ -1,0 +1,3468 @@
+{
+  "generatedAt": "2026-10-04T16:16:20.799Z",
+  "tiers": [
+    {
+      "id": "nfc",
+      "label": "Unicode NFC 归一"
+    },
+    {
+      "id": "trim",
+      "label": "前后空格 trim"
+    },
+    {
+      "id": "lower",
+      "label": "英文大小写统一"
+    },
+    {
+      "id": "ws",
+      "label": "连续空格归一"
+    },
+    {
+      "id": "dash",
+      "label": "连字符/连接符统一"
+    },
+    {
+      "id": "quote",
+      "label": "引号/撇号统一"
+    },
+    {
+      "id": "period",
+      "label": "多余句点归一"
+    },
+    {
+      "id": "punct",
+      "label": "其它标点归一（, ; :)"
+    }
+  ],
+  "totals": {
+    "snapshots": 54,
+    "totalFeatures": 17438,
+    "unnamedFeatures": 7046,
+    "nameNullFeatures": 7055,
+    "rawKeyCount": 2889,
+    "normKeyCount": 2887,
+    "mergedGroups": 2,
+    "mergedRawCount": 4,
+    "colorsBefore": 2360,
+    "colorsAfter": 2379,
+    "driftGroups": 2,
+    "eliminatedColors": 2,
+    "vanishTotal": 3021,
+    "appearTotal": 3209,
+    "renameCandidates": 426
+  },
+  "tierHistogram": {
+    "lower": 1,
+    "quote": 1
+  },
+  "contributingHistogram": {
+    "lower": 1,
+    "quote": 1
+  },
+  "mergedGroups": [
+    {
+      "normalized": "chinese warlords",
+      "members": [
+        "Chinese Warlords",
+        "Chinese warlords"
+      ],
+      "deepestTier": "lower",
+      "contributing": [
+        "lower"
+      ],
+      "colors": [
+        "#816cc6",
+        "#8f91d9"
+      ],
+      "years": [
+        1920,
+        1930,
+        1938
+      ],
+      "hypotheticalColor": "#a6d086"
+    },
+    {
+      "normalized": "kwakwaka'wakw",
+      "members": [
+        "Kwakwaka'wakw",
+        "Kwakwaka’wakw"
+      ],
+      "deepestTier": "quote",
+      "contributing": [
+        "quote"
+      ],
+      "colors": [
+        "#c2a082",
+        "#d593b8"
+      ],
+      "years": [
+        1492,
+        1530,
+        1600
+      ],
+      "hypotheticalColor": "#8a9ecc"
+    }
+  ],
+  "pairStats": [
+    {
+      "from": -123000,
+      "to": -10000,
+      "vanished": 3,
+      "appeared": 13,
+      "kept": 0
+    },
+    {
+      "from": -10000,
+      "to": -8000,
+      "vanished": 0,
+      "appeared": 1,
+      "kept": 13
+    },
+    {
+      "from": -8000,
+      "to": -5000,
+      "vanished": 8,
+      "appeared": 23,
+      "kept": 6
+    },
+    {
+      "from": -5000,
+      "to": -4000,
+      "vanished": 15,
+      "appeared": 9,
+      "kept": 14
+    },
+    {
+      "from": -4000,
+      "to": -3000,
+      "vanished": 0,
+      "appeared": 2,
+      "kept": 23
+    },
+    {
+      "from": -3000,
+      "to": -2000,
+      "vanished": 3,
+      "appeared": 23,
+      "kept": 22
+    },
+    {
+      "from": -2000,
+      "to": -1500,
+      "vanished": 31,
+      "appeared": 54,
+      "kept": 14
+    },
+    {
+      "from": -1500,
+      "to": -1000,
+      "vanished": 1,
+      "appeared": 2,
+      "kept": 67
+    },
+    {
+      "from": -1000,
+      "to": -700,
+      "vanished": 1,
+      "appeared": 5,
+      "kept": 68
+    },
+    {
+      "from": -700,
+      "to": -500,
+      "vanished": 33,
+      "appeared": 34,
+      "kept": 40
+    },
+    {
+      "from": -500,
+      "to": -400,
+      "vanished": 16,
+      "appeared": 17,
+      "kept": 58
+    },
+    {
+      "from": -400,
+      "to": -323,
+      "vanished": 25,
+      "appeared": 18,
+      "kept": 50
+    },
+    {
+      "from": -323,
+      "to": -300,
+      "vanished": 6,
+      "appeared": 11,
+      "kept": 62
+    },
+    {
+      "from": -300,
+      "to": -200,
+      "vanished": 19,
+      "appeared": 30,
+      "kept": 54
+    },
+    {
+      "from": -200,
+      "to": -100,
+      "vanished": 23,
+      "appeared": 23,
+      "kept": 61
+    },
+    {
+      "from": -100,
+      "to": -1,
+      "vanished": 27,
+      "appeared": 19,
+      "kept": 57
+    },
+    {
+      "from": -1,
+      "to": 100,
+      "vanished": 3,
+      "appeared": 9,
+      "kept": 73
+    },
+    {
+      "from": 100,
+      "to": 200,
+      "vanished": 19,
+      "appeared": 5,
+      "kept": 63
+    },
+    {
+      "from": 200,
+      "to": 300,
+      "vanished": 7,
+      "appeared": 10,
+      "kept": 61
+    },
+    {
+      "from": 300,
+      "to": 400,
+      "vanished": 10,
+      "appeared": 13,
+      "kept": 61
+    },
+    {
+      "from": 400,
+      "to": 500,
+      "vanished": 20,
+      "appeared": 33,
+      "kept": 54
+    },
+    {
+      "from": 500,
+      "to": 600,
+      "vanished": 41,
+      "appeared": 34,
+      "kept": 46
+    },
+    {
+      "from": 600,
+      "to": 700,
+      "vanished": 6,
+      "appeared": 44,
+      "kept": 74
+    },
+    {
+      "from": 700,
+      "to": 800,
+      "vanished": 76,
+      "appeared": 74,
+      "kept": 42
+    },
+    {
+      "from": 800,
+      "to": 900,
+      "vanished": 26,
+      "appeared": 44,
+      "kept": 90
+    },
+    {
+      "from": 900,
+      "to": 1000,
+      "vanished": 77,
+      "appeared": 71,
+      "kept": 57
+    },
+    {
+      "from": 1000,
+      "to": 1100,
+      "vanished": 28,
+      "appeared": 38,
+      "kept": 100
+    },
+    {
+      "from": 1100,
+      "to": 1200,
+      "vanished": 44,
+      "appeared": 34,
+      "kept": 94
+    },
+    {
+      "from": 1200,
+      "to": 1279,
+      "vanished": 60,
+      "appeared": 38,
+      "kept": 68
+    },
+    {
+      "from": 1279,
+      "to": 1300,
+      "vanished": 6,
+      "appeared": 11,
+      "kept": 100
+    },
+    {
+      "from": 1300,
+      "to": 1400,
+      "vanished": 16,
+      "appeared": 14,
+      "kept": 95
+    },
+    {
+      "from": 1400,
+      "to": 1492,
+      "vanished": 60,
+      "appeared": 1257,
+      "kept": 49
+    },
+    {
+      "from": 1492,
+      "to": 1500,
+      "vanished": 1205,
+      "appeared": 37,
+      "kept": 101
+    },
+    {
+      "from": 1500,
+      "to": 1530,
+      "vanished": 63,
+      "appeared": 192,
+      "kept": 75
+    },
+    {
+      "from": 1530,
+      "to": 1600,
+      "vanished": 9,
+      "appeared": 377,
+      "kept": 258
+    },
+    {
+      "from": 1600,
+      "to": 1650,
+      "vanished": 106,
+      "appeared": 43,
+      "kept": 529
+    },
+    {
+      "from": 1650,
+      "to": 1700,
+      "vanished": 12,
+      "appeared": 6,
+      "kept": 560
+    },
+    {
+      "from": 1700,
+      "to": 1715,
+      "vanished": 31,
+      "appeared": 43,
+      "kept": 535
+    },
+    {
+      "from": 1715,
+      "to": 1783,
+      "vanished": 112,
+      "appeared": 65,
+      "kept": 466
+    },
+    {
+      "from": 1783,
+      "to": 1800,
+      "vanished": 24,
+      "appeared": 19,
+      "kept": 507
+    },
+    {
+      "from": 1800,
+      "to": 1815,
+      "vanished": 283,
+      "appeared": 60,
+      "kept": 243
+    },
+    {
+      "from": 1815,
+      "to": 1878,
+      "vanished": 246,
+      "appeared": 104,
+      "kept": 57
+    },
+    {
+      "from": 1878,
+      "to": 1880,
+      "vanished": 5,
+      "appeared": 2,
+      "kept": 156
+    },
+    {
+      "from": 1880,
+      "to": 1900,
+      "vanished": 18,
+      "appeared": 14,
+      "kept": 140
+    },
+    {
+      "from": 1900,
+      "to": 1914,
+      "vanished": 81,
+      "appeared": 41,
+      "kept": 73
+    },
+    {
+      "from": 1914,
+      "to": 1920,
+      "vanished": 23,
+      "appeared": 50,
+      "kept": 91
+    },
+    {
+      "from": 1920,
+      "to": 1930,
+      "vanished": 3,
+      "appeared": 3,
+      "kept": 138
+    },
+    {
+      "from": 1930,
+      "to": 1938,
+      "vanished": 38,
+      "appeared": 18,
+      "kept": 103
+    },
+    {
+      "from": 1938,
+      "to": 1945,
+      "vanished": 29,
+      "appeared": 35,
+      "kept": 92
+    },
+    {
+      "from": 1945,
+      "to": 1960,
+      "vanished": 16,
+      "appeared": 44,
+      "kept": 111
+    },
+    {
+      "from": 1960,
+      "to": 1994,
+      "vanished": 7,
+      "appeared": 43,
+      "kept": 148
+    },
+    {
+      "from": 1994,
+      "to": 2000,
+      "vanished": 0,
+      "appeared": 0,
+      "kept": 191
+    },
+    {
+      "from": 2000,
+      "to": 2010,
+      "vanished": 0,
+      "appeared": 0,
+      "kept": 191
+    }
+  ],
+  "renameCandidates": [
+    {
+      "old": "Chinese Warlords",
+      "new": "Chinese warlords",
+      "sim": 1,
+      "from": 1930,
+      "to": 1938
+    },
+    {
+      "old": "Sultinate of Zanzibar",
+      "new": "Sultanate of Zanzibar",
+      "sim": 0.9523809523809523,
+      "from": 1878,
+      "to": 1880
+    },
+    {
+      "old": "Sinhalese kingdom",
+      "new": "Sinhalese kingdoms",
+      "sim": 0.9444444444444444,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Mon state",
+      "new": "Mon States",
+      "sim": 0.9,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Athabaskan",
+      "new": "Athabascan",
+      "sim": 0.9,
+      "from": 1650,
+      "to": 1700
+    },
+    {
+      "old": "Castile",
+      "new": "Castille",
+      "sim": 0.875,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Guanahatabeyes",
+      "new": "Guanahatabey",
+      "sim": 0.8571428571428572,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Buganda",
+      "new": "Uganda",
+      "sim": 0.8571428571428572,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Iceland",
+      "new": "Ireland",
+      "sim": 0.8571428571428572,
+      "from": 1930,
+      "to": 1938
+    },
+    {
+      "old": "Maori",
+      "new": "Maoris",
+      "sim": 0.8333333333333334,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Navajo",
+      "new": "Navaho",
+      "sim": 0.8333333333333334,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Maoris",
+      "new": "Maori",
+      "sim": 0.8333333333333334,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Tang Empire",
+      "new": "Song Empire",
+      "sim": 0.8181818181818181,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Silla",
+      "new": "Silia",
+      "sim": 0.8,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Silia",
+      "new": "Silla",
+      "sim": 0.8,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Sami",
+      "new": "Samis",
+      "sim": 0.8,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Kyivan Rus",
+      "new": "Kievan Rus",
+      "sim": 0.8,
+      "from": 1000,
+      "to": 1100
+    },
+    {
+      "old": "Ainu",
+      "new": "Ainus",
+      "sim": 0.8,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Bagan",
+      "new": "Pagan",
+      "sim": 0.8,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Hopi",
+      "new": "Hopie",
+      "sim": 0.8,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Ainus",
+      "new": "Ainu",
+      "sim": 0.8,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Maori",
+      "new": "Māori",
+      "sim": 0.8,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Sind",
+      "new": "Sindh",
+      "sim": 0.8,
+      "from": 1783,
+      "to": 1800
+    },
+    {
+      "old": "Māori",
+      "new": "Maori",
+      "sim": 0.8,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Maori",
+      "new": "M?ori",
+      "sim": 0.8,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "M?ori",
+      "new": "Māori",
+      "sim": 0.8,
+      "from": 1878,
+      "to": 1880
+    },
+    {
+      "old": "Pechenegs",
+      "new": "Peshemegs",
+      "sim": 0.7777777777777778,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Toltec Empire",
+      "new": "Mixtec Empire",
+      "sim": 0.7692307692307692,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Mongol Empire",
+      "new": "Ming Empire",
+      "sim": 0.7692307692307692,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Idrisid Caliphate",
+      "new": "Fatimid Caliphate",
+      "sim": 0.7647058823529411,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Fatimid Caliphate",
+      "new": "Hafsid Caliphate",
+      "sim": 0.7647058823529411,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Han Empire",
+      "new": "Roman Empire",
+      "sim": 0.75,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Maya states",
+      "new": "Papal States",
+      "sim": 0.75,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Tufan Empire",
+      "new": "Tang Empire",
+      "sim": 0.75,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Nan-Zhao",
+      "new": "Nan Chao",
+      "sim": 0.75,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Sámi",
+      "new": "Sami",
+      "sim": 0.75,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Emirate of Córdoba",
+      "new": "Caliphate of Córdoba",
+      "sim": 0.75,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Principality of Polotsk",
+      "new": "Principality of Novgorod",
+      "sim": 0.75,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Castilla",
+      "new": "Castile",
+      "sim": 0.75,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Timurid Empire",
+      "new": "Timurid Emirates",
+      "sim": 0.75,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Hoti",
+      "new": "Hopi",
+      "sim": 0.75,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Barundji",
+      "new": "Burundi",
+      "sim": 0.75,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Luba",
+      "new": "Cuba",
+      "sim": 0.75,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Kuba",
+      "new": "Cuba",
+      "sim": 0.75,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Malaya",
+      "new": "Malaysia",
+      "sim": 0.75,
+      "from": 1914,
+      "to": 1920
+    },
+    {
+      "old": "Kushan Principalities",
+      "new": "Lombard principalities",
+      "sim": 0.7272727272727273,
+      "from": 500,
+      "to": 600
+    },
+    {
+      "old": "Moravians",
+      "new": "Mordvinians",
+      "sim": 0.7272727272727273,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Polyanians",
+      "new": "Polynesians",
+      "sim": 0.7272727272727273,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Ming Empire",
+      "new": "Inca Empire",
+      "sim": 0.7272727272727273,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Kingdom of Norway",
+      "new": "Kingdom of Georgia",
+      "sim": 0.7222222222222222,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Sabini",
+      "new": "Sabines",
+      "sim": 0.7142857142857143,
+      "from": -400,
+      "to": -323
+    },
+    {
+      "old": "Dacians",
+      "new": "Dacia",
+      "sim": 0.7142857142857143,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Tufan Empire",
+      "new": "Tibetan Empire",
+      "sim": 0.7142857142857143,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Beothuk",
+      "new": "Boethuk",
+      "sim": 0.7142857142857143,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Toltec Empire",
+      "new": "Zapotec Empire",
+      "sim": 0.7142857142857143,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Boethuk",
+      "new": "Beothuk",
+      "sim": 0.7142857142857143,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Hainan",
+      "new": "Salinan",
+      "sim": 0.7142857142857143,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Makkura",
+      "new": "Makurap",
+      "sim": 0.7142857142857143,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Granada",
+      "new": "Guanaca",
+      "sim": 0.7142857142857143,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Castile",
+      "new": "Tastil",
+      "sim": 0.7142857142857143,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Malacca",
+      "new": "Malaya",
+      "sim": 0.7142857142857143,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Somalia",
+      "new": "Romania",
+      "sim": 0.7142857142857143,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Aghlabid Emirate",
+      "new": "Ghaznavid Emirate",
+      "sim": 0.7058823529411764,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Kingdom of Norway",
+      "new": "Kingdom of Pagan",
+      "sim": 0.7058823529411764,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Abbasid Caliphate",
+      "new": "Fatimid Caliphate",
+      "sim": 0.7058823529411764,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Emirate of Sicily",
+      "new": "Emirate of Tiflis",
+      "sim": 0.7058823529411764,
+      "from": 1000,
+      "to": 1100
+    },
+    {
+      "old": "Xiongnu",
+      "new": "S. Xiongnu",
+      "sim": 0.7,
+      "from": -1,
+      "to": 100
+    },
+    {
+      "old": "Jin Empire",
+      "new": "Sui Empire",
+      "sim": 0.7,
+      "from": 500,
+      "to": 600
+    },
+    {
+      "old": "Principality of Polotsk",
+      "new": "Principality of Kyiv",
+      "sim": 0.6956521739130435,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Kushan Empire",
+      "new": "Roman Empire",
+      "sim": 0.6923076923076923,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Mixtec Empire",
+      "new": "Ming Empire",
+      "sim": 0.6923076923076923,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Ming Empire",
+      "new": "Mixtec Empire",
+      "sim": 0.6923076923076923,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Inca Empire",
+      "new": "Manchu Empire",
+      "sim": 0.6923076923076923,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Fulani Empire",
+      "new": "Wadai Empire",
+      "sim": 0.6923076923076923,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Bosporan Kingdom",
+      "new": "Suren Kingdom",
+      "sim": 0.6875,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Maya states",
+      "new": "Maya city-states",
+      "sim": 0.6875,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Kingdom of Sardinia",
+      "new": "Kingdom of Brazil",
+      "sim": 0.6842105263157895,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Catacomb culture",
+      "new": "Late Jomon culture",
+      "sim": 0.6666666666666667,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "La Tène culture",
+      "new": "Adena Culture",
+      "sim": 0.6666666666666667,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Zhou states",
+      "new": "minor states",
+      "sim": 0.6666666666666667,
+      "from": -300,
+      "to": -200
+    },
+    {
+      "old": "Mauryan Empire",
+      "new": "Parthian Empire",
+      "sim": 0.6666666666666667,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Han Empire",
+      "new": "Parthian Empire",
+      "sim": 0.6666666666666667,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Kushan Empire",
+      "new": "Parthian Empire",
+      "sim": 0.6666666666666667,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Gupta Empire",
+      "new": "Huari Empire",
+      "sim": 0.6666666666666667,
+      "from": 500,
+      "to": 600
+    },
+    {
+      "old": "Gupta Empire",
+      "new": "Sui Empire",
+      "sim": 0.6666666666666667,
+      "from": 500,
+      "to": 600
+    },
+    {
+      "old": "Maya states",
+      "new": "Pandya state",
+      "sim": 0.6666666666666667,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Thai Kingdoms",
+      "new": "Celtic kingdoms",
+      "sim": 0.6666666666666667,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Sasanian Empire",
+      "new": "Carolingian Empire",
+      "sim": 0.6666666666666667,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Parhae",
+      "new": "Balhae",
+      "sim": 0.6666666666666667,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Arakan",
+      "new": "Aragón",
+      "sim": 0.6666666666666667,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Arakan",
+      "new": "Arran",
+      "sim": 0.6666666666666667,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Rajput kingdoms",
+      "new": "Hindu kingdoms",
+      "sim": 0.6666666666666667,
+      "from": 1000,
+      "to": 1100
+    },
+    {
+      "old": "Alans",
+      "new": "Malays",
+      "sim": 0.6666666666666667,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Palas",
+      "new": "Malays",
+      "sim": 0.6666666666666667,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Hindu kingdoms",
+      "new": "Rajput kingdoms",
+      "sim": 0.6666666666666667,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Pyu state",
+      "new": "Pandya state",
+      "sim": 0.6666666666666667,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Hainan",
+      "new": "Taiwan",
+      "sim": 0.6666666666666667,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Chimú Empire",
+      "new": "Ming Empire",
+      "sim": 0.6666666666666667,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Kediri",
+      "new": "Kiriri",
+      "sim": 0.6666666666666667,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Shuar",
+      "new": "Achuar",
+      "sim": 0.6666666666666667,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Chūzan",
+      "new": "Chafan",
+      "sim": 0.6666666666666667,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Chūzan",
+      "new": "Chelan",
+      "sim": 0.6666666666666667,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Achuar",
+      "new": "Shuar",
+      "sim": 0.6666666666666667,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Rajastan",
+      "new": "Rajputana",
+      "sim": 0.6666666666666667,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Calusa",
+      "new": "Cayuse",
+      "sim": 0.6666666666666667,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Khanty",
+      "new": "Nhanta",
+      "sim": 0.6666666666666667,
+      "from": 1530,
+      "to": 1600
+    },
+    {
+      "old": "Santee",
+      "new": "Asante",
+      "sim": 0.6666666666666667,
+      "from": 1700,
+      "to": 1715
+    },
+    {
+      "old": "Kanara",
+      "new": "Canada",
+      "sim": 0.6666666666666667,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Yanda",
+      "new": "Canada",
+      "sim": 0.6666666666666667,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Yanda",
+      "new": "Rwanda",
+      "sim": 0.6666666666666667,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Baden",
+      "new": "Ibadan",
+      "sim": 0.6666666666666667,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Nyamal",
+      "new": "Natal",
+      "sim": 0.6666666666666667,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Rwanda",
+      "new": "Uganda",
+      "sim": 0.6666666666666667,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Malaya",
+      "new": "Malawi",
+      "sim": 0.6666666666666667,
+      "from": 1914,
+      "to": 1920
+    },
+    {
+      "old": "Archaic Amerindian hunter-gatherers",
+      "new": "Caribbean hunter-gatherers",
+      "sim": 0.6571428571428571,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Hunters-gatherers",
+      "new": "Desert hunter-gatherers",
+      "sim": 0.6521739130434783,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Hunters-gatherers",
+      "new": "Amazon hunter-gatherers",
+      "sim": 0.6521739130434783,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Hunters-gatherers",
+      "new": "Andean hunter-gatherers",
+      "sim": 0.6521739130434783,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Kingdom of Kassander",
+      "new": "Kingdom of Gala",
+      "sim": 0.65,
+      "from": -300,
+      "to": -200
+    },
+    {
+      "old": "city-states",
+      "new": "Greek city-states",
+      "sim": 0.6470588235294117,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Umayyad Caliphate",
+      "new": "Idrisid Caliphate",
+      "sim": 0.6470588235294117,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Umayyad Caliphate",
+      "new": "Abbasid Caliphate",
+      "sim": 0.6470588235294117,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Rashtrakuta state",
+      "new": "Rashtrakuta",
+      "sim": 0.6470588235294117,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Almohad Caliphate",
+      "new": "Hafsid Caliphate",
+      "sim": 0.6470588235294117,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Mauryan Empire",
+      "new": "Roman Empire",
+      "sim": 0.6428571428571428,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Samanid Empire",
+      "new": "Song Empire",
+      "sim": 0.6428571428571428,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Islamic states",
+      "new": "Shan states",
+      "sim": 0.6428571428571428,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Mughal Empire",
+      "new": "Russian Empire",
+      "sim": 0.6428571428571428,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Merina Kingdom",
+      "new": "Dendi Kingdom",
+      "sim": 0.6428571428571428,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Russian Empire",
+      "new": "German Empire",
+      "sim": 0.6428571428571428,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Archaic Amerindian hunter-gatherers",
+      "new": "Eastern North American hunter-gatherers",
+      "sim": 0.641025641025641,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Maya states",
+      "new": "Mon state",
+      "sim": 0.6363636363636364,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Maya states",
+      "new": "Pyu state",
+      "sim": 0.6363636363636364,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Sui Empire",
+      "new": "Tang Empire",
+      "sim": 0.6363636363636364,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Lusatian culture",
+      "new": "Pomeranian culture ",
+      "sim": 0.631578947368421,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Kingdom of Pagan",
+      "new": "Kingdom of Sukhotai",
+      "sim": 0.631578947368421,
+      "from": 1000,
+      "to": 1100
+    },
+    {
+      "old": "Mesoamerican city-states and chiefdoms",
+      "new": "Andean states and chiefdoms",
+      "sim": 0.631578947368421,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Archaic Amerindian hunter-gatherers",
+      "new": "Andean hunter-gatherers",
+      "sim": 0.6285714285714286,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Dakapeng culture",
+      "new": "Karasuk culture",
+      "sim": 0.625,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Hunters-gatherers",
+      "new": "Savanna hunter-gatherers",
+      "sim": 0.625,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Catacomb culture",
+      "new": "Karasuk culture",
+      "sim": 0.625,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Samnites",
+      "new": "Sabines",
+      "sim": 0.625,
+      "from": -400,
+      "to": -323
+    },
+    {
+      "old": "Armenia",
+      "new": "Dardania",
+      "sim": 0.625,
+      "from": -300,
+      "to": -200
+    },
+    {
+      "old": "Bosporan Kingdom",
+      "new": "Saka Kingdom",
+      "sim": 0.625,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Seleucid Kingdom",
+      "new": "Suren Kingdom",
+      "sim": 0.625,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Nabatean Kingdom",
+      "new": "Suren Kingdom",
+      "sim": 0.625,
+      "from": 100,
+      "to": 200
+    },
+    {
+      "old": "Sasanian Empire",
+      "new": "Byzantine Empire",
+      "sim": 0.625,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Aghlabid Emirate",
+      "new": "Buyid Emirate",
+      "sim": 0.625,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Silla",
+      "new": "Castilla",
+      "sim": 0.625,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Hainan",
+      "new": "Kaingang",
+      "sim": 0.625,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Aymara kingdoms",
+      "new": "Burmese kingdoms",
+      "sim": 0.625,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Kalinago",
+      "new": "Salinan",
+      "sim": 0.625,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Kalinago",
+      "new": "Kalapalo",
+      "sim": 0.625,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Tlinoit",
+      "new": "Illinois",
+      "sim": 0.625,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Chagatai Khanate",
+      "new": "Khiva Khanate",
+      "sim": 0.625,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Chagatai Khanate",
+      "new": "Kazan Khanate",
+      "sim": 0.625,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Chagatai Khanate",
+      "new": "Quazaq Khanate",
+      "sim": 0.625,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Chagatai Khanate",
+      "new": "Bukara Khanate",
+      "sim": 0.625,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Barindji",
+      "new": "Burundi",
+      "sim": 0.625,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Baradha",
+      "new": "Barbados",
+      "sim": 0.625,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Cambodia",
+      "new": "Gambia",
+      "sim": 0.625,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Bavaria",
+      "new": "Bulgaria",
+      "sim": 0.625,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Larrakia",
+      "new": "Arabia",
+      "sim": 0.625,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Angola",
+      "new": "Mongolia",
+      "sim": 0.625,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Togoland",
+      "new": "Poland",
+      "sim": 0.625,
+      "from": 1914,
+      "to": 1920
+    },
+    {
+      "old": "Malawi",
+      "new": "Malaysia",
+      "sim": 0.625,
+      "from": 1938,
+      "to": 1945
+    },
+    {
+      "old": "Anguilla",
+      "new": "Angola",
+      "sim": 0.625,
+      "from": 1945,
+      "to": 1960
+    },
+    {
+      "old": "Kingdom of Lysimachus",
+      "new": "Kingdom of Syphax",
+      "sim": 0.6190476190476191,
+      "from": -300,
+      "to": -200
+    },
+    {
+      "old": "Hunnic Empire",
+      "new": "Jin Empire",
+      "sim": 0.6153846153846154,
+      "from": 400,
+      "to": 500
+    },
+    {
+      "old": "Pallavas",
+      "new": "Pallava state",
+      "sim": 0.6153846153846154,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Tufan Empire",
+      "new": "Toltec Empire",
+      "sim": 0.6153846153846154,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Mixtec Empire",
+      "new": "Mughal Empire",
+      "sim": 0.6153846153846154,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Manchu Empire",
+      "new": "Kong Empire",
+      "sim": 0.6153846153846154,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Manchu Empire",
+      "new": "Qing Empire",
+      "sim": 0.6153846153846154,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Kong Empire",
+      "new": "Fulani Empire",
+      "sim": 0.6153846153846154,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Kong Empire",
+      "new": "Manchu Empire",
+      "sim": 0.6153846153846154,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Qing Empire",
+      "new": "Fulani Empire",
+      "sim": 0.6153846153846154,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Qing Empire",
+      "new": "Manchu Empire",
+      "sim": 0.6153846153846154,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Fulani Empire",
+      "new": "Kong Empire",
+      "sim": 0.6153846153846154,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Thai Kingdoms",
+      "new": "Sinhalese kingdoms",
+      "sim": 0.6111111111111112,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Hindu kingdoms",
+      "new": "Sinhalese kingdoms",
+      "sim": 0.6111111111111112,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Carolingian Empire",
+      "new": "Chola Empire",
+      "sim": 0.6111111111111112,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Maratha Confederacy",
+      "new": "Ato trading confederacy",
+      "sim": 0.6086956521739131,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Archaic Amerindian hunter-gatherers",
+      "new": "Savanna hunter-gatherers",
+      "sim": 0.6,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Archaic Amerindian hunter-gatherers",
+      "new": "Subarctic forest hunter-gatherers",
+      "sim": 0.6,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Karasuk culture",
+      "new": "Glades Culture",
+      "sim": 0.6,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Karasuk culture",
+      "new": "Adena Culture",
+      "sim": 0.6,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "La Tène culture",
+      "new": "Glades Culture",
+      "sim": 0.6,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Kingdom of Kassander",
+      "new": "Kingdom of Syphax",
+      "sim": 0.6,
+      "from": -300,
+      "to": -200
+    },
+    {
+      "old": "Kingdom of Antigonus",
+      "new": "Kingdom of Gala",
+      "sim": 0.6,
+      "from": -300,
+      "to": -200
+    },
+    {
+      "old": "Saami",
+      "new": "Sámi",
+      "sim": 0.6,
+      "from": 100,
+      "to": 200
+    },
+    {
+      "old": "Sámi",
+      "new": "Saami",
+      "sim": 0.6,
+      "from": 200,
+      "to": 300
+    },
+    {
+      "old": "Hunnic Empire",
+      "new": "Sasanian Empire",
+      "sim": 0.6,
+      "from": 400,
+      "to": 500
+    },
+    {
+      "old": "Turingians",
+      "new": "Frisians",
+      "sim": 0.6,
+      "from": 500,
+      "to": 600
+    },
+    {
+      "old": "Sasanian Empire",
+      "new": "Tang Empire",
+      "sim": 0.6,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Sasanian Empire",
+      "new": "Tibetan Empire",
+      "sim": 0.6,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Hindu kingdoms",
+      "new": "Celtic kingdoms",
+      "sim": 0.6,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Pyu state",
+      "new": "Mon States",
+      "sim": 0.6,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Japan",
+      "new": "Pagan",
+      "sim": 0.6,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Malagasy",
+      "new": "Madagascar",
+      "sim": 0.6,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Malay",
+      "new": "Mali",
+      "sim": 0.6,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Avars",
+      "new": "Alans",
+      "sim": 0.6,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Banas",
+      "new": "Senas",
+      "sim": 0.6,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Chalukya Empire",
+      "new": "Seljuk Empire",
+      "sim": 0.6,
+      "from": 1000,
+      "to": 1100
+    },
+    {
+      "old": "Samis",
+      "new": "Sámi",
+      "sim": 0.6,
+      "from": 1000,
+      "to": 1100
+    },
+    {
+      "old": "Celtic kingdoms",
+      "new": "Aymara kingdoms",
+      "sim": 0.6,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Rajput kingdoms",
+      "new": "Aymara kingdoms",
+      "sim": 0.6,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Sámi",
+      "new": "Samis",
+      "sim": 0.6,
+      "from": 1279,
+      "to": 1300
+    },
+    {
+      "old": "Pagan",
+      "new": "Japan",
+      "sim": 0.6,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Pagan",
+      "new": "Akan",
+      "sim": 0.6,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Pagan",
+      "new": "Yagán",
+      "sim": 0.6,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Kolla",
+      "new": "Bella",
+      "sim": 0.6,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Yurok",
+      "new": "Huron",
+      "sim": 0.6,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Apalachees",
+      "new": "Apache",
+      "sim": 0.6,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Hoopa",
+      "new": "Hopi",
+      "sim": 0.6,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Japan",
+      "new": "Lipan",
+      "sim": 0.6,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Maori",
+      "new": "Mahra",
+      "sim": 0.6,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Mali",
+      "new": "Miami",
+      "sim": 0.6,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Komi",
+      "new": "Kooma",
+      "sim": 0.6,
+      "from": 1530,
+      "to": 1600
+    },
+    {
+      "old": "Pima",
+      "new": "Parma",
+      "sim": 0.6,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Genoa",
+      "new": "Goa",
+      "sim": 0.6,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Laotian states",
+      "new": "Mahratta states",
+      "sim": 0.6,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Shan states",
+      "new": "Mahratta states",
+      "sim": 0.6,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Arma",
+      "new": "Burma",
+      "sim": 0.6,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Oto",
+      "new": "Sotho",
+      "sim": 0.6,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Assam",
+      "new": "Siam",
+      "sim": 0.6,
+      "from": 1783,
+      "to": 1800
+    },
+    {
+      "old": "Siam",
+      "new": "Assam",
+      "sim": 0.6,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Awsa",
+      "new": "Assam",
+      "sim": 0.6,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Mara",
+      "new": "Maori",
+      "sim": 0.6,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Wurundjeri",
+      "new": "Burundi",
+      "sim": 0.6,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Yemen",
+      "new": "Yeke",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Lucca",
+      "new": "Luba",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Massa",
+      "new": "Malta",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Congo",
+      "new": "Tonga",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Xhosa",
+      "new": "Shona",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Yiiji",
+      "new": "Fiji",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Maya",
+      "new": "Malta",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Nana",
+      "new": "Natal",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Yulparitja",
+      "new": "Bulgaria",
+      "sim": 0.6,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Imperial Japan",
+      "new": "Empire of Japan",
+      "sim": 0.6,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Aboriginal tribes",
+      "new": "Anatolian tribes",
+      "sim": 0.5882352941176471,
+      "from": -3000,
+      "to": -2000
+    },
+    {
+      "old": "Chernoles culture",
+      "new": "Glades Culture",
+      "sim": 0.5882352941176471,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Chernoles culture",
+      "new": "Adena Culture",
+      "sim": 0.5882352941176471,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Tuʻi Tonga Empire",
+      "new": "Tufan Empire",
+      "sim": 0.5882352941176471,
+      "from": 600,
+      "to": 700
+    },
+    {
+      "old": "Aghlabid Emirate",
+      "new": "Buwayhid Emirates",
+      "sim": 0.5882352941176471,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Tibetan Empire",
+      "new": "Tuʻi Tonga Empire",
+      "sim": 0.5882352941176471,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Tang Empire",
+      "new": "Tuʻi Tonga Empire",
+      "sim": 0.5882352941176471,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Almoravid dynasty",
+      "new": "Buyid dynasty",
+      "sim": 0.5882352941176471,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Sinhalese kingdom",
+      "new": "Burmese kingdoms",
+      "sim": 0.5882352941176471,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Tuʻi Tonga Empire",
+      "new": "Kong Empire",
+      "sim": 0.5882352941176471,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Celtiberians",
+      "new": "Etrurians",
+      "sim": 0.5833333333333333,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Roman Empire",
+      "new": "Gupta Empire",
+      "sim": 0.5833333333333333,
+      "from": 200,
+      "to": 300
+    },
+    {
+      "old": "Jin Empire",
+      "new": "Huari Empire",
+      "sim": 0.5833333333333333,
+      "from": 500,
+      "to": 600
+    },
+    {
+      "old": "Pandyas",
+      "new": "Pandya state",
+      "sim": 0.5833333333333333,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Papal States",
+      "new": "Mon States",
+      "sim": 0.5833333333333333,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Tang Empire",
+      "new": "Chola Empire",
+      "sim": 0.5833333333333333,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Tang Empire",
+      "new": "Chimú Empire",
+      "sim": 0.5833333333333333,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "East Francia",
+      "new": "East Java",
+      "sim": 0.5833333333333333,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Mon state",
+      "new": "Pandya state",
+      "sim": 0.5833333333333333,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Pandya state",
+      "new": "Hausa States",
+      "sim": 0.5833333333333333,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Chola Empire",
+      "new": "Ming Empire",
+      "sim": 0.5833333333333333,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Khmer Empire",
+      "new": "Ming Empire",
+      "sim": 0.5833333333333333,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Ming Empire",
+      "new": "Aztec Empire",
+      "sim": 0.5833333333333333,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Islamic states",
+      "new": "Islamic and Hindu states",
+      "sim": 0.5833333333333333,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Golden Horde",
+      "new": "Nogai Horde",
+      "sim": 0.5833333333333333,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Papal States",
+      "new": "Borgu States",
+      "sim": 0.5833333333333333,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "East Germany",
+      "new": "Germany",
+      "sim": 0.5833333333333333,
+      "from": 1960,
+      "to": 1994
+    },
+    {
+      "old": "West Germany",
+      "new": "Germany",
+      "sim": 0.5833333333333333,
+      "from": 1960,
+      "to": 1994
+    },
+    {
+      "old": "Hunters-gatherers",
+      "new": "Shellfish gatherers",
+      "sim": 0.5789473684210527,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Almoravid dynasty",
+      "new": "Khwarazmian dynasty",
+      "sim": 0.5789473684210527,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Ming Empire",
+      "new": "Ming Chinese Empire",
+      "sim": 0.5789473684210527,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Ming Chinese Empire",
+      "new": "Manchu Empire",
+      "sim": 0.5789473684210527,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Hunters-gatherers",
+      "new": "Caribbean hunter-gatherers",
+      "sim": 0.5769230769230769,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Beaker",
+      "new": "Berbers",
+      "sim": 0.5714285714285714,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Archaic Amerindian hunter-gatherers",
+      "new": "Amazon hunter-gatherers",
+      "sim": 0.5714285714285714,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Kingdom of Lysimachus",
+      "new": "Kingdom of Gala",
+      "sim": 0.5714285714285714,
+      "from": -300,
+      "to": -200
+    },
+    {
+      "old": "Hindu kingdoms",
+      "new": "Suren Kingdom",
+      "sim": 0.5714285714285714,
+      "from": 100,
+      "to": 200
+    },
+    {
+      "old": "Kwarezm",
+      "new": "Kanem",
+      "sim": 0.5714285714285714,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Danube Bulgars",
+      "new": "Volga Bulgars",
+      "sim": 0.5714285714285714,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Alans",
+      "new": "Papuans",
+      "sim": 0.5714285714285714,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Chen-La",
+      "new": "Chelmia",
+      "sim": 0.5714285714285714,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Tibetan Empire",
+      "new": "Chola Empire",
+      "sim": 0.5714285714285714,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Papuans",
+      "new": "Alans",
+      "sim": 0.5714285714285714,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Mercia",
+      "new": "Georgia",
+      "sim": 0.5714285714285714,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Irlanda",
+      "new": "Poland",
+      "sim": 0.5714285714285714,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Avars",
+      "new": "Navarre",
+      "sim": 0.5714285714285714,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Azandes",
+      "new": "Alans",
+      "sim": 0.5714285714285714,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Buyid Emirate",
+      "new": "Soomra Emirate",
+      "sim": 0.5714285714285714,
+      "from": 1000,
+      "to": 1100
+    },
+    {
+      "old": "Serbia",
+      "new": "Georgia",
+      "sim": 0.5714285714285714,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Palas",
+      "new": "Papuans",
+      "sim": 0.5714285714285714,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Song Empire",
+      "new": "Zapotec Empire",
+      "sim": 0.5714285714285714,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Papuans",
+      "new": "Pagan",
+      "sim": 0.5714285714285714,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Ghana",
+      "new": "Granada",
+      "sim": 0.5714285714285714,
+      "from": 1200,
+      "to": 1279
+    },
+    {
+      "old": "Morocco",
+      "new": "Modoc",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Makkura",
+      "new": "Maijuna",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Makkura",
+      "new": "Saura",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Corsica",
+      "new": "Coca",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Corsica",
+      "new": "Cuica",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Sicily",
+      "new": "Shiwilu",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Hungary",
+      "new": "Huetar",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Granada",
+      "new": "Guacata",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Granada",
+      "new": "Tanana",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Castile",
+      "new": "Mattole",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Shuar",
+      "new": "Shiwiar",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Hokuzan",
+      "new": "Houma",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Hokuzan",
+      "new": "Tolupan",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Moldova",
+      "new": "Modoc",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Moldova",
+      "new": "Molalla",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Timurid Empire",
+      "new": "Ming Empire",
+      "sim": 0.5714285714285714,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Otavalo",
+      "new": "Navajo",
+      "sim": 0.5714285714285714,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Shiwiar",
+      "new": "Shuar",
+      "sim": 0.5714285714285714,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Inuit",
+      "new": "Tlinoit",
+      "sim": 0.5714285714285714,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Taino",
+      "new": "Tlinoit",
+      "sim": 0.5714285714285714,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Japan",
+      "new": "Papuans",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Taiwan",
+      "new": "Mahican",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Navarre",
+      "new": "Navaho",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Navarre",
+      "new": "Nayarit",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Yemen",
+      "new": "Itelmen",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Arakan",
+      "new": "Atakapa",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Arakan",
+      "new": "Arapaho",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Arakan",
+      "new": "Arikara",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Aztec Empire",
+      "new": "Safavid Empire",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Calusa",
+      "new": "Cahulia",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Navajo",
+      "new": "Naniaho",
+      "sim": 0.5714285714285714,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Khanty",
+      "new": "Kaantju",
+      "sim": 0.5714285714285714,
+      "from": 1530,
+      "to": 1600
+    },
+    {
+      "old": "Khanty",
+      "new": "Kuthant",
+      "sim": 0.5714285714285714,
+      "from": 1530,
+      "to": 1600
+    },
+    {
+      "old": "Malacca",
+      "new": "Lucca",
+      "sim": 0.5714285714285714,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Walapai",
+      "new": "Malaya",
+      "sim": 0.5714285714285714,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Caxcane",
+      "new": "Cayenne",
+      "sim": 0.5714285714285714,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Montana",
+      "new": "Modena",
+      "sim": 0.5714285714285714,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Itelmen",
+      "new": "Bremen",
+      "sim": 0.5714285714285714,
+      "from": 1700,
+      "to": 1715
+    },
+    {
+      "old": "Itelmen",
+      "new": "Yemen",
+      "sim": 0.5714285714285714,
+      "from": 1700,
+      "to": 1715
+    },
+    {
+      "old": "Arapaho",
+      "new": "Arakan",
+      "sim": 0.5714285714285714,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Arikara",
+      "new": "Arakan",
+      "sim": 0.5714285714285714,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Atakapa",
+      "new": "Arakan",
+      "sim": 0.5714285714285714,
+      "from": 1715,
+      "to": 1783
+    },
+    {
+      "old": "Gangulu",
+      "new": "Angola",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Yanda",
+      "new": "Buganda",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Turrbal",
+      "new": "Turan",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Baradha",
+      "new": "Canada",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Kurnai",
+      "new": "Burundi",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Burarra",
+      "new": "Buganda",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Buandig",
+      "new": "Buganda",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Buandig",
+      "new": "Burundi",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Ngandi",
+      "new": "Buganda",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Swabia",
+      "new": "Somalia",
+      "sim": 0.5714285714285714,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Somalia",
+      "new": "Malta",
+      "sim": 0.5714285714285714,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Bavaria",
+      "new": "Arabia",
+      "sim": 0.5714285714285714,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Malkana",
+      "new": "Malta",
+      "sim": 0.5714285714285714,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Wagiman",
+      "new": "Taiwan",
+      "sim": 0.5714285714285714,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Alawa",
+      "new": "Calabar",
+      "sim": 0.5714285714285714,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Dangbon",
+      "new": "Gabon",
+      "sim": 0.5714285714285714,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Unggumi",
+      "new": "Nguni",
+      "sim": 0.5714285714285714,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Buganda",
+      "new": "Guyana",
+      "sim": 0.5714285714285714,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Arabia",
+      "new": "Albania",
+      "sim": 0.5714285714285714,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Arabia",
+      "new": "Armenia",
+      "sim": 0.5714285714285714,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Algeria",
+      "new": "Albania",
+      "sim": 0.5714285714285714,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Algeria",
+      "new": "Armenia",
+      "sim": 0.5714285714285714,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Armenia",
+      "new": "Algeria",
+      "sim": 0.5714285714285714,
+      "from": 1914,
+      "to": 1920
+    },
+    {
+      "old": "Russia",
+      "new": "Austria",
+      "sim": 0.5714285714285714,
+      "from": 1914,
+      "to": 1920
+    },
+    {
+      "old": "Angola",
+      "new": "Andorra",
+      "sim": 0.5714285714285714,
+      "from": 1930,
+      "to": 1938
+    },
+    {
+      "old": "Union of South Africa",
+      "new": "South Africa",
+      "sim": 0.5714285714285714,
+      "from": 1938,
+      "to": 1945
+    },
+    {
+      "old": "Czechoslovakia",
+      "new": "Slovakia",
+      "sim": 0.5714285714285714,
+      "from": 1960,
+      "to": 1994
+    },
+    {
+      "old": "Okhotsk culture",
+      "new": "Dakapeng culture",
+      "sim": 0.5625,
+      "from": -8000,
+      "to": -5000
+    },
+    {
+      "old": "Yamnaya culture",
+      "new": "Catacomb culture",
+      "sim": 0.5625,
+      "from": -3000,
+      "to": -2000
+    },
+    {
+      "old": "Dakapeng culture",
+      "new": "Pampas cultures",
+      "sim": 0.5625,
+      "from": -2000,
+      "to": -1500
+    },
+    {
+      "old": "Lusatian culture",
+      "new": "Glades Culture",
+      "sim": 0.5625,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Lusatian culture",
+      "new": "Adena Culture",
+      "sim": 0.5625,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Adena Culture",
+      "new": "Hopewell Culture",
+      "sim": 0.5625,
+      "from": -200,
+      "to": -100
+    },
+    {
+      "old": "Seleucid Kingdom",
+      "new": "Saka Kingdom",
+      "sim": 0.5625,
+      "from": -100,
+      "to": -1
+    },
+    {
+      "old": "Saka Kingdom",
+      "new": "Sixteen Kingdoms",
+      "sim": 0.5625,
+      "from": 300,
+      "to": 400
+    },
+    {
+      "old": "Sui Empire",
+      "new": "Srivijaya Empire",
+      "sim": 0.5625,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Tufan Empire",
+      "new": "Byzantine Empire",
+      "sim": 0.5625,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Georgian Kingdom",
+      "new": "Celtic kingdoms",
+      "sim": 0.5625,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Sasanian Empire",
+      "new": "Srivijaya Empire",
+      "sim": 0.5625,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Croatian kingdom",
+      "new": "Merina Kingdom",
+      "sim": 0.5625,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Croatian kingdom",
+      "new": "Rajput kingdoms",
+      "sim": 0.5625,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Principality of Polotsk",
+      "new": "Principality of Galicia-Volhynia",
+      "sim": 0.5625,
+      "from": 1100,
+      "to": 1200
+    },
+    {
+      "old": "Lithuania",
+      "new": "Poland-Lithuania",
+      "sim": 0.5625,
+      "from": 1300,
+      "to": 1400
+    },
+    {
+      "old": "Byzantine Empire",
+      "new": "Ming Empire",
+      "sim": 0.5625,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Austrian Empire",
+      "new": "Wassoulou Empire",
+      "sim": 0.5625,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Cimerians",
+      "new": "Etrurians",
+      "sim": 0.5555555555555556,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Cimerians",
+      "new": "Curonians",
+      "sim": 0.5555555555555556,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Phrygians",
+      "new": "Etrurians",
+      "sim": 0.5555555555555556,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Phrygians",
+      "new": "Curonians",
+      "sim": 0.5555555555555556,
+      "from": -700,
+      "to": -500
+    },
+    {
+      "old": "Cholas",
+      "new": "Chalukyas",
+      "sim": 0.5555555555555556,
+      "from": 500,
+      "to": 600
+    },
+    {
+      "old": "Frisians",
+      "new": "Karelians",
+      "sim": 0.5555555555555556,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Karluks",
+      "new": "Karelians",
+      "sim": 0.5555555555555556,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Moravians",
+      "new": "Permians",
+      "sim": 0.5555555555555556,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Moravians",
+      "new": "Karelians",
+      "sim": 0.5555555555555556,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Severians",
+      "new": "Permians",
+      "sim": 0.5555555555555556,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Severians",
+      "new": "Karelians",
+      "sim": 0.5555555555555556,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Alans",
+      "new": "Karelians",
+      "sim": 0.5555555555555556,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Visigothic Kingdom",
+      "new": "Celtic kingdoms",
+      "sim": 0.5555555555555556,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Karelians",
+      "new": "Karluks",
+      "sim": 0.5555555555555556,
+      "from": 800,
+      "to": 900
+    },
+    {
+      "old": "Mercia",
+      "new": "Pomerania",
+      "sim": 0.5555555555555556,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Carolingian Empire",
+      "new": "Song Empire",
+      "sim": 0.5555555555555556,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Carolingian Empire",
+      "new": "Chalukya Empire",
+      "sim": 0.5555555555555556,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Carolingian Empire",
+      "new": "Holy Roman Empire",
+      "sim": 0.5555555555555556,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Somvamsis",
+      "new": "Samis",
+      "sim": 0.5555555555555556,
+      "from": 900,
+      "to": 1000
+    },
+    {
+      "old": "Aymara kingdoms",
+      "new": "Sinhalese kingdoms",
+      "sim": 0.5555555555555556,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Granada",
+      "new": "Karankawa",
+      "sim": 0.5555555555555556,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Seljuk Caliphate",
+      "new": "Wattasid Caliphate",
+      "sim": 0.5555555555555556,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Seljuk Caliphate",
+      "new": "Zayyanid Caliphate",
+      "sim": 0.5555555555555556,
+      "from": 1400,
+      "to": 1492
+    },
+    {
+      "old": "Chorotega",
+      "new": "Cherokee",
+      "sim": 0.5555555555555556,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Monqui",
+      "new": "Algonquin",
+      "sim": 0.5555555555555556,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Chowanoke",
+      "new": "Comanche",
+      "sim": 0.5555555555555556,
+      "from": 1492,
+      "to": 1500
+    },
+    {
+      "old": "Arakan",
+      "new": "Karankawa",
+      "sim": 0.5555555555555556,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Siberians",
+      "new": "Serano",
+      "sim": 0.5555555555555556,
+      "from": 1500,
+      "to": 1530
+    },
+    {
+      "old": "Karankawa",
+      "new": "Arakan",
+      "sim": 0.5555555555555556,
+      "from": 1600,
+      "to": 1650
+    },
+    {
+      "old": "Carnatic",
+      "new": "Cyrenaica",
+      "sim": 0.5555555555555556,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Karangura",
+      "new": "Paraguay",
+      "sim": 0.5555555555555556,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Banggarla",
+      "new": "Imbangala",
+      "sim": 0.5555555555555556,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Banggarla",
+      "new": "Angola",
+      "sim": 0.5555555555555556,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Walangama",
+      "new": "Imbangala",
+      "sim": 0.5555555555555556,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Barkindji",
+      "new": "Burundi",
+      "sim": 0.5555555555555556,
+      "from": 1800,
+      "to": 1815
+    },
+    {
+      "old": "Warlmanpa",
+      "new": "Romania",
+      "sim": 0.5555555555555556,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Wagiman",
+      "new": "Swaziland",
+      "sim": 0.5555555555555556,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Rembarnga",
+      "new": "Romania",
+      "sim": 0.5555555555555556,
+      "from": 1815,
+      "to": 1878
+    },
+    {
+      "old": "Greenland",
+      "new": "Finland",
+      "sim": 0.5555555555555556,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Greenland",
+      "new": "Grenada",
+      "sim": 0.5555555555555556,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Arabia",
+      "new": "Australia",
+      "sim": 0.5555555555555556,
+      "from": 1900,
+      "to": 1914
+    },
+    {
+      "old": "Grenada",
+      "new": "Greenland",
+      "sim": 0.5555555555555556,
+      "from": 1945,
+      "to": 1960
+    },
+    {
+      "old": "Kingdom of Antigonus",
+      "new": "Kingdom of Syphax",
+      "sim": 0.55,
+      "from": -300,
+      "to": -200
+    },
+    {
+      "old": "Parthian Empire",
+      "new": "Eastern Roman Empire",
+      "sim": 0.55,
+      "from": 300,
+      "to": 400
+    },
+    {
+      "old": "Eastern Roman Empire",
+      "new": "Carolingian Empire",
+      "sim": 0.55,
+      "from": 700,
+      "to": 800
+    },
+    {
+      "old": "Habsburg Netherlands",
+      "new": "Netherlands",
+      "sim": 0.55,
+      "from": 1600,
+      "to": 1650
+    }
+  ],
+  "nameStats": {
+    "raw": 3003,
+    "normalized": 2999,
+    "mergedGroups": 3
+  }
+}

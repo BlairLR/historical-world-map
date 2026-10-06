@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "r6-forbidden-output",
+      "match": { "key": "uk", "years": [1783, 1800] },
+      "output": {
+        "entityId": "UK-UNITED-KINGDOM",
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": null,
+        "relationship": "sovereign-territory"
+      },
+      "source": "P4.1-B 测试夹具（R6：规则 output 出现身份标识字段，必须被拒绝）。",
+      "confidence": "low"
+    }
+  ]
+}

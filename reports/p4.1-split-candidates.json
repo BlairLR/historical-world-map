@@ -1,0 +1,7496 @@
+{
+  "generatedAt": "2026-10-04T16:39:02.618Z",
+  "keyCount": 139,
+  "autoKeyCount": 134,
+  "totalRuns": 322,
+  "gapCount": 183,
+  "counts": {
+    "A": 40,
+    "B": 61,
+    "C": 33,
+    "M": 5
+  },
+  "records": [
+    {
+      "key": "united states",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:united states",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#cb6e67"
+        },
+        {
+          "entityId": "auto:united states#1",
+          "kind": "auto",
+          "first": 1914,
+          "last": 2010,
+          "yearCount": 9,
+          "features": 21,
+          "color": "#d4d482"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1914,
+          "span": 99,
+          "gapYears": [
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": [
+            {
+              "key": "united states virgin islands",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 3
+            },
+            {
+              "key": "united states of america",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "denmark",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:denmark",
+          "kind": "auto",
+          "first": 1100,
+          "last": 1300,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#79cba1"
+        },
+        {
+          "entityId": "auto:denmark#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 2010,
+          "yearCount": 13,
+          "features": 17,
+          "color": "#cb67a8"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1300,
+          "to": 1815,
+          "span": 515,
+          "gapYears": [
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800
+          ],
+          "candidates": [
+            {
+              "key": "denmark-norway",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 9
+            },
+            {
+              "key": "danemark",
+              "score": 0.75,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "norway",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:norway",
+          "kind": "auto",
+          "first": 1100,
+          "last": 1300,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#aec78e"
+        },
+        {
+          "entityId": "auto:norway#1",
+          "kind": "auto",
+          "first": 1914,
+          "last": 2010,
+          "yearCount": 9,
+          "features": 9,
+          "color": "#8fa4d9"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1300,
+          "to": 1914,
+          "span": 614,
+          "gapYears": [
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": [
+            {
+              "key": "denmark-norway",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 9
+            },
+            {
+              "key": "sweden-norway",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "uganda",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:uganda",
+          "kind": "auto",
+          "first": 1914,
+          "last": 1930,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#70aad4"
+        },
+        {
+          "entityId": "auto:uganda#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#7ec692"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "rwanda",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "zambia",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:zambia",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c67ea8"
+        },
+        {
+          "entityId": "auto:zambia#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#96d1c6"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "namibia",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "united kingdom",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:united kingdom",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 9,
+          "color": "#8f70d4"
+        },
+        {
+          "entityId": "auto:united kingdom#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 2010,
+          "yearCount": 13,
+          "features": 65,
+          "color": "#ccb08a"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "egypt",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:egypt",
+          "kind": "auto",
+          "first": -4000,
+          "last": -700,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#786cc6"
+        },
+        {
+          "entityId": "auto:egypt#1",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#62bad0"
+        },
+        {
+          "entityId": "auto:egypt#2",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c17d71"
+        },
+        {
+          "entityId": "auto:egypt#3",
+          "kind": "auto",
+          "first": 1900,
+          "last": 1900,
+          "yearCount": 1,
+          "features": 2,
+          "color": "#6cb7c6"
+        },
+        {
+          "entityId": "auto:egypt#4",
+          "kind": "auto",
+          "first": 1938,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#cb7367"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -700,
+          "to": 1715,
+          "span": 2415,
+          "gapYears": [
+            -500,
+            -400,
+            -323,
+            -300,
+            -200,
+            -100,
+            -1,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900,
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1815,
+          "to": 1900,
+          "span": 85,
+          "gapYears": [
+            1878,
+            1880
+          ],
+          "candidates": [
+            {
+              "key": "harer (egypt)",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            }
+          ]
+        },
+        {
+          "from": 1900,
+          "to": 1938,
+          "span": 38,
+          "gapYears": [
+            1914,
+            1920,
+            1930
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "lithuania",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:lithuania",
+          "kind": "auto",
+          "first": 1279,
+          "last": 1300,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#bed482"
+        },
+        {
+          "entityId": "auto:lithuania#1",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1938,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#cd9ab9"
+        },
+        {
+          "entityId": "auto:lithuania#2",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#93d5aa"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1300,
+          "to": 1920,
+          "span": 620,
+          "gapYears": [
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": [
+            {
+              "key": "poland-lithuania",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 5
+            }
+          ]
+        },
+        {
+          "from": 1938,
+          "to": 1994,
+          "span": 56,
+          "gapYears": [
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "ukraine",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:ukraine",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1920,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#9982c2"
+        },
+        {
+          "entityId": "auto:ukraine#1",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#cb9c79"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1920,
+          "to": 1994,
+          "span": 74,
+          "gapYears": [
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "bhutan",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 450 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:bhutan",
+          "kind": "auto",
+          "first": 1200,
+          "last": 1200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8ec7bd"
+        },
+        {
+          "entityId": "auto:bhutan#1",
+          "kind": "auto",
+          "first": 1650,
+          "last": 2010,
+          "yearCount": 17,
+          "features": 17,
+          "color": "#7ec6aa"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1200,
+          "to": 1650,
+          "span": 450,
+          "gapYears": [
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "yemen",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 215 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:yemen",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1500,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#c6897e"
+        },
+        {
+          "entityId": "auto:yemen#1",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1815,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#d4709d"
+        },
+        {
+          "entityId": "auto:yemen#2",
+          "kind": "auto",
+          "first": 1920,
+          "last": 2010,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#74d0ab"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1715,
+          "span": 215,
+          "gapYears": [
+            1530,
+            1600,
+            1650,
+            1700
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1815,
+          "to": 1920,
+          "span": 105,
+          "gapYears": [
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "cyprus",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 460 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": true,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:cyprus",
+          "kind": "auto",
+          "first": 800,
+          "last": 1500,
+          "yearCount": 10,
+          "features": 10,
+          "color": "#82c171"
+        },
+        {
+          "entityId": "auto:cyprus#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#cb676f"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1960,
+          "span": 460,
+          "gapYears": [
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "denmark-norway",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:denmark-norway",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1000,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#6cc68d"
+        },
+        {
+          "entityId": "auto:denmark-norway#1",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1800,
+          "yearCount": 9,
+          "features": 13,
+          "color": "#a686d0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1000,
+          "to": 1492,
+          "span": 492,
+          "gapYears": [
+            1100,
+            1200,
+            1279,
+            1300,
+            1400
+          ],
+          "candidates": [
+            {
+              "key": "norway",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 4
+            },
+            {
+              "key": "denmark",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "eastern north american hunter-gatherers",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:eastern north american hunter-gatherers",
+          "kind": "auto",
+          "first": -1500,
+          "last": -200,
+          "yearCount": 8,
+          "features": 9,
+          "color": "#d196c9"
+        },
+        {
+          "entityId": "auto:eastern north american hunter-gatherers#1",
+          "kind": "auto",
+          "first": 500,
+          "last": 1400,
+          "yearCount": 11,
+          "features": 11,
+          "color": "#d470c7"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -200,
+          "to": 500,
+          "span": 700,
+          "gapYears": [
+            -100,
+            -1,
+            100,
+            200,
+            300,
+            400
+          ],
+          "candidates": [
+            {
+              "key": "paleo-siberian hunter-gatherers",
+              "score": 0.641,
+              "kind": "拼写",
+              "years": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "poland",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:poland",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1300,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#93d062"
+        },
+        {
+          "entityId": "auto:poland#1",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1783,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d1bf96"
+        },
+        {
+          "entityId": "auto:poland#2",
+          "kind": "auto",
+          "first": 1920,
+          "last": 2010,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#8ba1dc"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1300,
+          "to": 1783,
+          "span": 483,
+          "gapYears": [
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715
+          ],
+          "candidates": [
+            {
+              "key": "poland-lithuania",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 5
+            },
+            {
+              "key": "scotland",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 7
+            }
+          ]
+        },
+        {
+          "from": 1783,
+          "to": 1920,
+          "span": 137,
+          "gapYears": [
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": [
+            {
+              "key": "togoland",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sweden",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:sweden",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1800,
+          "yearCount": 13,
+          "features": 28,
+          "color": "#7ec6b4"
+        },
+        {
+          "entityId": "auto:sweden#1",
+          "kind": "auto",
+          "first": 1914,
+          "last": 2010,
+          "yearCount": 9,
+          "features": 9,
+          "color": "#a679cb"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1800,
+          "to": 1914,
+          "span": 114,
+          "gapYears": [
+            1815,
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": [
+            {
+              "key": "sweden-norway",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "hungary",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:hungary",
+          "kind": "auto",
+          "first": 1100,
+          "last": 1400,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#c7978e"
+        },
+        {
+          "entityId": "auto:hungary#1",
+          "kind": "auto",
+          "first": 1920,
+          "last": 2010,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#71c1a2"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1400,
+          "to": 1920,
+          "span": 520,
+          "gapYears": [
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": [
+            {
+              "key": "imperial hungary",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            },
+            {
+              "key": "austria hungary",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 3
+            },
+            {
+              "key": "gunggari",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "angola",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:angola",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#62d0ce"
+        },
+        {
+          "entityId": "auto:angola#1",
+          "kind": "auto",
+          "first": 1900,
+          "last": 1930,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#98c171"
+        },
+        {
+          "entityId": "auto:angola#2",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#9976bc"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1900,
+          "span": 85,
+          "gapYears": [
+            1878,
+            1880
+          ],
+          "candidates": [
+            {
+              "key": "anguilla",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        },
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "mongolia",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            },
+            {
+              "key": "anguilla",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "austria",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:austria",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1783,
+          "yearCount": 1,
+          "features": 2,
+          "color": "#8fd9c0"
+        },
+        {
+          "entityId": "auto:austria#1",
+          "kind": "auto",
+          "first": 1920,
+          "last": 2010,
+          "yearCount": 7,
+          "features": 7,
+          "color": "#8fd4d9"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1783,
+          "to": 1920,
+          "span": 137,
+          "gapYears": [
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": [
+            {
+              "key": "habsburg austria",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 1
+            },
+            {
+              "key": "austria hungary",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 3
+            },
+            {
+              "key": "australia",
+              "score": 0.778,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "beothuk",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:beothuk",
+          "kind": "auto",
+          "first": 800,
+          "last": 900,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#b38acc"
+        },
+        {
+          "entityId": "auto:beothuk#1",
+          "kind": "auto",
+          "first": 1279,
+          "last": 1600,
+          "yearCount": 7,
+          "features": 7,
+          "color": "#c67a6c"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 900,
+          "to": 1279,
+          "span": 379,
+          "gapYears": [
+            1000,
+            1100,
+            1200
+          ],
+          "candidates": [
+            {
+              "key": "boethuk",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "serbia",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:serbia",
+          "kind": "auto",
+          "first": 900,
+          "last": 1279,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#d0a374"
+        },
+        {
+          "entityId": "auto:serbia#1",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1914,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#93d59a"
+        },
+        {
+          "entityId": "auto:serbia#2",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#d196cb"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1279,
+          "to": 1878,
+          "span": 599,
+          "gapYears": [
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815
+          ],
+          "candidates": [
+            {
+              "key": "persia",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 3
+            },
+            {
+              "key": "swabia",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        },
+        {
+          "from": 1914,
+          "to": 1994,
+          "span": 80,
+          "gapYears": [
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": [
+            {
+              "key": "syria",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ghana",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:ghana",
+          "kind": "auto",
+          "first": 800,
+          "last": 1200,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#bc86d0"
+        },
+        {
+          "entityId": "auto:ghana#1",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#b18bdc"
+        },
+        {
+          "entityId": "auto:ghana#2",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#b8cd9a"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1200,
+          "to": 1920,
+          "span": 720,
+          "gapYears": [
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": [
+            {
+              "key": "gharra",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 4
+            },
+            {
+              "key": "nhanta",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 7
+            },
+            {
+              "key": "guyana",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        },
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "guyana",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "oman",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:oman",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1900,
+          "yearCount": 11,
+          "features": 11,
+          "color": "#8ec7be"
+        },
+        {
+          "entityId": "auto:oman#1",
+          "kind": "auto",
+          "first": 1945,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#9ecc8a"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1900,
+          "to": 1945,
+          "span": 45,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938
+          ],
+          "candidates": [
+            {
+              "key": "trucial oman",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rwanda",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:rwanda",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1900,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#7976bc"
+        },
+        {
+          "entityId": "auto:rwanda#1",
+          "kind": "auto",
+          "first": 1945,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#bac67e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1900,
+          "to": 1945,
+          "span": 45,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938
+          ],
+          "candidates": [
+            {
+              "key": "uganda",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ainu",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:ainu",
+          "kind": "auto",
+          "first": -5000,
+          "last": 1200,
+          "yearCount": 26,
+          "features": 26,
+          "color": "#75c66c"
+        },
+        {
+          "entityId": "auto:ainu#1",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1700,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#a9d470"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1200,
+          "to": 1530,
+          "span": 330,
+          "gapYears": [
+            1279,
+            1300,
+            1400,
+            1492,
+            1500
+          ],
+          "candidates": [
+            {
+              "key": "ainus",
+              "score": 0.8,
+              "kind": "拼写",
+              "years": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "algeria",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:algeria",
+          "kind": "auto",
+          "first": 1900,
+          "last": 1930,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#a8d086"
+        },
+        {
+          "entityId": "auto:algeria#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#79b5cb"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "bulgaria",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "cambodia",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:cambodia",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1815,
+          "yearCount": 10,
+          "features": 10,
+          "color": "#93c4d5"
+        },
+        {
+          "entityId": "auto:cambodia#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#62d0c0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1960,
+          "span": 145,
+          "gapYears": [
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "gambia",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 3
+            },
+            {
+              "key": "zambia",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "greenland",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:greenland",
+          "kind": "auto",
+          "first": 1900,
+          "last": 1900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#71c192"
+        },
+        {
+          "entityId": "auto:greenland#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#bd86d0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1900,
+          "to": 1960,
+          "span": 60,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "ireland",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "madagascar",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:madagascar",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1900,
+          "yearCount": 18,
+          "features": 18,
+          "color": "#cbbf67"
+        },
+        {
+          "entityId": "auto:madagascar#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#c0c67e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1900,
+          "to": 1960,
+          "span": 60,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "madagascar (france)",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "maori",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:maori",
+          "kind": "auto",
+          "first": 1279,
+          "last": 1500,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#9aa0cd"
+        },
+        {
+          "entityId": "auto:maori#1",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1715,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#708fd4"
+        },
+        {
+          "entityId": "auto:maori#2",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#cbb579"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1650,
+          "span": 150,
+          "gapYears": [
+            1530,
+            1600
+          ],
+          "candidates": [
+            {
+              "key": "maoris",
+              "score": 0.833,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        },
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": [
+            {
+              "key": "māori",
+              "score": 0.8,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "nigeria",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:nigeria",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#bc7b76"
+        },
+        {
+          "entityId": "auto:nigeria#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#a9c78e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "liberia",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "somalia",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:somalia",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c2ba82"
+        },
+        {
+          "entityId": "auto:somalia#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#cb9167"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1960,
+          "span": 145,
+          "gapYears": [
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "romania",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "swaziland",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:swaziland",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1930,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#ca70d4"
+        },
+        {
+          "entityId": "auto:swaziland#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#c7908e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "thailand",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            },
+            {
+              "key": "switzerland",
+              "score": 0.636,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "croatia",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:croatia",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1200,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#93c66c"
+        },
+        {
+          "entityId": "auto:croatia#1",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#bed98f"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1200,
+          "to": 1994,
+          "span": 794,
+          "gapYears": [
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": [
+            {
+              "key": "croatan",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 1
+            },
+            {
+              "key": "carnatic",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "hindu kingdoms",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:hindu kingdoms",
+          "kind": "auto",
+          "first": -500,
+          "last": 700,
+          "yearCount": 11,
+          "features": 15,
+          "color": "#8fd0d9"
+        },
+        {
+          "entityId": "auto:hindu kingdoms#1",
+          "kind": "auto",
+          "first": 1100,
+          "last": 1100,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d4d382"
+        },
+        {
+          "entityId": "auto:hindu kingdoms#2",
+          "kind": "auto",
+          "first": 1700,
+          "last": 1715,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#8a8ccc"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 700,
+          "to": 1100,
+          "span": 400,
+          "gapYears": [
+            800,
+            900,
+            1000
+          ],
+          "candidates": [
+            {
+              "key": "rajput kingdoms",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        },
+        {
+          "from": 1100,
+          "to": 1700,
+          "span": 600,
+          "gapYears": [
+            1200,
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650
+          ],
+          "candidates": [
+            {
+              "key": "minor hindu kingdoms",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            },
+            {
+              "key": "minor hindu and buddhist kingdoms",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            },
+            {
+              "key": "rajput kingdoms",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pagan",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:pagan",
+          "kind": "auto",
+          "first": 900,
+          "last": 900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#82a8d4"
+        },
+        {
+          "entityId": "auto:pagan#1",
+          "kind": "auto",
+          "first": 1279,
+          "last": 1400,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#c6967e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 900,
+          "to": 1279,
+          "span": 379,
+          "gapYears": [
+            1000,
+            1100,
+            1200
+          ],
+          "candidates": [
+            {
+              "key": "kingdom of pagan",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 1
+            },
+            {
+              "key": "bagan",
+              "score": 0.8,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pandya state",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:pandya state",
+          "kind": "auto",
+          "first": 800,
+          "last": 900,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#6cc6a6"
+        },
+        {
+          "entityId": "auto:pandya state#1",
+          "kind": "auto",
+          "first": 1279,
+          "last": 1400,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#d0a374"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 900,
+          "to": 1279,
+          "span": 379,
+          "gapYears": [
+            1000,
+            1100,
+            1200
+          ],
+          "candidates": [
+            {
+              "key": "pyu state",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "united states virgin islands",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:united states virgin islands",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1938,
+          "yearCount": 7,
+          "features": 7,
+          "color": "#c69acd"
+        },
+        {
+          "entityId": "auto:united states virgin islands#1",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#98c171"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1938,
+          "to": 1994,
+          "span": 56,
+          "gapYears": [
+            1945,
+            1960
+          ],
+          "candidates": [
+            {
+              "key": "united states",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mon state",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:mon state",
+          "kind": "auto",
+          "first": 800,
+          "last": 800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c374d0"
+        },
+        {
+          "entityId": "auto:mon state#1",
+          "kind": "auto",
+          "first": 1100,
+          "last": 1200,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#d87dcc"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 800,
+          "to": 1100,
+          "span": 300,
+          "gapYears": [
+            900,
+            1000
+          ],
+          "candidates": [
+            {
+              "key": "mon states",
+              "score": 0.9,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "māori",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:māori",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1800,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c19271"
+        },
+        {
+          "entityId": "auto:māori#1",
+          "kind": "auto",
+          "first": 1880,
+          "last": 1900,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c2829f"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1800,
+          "to": 1880,
+          "span": 80,
+          "gapYears": [
+            1815,
+            1878
+          ],
+          "candidates": [
+            {
+              "key": "maori",
+              "score": 0.8,
+              "kind": "拼写",
+              "years": 1
+            },
+            {
+              "key": "m?ori",
+              "score": 0.8,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pyu state",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:pyu state",
+          "kind": "auto",
+          "first": 800,
+          "last": 800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c1bb71"
+        },
+        {
+          "entityId": "auto:pyu state#1",
+          "kind": "auto",
+          "first": 1100,
+          "last": 1200,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#93d593"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 800,
+          "to": 1100,
+          "span": 300,
+          "gapYears": [
+            900,
+            1000
+          ],
+          "candidates": [
+            {
+              "key": "pandya state",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sinhalese kingdoms",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:sinhalese kingdoms",
+          "kind": "auto",
+          "first": 800,
+          "last": 800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#dc8b95"
+        },
+        {
+          "entityId": "auto:sinhalese kingdoms#1",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#d9b38f"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 800,
+          "to": 1492,
+          "span": 692,
+          "gapYears": [
+            900,
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400
+          ],
+          "candidates": [
+            {
+              "key": "sinhalese kingdom",
+              "score": 0.944,
+              "kind": "拼写",
+              "years": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "maize farmers",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:maize farmers",
+          "kind": "auto",
+          "first": -1500,
+          "last": -400,
+          "yearCount": 5,
+          "features": 6,
+          "color": "#a7d470"
+        },
+        {
+          "entityId": "auto:maize farmers#1",
+          "kind": "auto",
+          "first": -200,
+          "last": -200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#6cc68f"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -400,
+          "to": -200,
+          "span": 200,
+          "gapYears": [
+            -323,
+            -300
+          ],
+          "candidates": [
+            {
+              "key": "manioc farmers",
+              "score": 0.786,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "malays",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:malays",
+          "kind": "auto",
+          "first": -200,
+          "last": -200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#87d074"
+        },
+        {
+          "entityId": "auto:malays#1",
+          "kind": "auto",
+          "first": 1200,
+          "last": 1200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8682c2"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -200,
+          "to": 1200,
+          "span": 1400,
+          "gapYears": [
+            -100,
+            -1,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900,
+            1000,
+            1100
+          ],
+          "candidates": [
+            {
+              "key": "malay",
+              "score": 0.833,
+              "kind": "拼写",
+              "years": 2
+            },
+            {
+              "key": "alans",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 4
+            },
+            {
+              "key": "palas",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 5
+            },
+            {
+              "key": "malagasy",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "multan",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:multan",
+          "kind": "auto",
+          "first": 900,
+          "last": 900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#77c171"
+        },
+        {
+          "entityId": "auto:multan#1",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1783,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#b774d0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 900,
+          "to": 1783,
+          "span": 883,
+          "gapYears": [
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715
+          ],
+          "candidates": [
+            {
+              "key": "milan",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sindh",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:sindh",
+          "kind": "auto",
+          "first": 900,
+          "last": 900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#cbbc79"
+        },
+        {
+          "entityId": "auto:sindh#1",
+          "kind": "auto",
+          "first": 1800,
+          "last": 1800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d593cb"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 900,
+          "to": 1800,
+          "span": 900,
+          "gapYears": [
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783
+          ],
+          "candidates": [
+            {
+              "key": "sind",
+              "score": 0.8,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "thai",
+      "cls": "A",
+      "clsWhy": "每个缺口年份都存在同政权换写法的 key（token 包含 或 相似度 ≥0.5）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:thai",
+          "kind": "auto",
+          "first": -2000,
+          "last": -2000,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8cd086"
+        },
+        {
+          "entityId": "auto:thai#1",
+          "kind": "auto",
+          "first": -200,
+          "last": -200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#98d593"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -2000,
+          "to": -200,
+          "span": 1800,
+          "gapYears": [
+            -1500,
+            -1000,
+            -700,
+            -500,
+            -400,
+            -323,
+            -300
+          ],
+          "candidates": [
+            {
+              "key": "proto-thai cultures",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "spain",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:spain",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1600,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#94bc76"
+        },
+        {
+          "entityId": "auto:spain#1",
+          "kind": "auto",
+          "first": 1715,
+          "last": 2010,
+          "yearCount": 16,
+          "features": 42,
+          "color": "#8f96d9"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1600,
+          "to": 1715,
+          "span": 115,
+          "gapYears": [
+            1650,
+            1700
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "philippines",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:philippines",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#a2c66c"
+        },
+        {
+          "entityId": "auto:philippines#1",
+          "kind": "auto",
+          "first": 1650,
+          "last": 2010,
+          "yearCount": 17,
+          "features": 17,
+          "color": "#c78eb8"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1650,
+          "span": 150,
+          "gapYears": [
+            1530,
+            1600
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "morocco",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:morocco",
+          "kind": "auto",
+          "first": 1300,
+          "last": 1400,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#8274d0"
+        },
+        {
+          "entityId": "auto:morocco#1",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1930,
+          "yearCount": 12,
+          "features": 12,
+          "color": "#93d062"
+        },
+        {
+          "entityId": "auto:morocco#2",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#a367cb"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1400,
+          "to": 1650,
+          "span": 250,
+          "gapYears": [
+            1492,
+            1500,
+            1530,
+            1600
+          ],
+          "candidates": [
+            {
+              "key": "watassid morocco",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            }
+          ]
+        },
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "haiti",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:haiti",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#b79acd"
+        },
+        {
+          "entityId": "auto:haiti#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 2010,
+          "yearCount": 13,
+          "features": 13,
+          "color": "#c8cb67"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "antigua and barbuda",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:antigua and barbuda",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#7ec685"
+        },
+        {
+          "entityId": "auto:antigua and barbuda#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 2010,
+          "yearCount": 12,
+          "features": 12,
+          "color": "#b5c67e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "belize",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:belize",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1700,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#76bca2"
+        },
+        {
+          "entityId": "auto:belize#1",
+          "kind": "auto",
+          "first": 1878,
+          "last": 2010,
+          "yearCount": 12,
+          "features": 12,
+          "color": "#8accc9"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1700,
+          "to": 1878,
+          "span": 178,
+          "gapYears": [
+            1715,
+            1783,
+            1800,
+            1815
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "montserrat",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:montserrat",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#9fc66c"
+        },
+        {
+          "entityId": "auto:montserrat#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 2010,
+          "yearCount": 12,
+          "features": 12,
+          "color": "#d1c096"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "armenia",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:armenia",
+          "kind": "auto",
+          "first": -323,
+          "last": -300,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#bd82c2"
+        },
+        {
+          "entityId": "auto:armenia#1",
+          "kind": "auto",
+          "first": -1,
+          "last": 300,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#9882d4"
+        },
+        {
+          "entityId": "auto:armenia#2",
+          "kind": "auto",
+          "first": 700,
+          "last": 700,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c5d87d"
+        },
+        {
+          "entityId": "auto:armenia#3",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1200,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#9c8ec7"
+        },
+        {
+          "entityId": "auto:armenia#4",
+          "kind": "auto",
+          "first": 1914,
+          "last": 1914,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c2d086"
+        },
+        {
+          "entityId": "auto:armenia#5",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#9282d4"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -300,
+          "to": -1,
+          "span": 299,
+          "gapYears": [
+            -200,
+            -100
+          ],
+          "candidates": [
+            {
+              "key": "dardania",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        },
+        {
+          "from": 300,
+          "to": 700,
+          "span": 400,
+          "gapYears": [
+            400,
+            500,
+            600
+          ],
+          "candidates": [
+            {
+              "key": "armorica",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        },
+        {
+          "from": 700,
+          "to": 1000,
+          "span": 300,
+          "gapYears": [
+            800,
+            900
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1200,
+          "to": 1914,
+          "span": 714,
+          "gapYears": [
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": [
+            {
+              "key": "argentina",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 3
+            },
+            {
+              "key": "sardinia",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 5
+            }
+          ]
+        },
+        {
+          "from": 1914,
+          "to": 1994,
+          "span": 80,
+          "gapYears": [
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": [
+            {
+              "key": "argentina",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "guadeloupe",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:guadeloupe",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c7b68e"
+        },
+        {
+          "entityId": "auto:guadeloupe#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1938,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#82a6c2"
+        },
+        {
+          "entityId": "auto:guadeloupe#2",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#c69e7e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1938,
+          "to": 1994,
+          "span": 56,
+          "gapYears": [
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "grenada",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:grenada",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c1719a"
+        },
+        {
+          "entityId": "auto:grenada#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8bdbdc"
+        },
+        {
+          "entityId": "auto:grenada#2",
+          "kind": "auto",
+          "first": 1914,
+          "last": 2010,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#d9948f"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1815,
+          "to": 1914,
+          "span": 99,
+          "gapYears": [
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "saint lucia",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:saint lucia",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#87d074"
+        },
+        {
+          "entityId": "auto:saint lucia#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#7db4d8"
+        },
+        {
+          "entityId": "auto:saint lucia#2",
+          "kind": "auto",
+          "first": 1914,
+          "last": 2010,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#cca18a"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1815,
+          "to": 1914,
+          "span": 99,
+          "gapYears": [
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "saint vincent and the grenadines",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:saint vincent and the grenadines",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#74b0d0"
+        },
+        {
+          "entityId": "auto:saint vincent and the grenadines#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c6806c"
+        },
+        {
+          "entityId": "auto:saint vincent and the grenadines#2",
+          "kind": "auto",
+          "first": 1914,
+          "last": 2010,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#76a9bc"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1815,
+          "to": 1914,
+          "span": 99,
+          "gapYears": [
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "trinidad",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:trinidad",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#93cc8a"
+        },
+        {
+          "entityId": "auto:trinidad#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d482b9"
+        },
+        {
+          "entityId": "auto:trinidad#2",
+          "kind": "auto",
+          "first": 1920,
+          "last": 2010,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#8ec79e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1815,
+          "to": 1920,
+          "span": 105,
+          "gapYears": [
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "arakan",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:arakan",
+          "kind": "auto",
+          "first": -200,
+          "last": 100,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#9ac66c"
+        },
+        {
+          "entityId": "auto:arakan#1",
+          "kind": "auto",
+          "first": 600,
+          "last": 600,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d9d08f"
+        },
+        {
+          "entityId": "auto:arakan#2",
+          "kind": "auto",
+          "first": 900,
+          "last": 900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#9397d5"
+        },
+        {
+          "entityId": "auto:arakan#3",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#cdc99a"
+        },
+        {
+          "entityId": "auto:arakan#4",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1650,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8b8edc"
+        },
+        {
+          "entityId": "auto:arakan#5",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1815,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#d9d58f"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 100,
+          "to": 600,
+          "span": 500,
+          "gapYears": [
+            200,
+            300,
+            400,
+            500
+          ],
+          "candidates": []
+        },
+        {
+          "from": 600,
+          "to": 900,
+          "span": 300,
+          "gapYears": [
+            700,
+            800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 900,
+          "to": 1492,
+          "span": 592,
+          "gapYears": [
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400
+          ],
+          "candidates": [
+            {
+              "key": "aragón",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 6
+            },
+            {
+              "key": "arran",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        },
+        {
+          "from": 1500,
+          "to": 1650,
+          "span": 150,
+          "gapYears": [
+            1530,
+            1600
+          ],
+          "candidates": [
+            {
+              "key": "arabana",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 1
+            },
+            {
+              "key": "akan",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 2
+            },
+            {
+              "key": "ngalakan",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 1
+            },
+            {
+              "key": "wardaman",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        },
+        {
+          "from": 1650,
+          "to": 1783,
+          "span": 133,
+          "gapYears": [
+            1700,
+            1715
+          ],
+          "candidates": [
+            {
+              "key": "arakan (indian princely state)",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            },
+            {
+              "key": "arabana",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 2
+            },
+            {
+              "key": "akan",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 1
+            },
+            {
+              "key": "ngalakan",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            },
+            {
+              "key": "wardaman",
+              "score": 0.625,
+              "kind": "拼写",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "barbados",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:barbados",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#67cb8d"
+        },
+        {
+          "entityId": "auto:barbados#1",
+          "kind": "auto",
+          "first": 1914,
+          "last": 2010,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#8970d4"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1914,
+          "span": 99,
+          "gapYears": [
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "benin",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:benin",
+          "kind": "auto",
+          "first": 1279,
+          "last": 1700,
+          "yearCount": 9,
+          "features": 9,
+          "color": "#d0ad74"
+        },
+        {
+          "entityId": "auto:benin#1",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1900,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#d5c093"
+        },
+        {
+          "entityId": "auto:benin#2",
+          "kind": "auto",
+          "first": 1945,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#9aa8cd"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1700,
+          "to": 1878,
+          "span": 178,
+          "gapYears": [
+            1715,
+            1783,
+            1800,
+            1815
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1900,
+          "to": 1945,
+          "span": 45,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "ceylon",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:ceylon",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1715,
+          "yearCount": 3,
+          "features": 4,
+          "color": "#70d4cf"
+        },
+        {
+          "entityId": "auto:ceylon#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1938,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#d482c8"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "martinique",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:martinique",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#b471c1"
+        },
+        {
+          "entityId": "auto:martinique#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1815,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#7d99d8"
+        },
+        {
+          "entityId": "auto:martinique#2",
+          "kind": "auto",
+          "first": 1914,
+          "last": 1938,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#c7b78e"
+        },
+        {
+          "entityId": "auto:martinique#3",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#869ad0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1815,
+          "span": 100,
+          "gapYears": [
+            1783,
+            1800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1815,
+          "to": 1914,
+          "span": 99,
+          "gapYears": [
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1938,
+          "to": 1994,
+          "span": 56,
+          "gapYears": [
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "sámi",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:sámi",
+          "kind": "auto",
+          "first": 200,
+          "last": 200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#749ad0"
+        },
+        {
+          "entityId": "auto:sámi#1",
+          "kind": "auto",
+          "first": 800,
+          "last": 800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8ed482"
+        },
+        {
+          "entityId": "auto:sámi#2",
+          "kind": "auto",
+          "first": 1100,
+          "last": 1530,
+          "yearCount": 7,
+          "features": 7,
+          "color": "#c486d0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 200,
+          "to": 800,
+          "span": 600,
+          "gapYears": [
+            300,
+            400,
+            500,
+            600,
+            700
+          ],
+          "candidates": []
+        },
+        {
+          "from": 800,
+          "to": 1100,
+          "span": 300,
+          "gapYears": [
+            900,
+            1000
+          ],
+          "candidates": [
+            {
+              "key": "sami",
+              "score": 0.75,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mali",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:mali",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1500,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#be82d4"
+        },
+        {
+          "entityId": "auto:mali#1",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1715,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#d062d0"
+        },
+        {
+          "entityId": "auto:mali#2",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#75c171"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1650,
+          "span": 150,
+          "gapYears": [
+            1530,
+            1600
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1715,
+          "to": 1960,
+          "span": 245,
+          "gapYears": [
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "malawi",
+              "score": 0.667,
+              "kind": "拼写",
+              "years": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "montenegro",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:montenegro",
+          "kind": "auto",
+          "first": 1715,
+          "last": 1715,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#82c2c1"
+        },
+        {
+          "entityId": "auto:montenegro#1",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1914,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#9c8fd9"
+        },
+        {
+          "entityId": "auto:montenegro#2",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#cad593"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1878,
+          "span": 163,
+          "gapYears": [
+            1783,
+            1800,
+            1815
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1914,
+          "to": 1994,
+          "span": 80,
+          "gapYears": [
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "taiwan",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:taiwan",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#79cb90"
+        },
+        {
+          "entityId": "auto:taiwan#1",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1880,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#a98fd9"
+        },
+        {
+          "entityId": "auto:taiwan#2",
+          "kind": "auto",
+          "first": 1945,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#bad593"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1878,
+          "span": 378,
+          "gapYears": [
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815
+          ],
+          "candidates": [
+            {
+              "key": "wailwan",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 6
+            }
+          ]
+        },
+        {
+          "from": 1880,
+          "to": 1945,
+          "span": 65,
+          "gapYears": [
+            1900,
+            1914,
+            1920,
+            1930,
+            1938
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "bahamas",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:bahamas",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1800,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c78eba"
+        },
+        {
+          "entityId": "auto:bahamas#1",
+          "kind": "auto",
+          "first": 1938,
+          "last": 2010,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#bc76a7"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1800,
+          "to": 1938,
+          "span": 138,
+          "gapYears": [
+            1815,
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "congo",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:congo",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1815,
+          "yearCount": 10,
+          "features": 10,
+          "color": "#c78ea4"
+        },
+        {
+          "entityId": "auto:congo#1",
+          "kind": "auto",
+          "first": 1900,
+          "last": 1900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#96d1c2"
+        },
+        {
+          "entityId": "auto:congo#2",
+          "kind": "auto",
+          "first": 1945,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#cd9aa4"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1900,
+          "span": 85,
+          "gapYears": [
+            1878,
+            1880
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1900,
+          "to": 1945,
+          "span": 45,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "england",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:england",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1279,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#a4c171"
+        },
+        {
+          "entityId": "auto:england#1",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c28982"
+        },
+        {
+          "entityId": "auto:england#2",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1700,
+          "yearCount": 2,
+          "features": 4,
+          "color": "#74d091"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1279,
+          "to": 1492,
+          "span": 213,
+          "gapYears": [
+            1300,
+            1400
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1500,
+          "to": 1650,
+          "span": 150,
+          "gapYears": [
+            1530,
+            1600
+          ],
+          "candidates": [
+            {
+              "key": "england and ireland",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "india",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:india",
+          "kind": "auto",
+          "first": 1900,
+          "last": 1900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#ccb18a"
+        },
+        {
+          "entityId": "auto:india#1",
+          "kind": "auto",
+          "first": 1938,
+          "last": 2010,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#8762d0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1900,
+          "to": 1938,
+          "span": 38,
+          "gapYears": [
+            1914,
+            1920,
+            1930
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "kuwait",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:kuwait",
+          "kind": "auto",
+          "first": 1914,
+          "last": 1914,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#998fd9"
+        },
+        {
+          "entityId": "auto:kuwait#1",
+          "kind": "auto",
+          "first": 1938,
+          "last": 2010,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#8ec79d"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1914,
+          "to": 1938,
+          "span": 24,
+          "gapYears": [
+            1920,
+            1930
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "laos",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:laos",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1600,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#cb6767"
+        },
+        {
+          "entityId": "auto:laos#1",
+          "kind": "auto",
+          "first": 1800,
+          "last": 1800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#70a5d4"
+        },
+        {
+          "entityId": "auto:laos#2",
+          "kind": "auto",
+          "first": 1938,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#c69c7e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1600,
+          "to": 1800,
+          "span": 200,
+          "gapYears": [
+            1650,
+            1700,
+            1715,
+            1783
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1800,
+          "to": 1938,
+          "span": 138,
+          "gapYears": [
+            1815,
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930
+          ],
+          "candidates": [
+            {
+              "key": "lagos",
+              "score": 0.8,
+              "kind": "拼写",
+              "years": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "qatar",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:qatar",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1914,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#828fd4"
+        },
+        {
+          "entityId": "auto:qatar#1",
+          "kind": "auto",
+          "first": 1938,
+          "last": 2010,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#c66cb1"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1914,
+          "to": 1938,
+          "span": 24,
+          "gapYears": [
+            1920,
+            1930
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "tibet",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:tibet",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1715,
+          "yearCount": 11,
+          "features": 11,
+          "color": "#d470b8"
+        },
+        {
+          "entityId": "auto:tibet#1",
+          "kind": "auto",
+          "first": 1914,
+          "last": 1960,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#b8d062"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1715,
+          "to": 1914,
+          "span": 199,
+          "gapYears": [
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "turks and caicos islands",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:turks and caicos islands",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1800,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#868ad0"
+        },
+        {
+          "entityId": "auto:turks and caicos islands#1",
+          "kind": "auto",
+          "first": 1938,
+          "last": 2010,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#8fd9b7"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1800,
+          "to": 1938,
+          "span": 138,
+          "gapYears": [
+            1815,
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "burma",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:burma",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1815,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#bc769b"
+        },
+        {
+          "entityId": "auto:burma#1",
+          "kind": "auto",
+          "first": 1945,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#71c186"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1945,
+          "span": 130,
+          "gapYears": [
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930,
+            1938
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "gabon",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:gabon",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1900,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#a579cb"
+        },
+        {
+          "entityId": "auto:gabon#1",
+          "kind": "auto",
+          "first": 1945,
+          "last": 2010,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#d4b370"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1900,
+          "to": 1945,
+          "span": 45,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "senegal",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:senegal",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1815,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#a3cb67"
+        },
+        {
+          "entityId": "auto:senegal#1",
+          "kind": "auto",
+          "first": 1900,
+          "last": 1900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#86d0b2"
+        },
+        {
+          "entityId": "auto:senegal#2",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#d87da6"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1900,
+          "span": 85,
+          "gapYears": [
+            1878,
+            1880
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1900,
+          "to": 1960,
+          "span": 60,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "alans",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:alans",
+          "kind": "auto",
+          "first": 100,
+          "last": 100,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#a093d5"
+        },
+        {
+          "entityId": "auto:alans#1",
+          "kind": "auto",
+          "first": 700,
+          "last": 700,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c78eb1"
+        },
+        {
+          "entityId": "auto:alans#2",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1100,
+          "yearCount": 2,
+          "features": 3,
+          "color": "#8acca1"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 100,
+          "to": 700,
+          "span": 600,
+          "gapYears": [
+            200,
+            300,
+            400,
+            500,
+            600
+          ],
+          "candidates": [
+            {
+              "key": "alamans",
+              "score": 0.714,
+              "kind": "拼写",
+              "years": 1
+            }
+          ]
+        },
+        {
+          "from": 700,
+          "to": 1000,
+          "span": 300,
+          "gapYears": [
+            800,
+            900
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "botswana",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:botswana",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#b976bc"
+        },
+        {
+          "entityId": "auto:botswana#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#a496d1"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "eritrea",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:eritrea",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#8c82c2"
+        },
+        {
+          "entityId": "auto:eritrea#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#cc8ac2"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "ivory coast",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:ivory coast",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1900,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#84cb79"
+        },
+        {
+          "entityId": "auto:ivory coast#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#906cc6"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1900,
+          "to": 1960,
+          "span": 60,
+          "gapYears": [
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "kenya",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:kenya",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#62d0ce"
+        },
+        {
+          "entityId": "auto:kenya#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#9a8bdc"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "lesotho",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:lesotho",
+          "kind": "auto",
+          "first": 1914,
+          "last": 1930,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#91c78e"
+        },
+        {
+          "entityId": "auto:lesotho#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#897ec6"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "mozambique",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:mozambique",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#cb67ab"
+        },
+        {
+          "entityId": "auto:mozambique#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#9fd062"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "sierra leone",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:sierra leone",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1930,
+          "yearCount": 7,
+          "features": 7,
+          "color": "#d062a0"
+        },
+        {
+          "entityId": "auto:sierra leone#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#cb9c79"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "tanzania, united republic of",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:tanzania, united republic of",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#7667cb"
+        },
+        {
+          "entityId": "auto:tanzania, united republic of#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#c493d5"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "zimbabwe",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:zimbabwe",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c09acd"
+        },
+        {
+          "entityId": "auto:zimbabwe#1",
+          "kind": "auto",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#c6c67e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1930,
+          "to": 1960,
+          "span": 30,
+          "gapYears": [
+            1938,
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "azerbaijan",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:azerbaijan",
+          "kind": "auto",
+          "first": 1914,
+          "last": 1914,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#93bad5"
+        },
+        {
+          "entityId": "auto:azerbaijan#1",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#b2d086"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1914,
+          "to": 1994,
+          "span": 80,
+          "gapYears": [
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "estonia",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:estonia",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1938,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#cbd086"
+        },
+        {
+          "entityId": "auto:estonia#1",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#82d4ae"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1938,
+          "to": 1994,
+          "span": 56,
+          "gapYears": [
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "latvia",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:latvia",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1938,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#71c1a4"
+        },
+        {
+          "entityId": "auto:latvia#1",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#79cb9c"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1938,
+          "to": 1994,
+          "span": 56,
+          "gapYears": [
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "malta",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:malta",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1914,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#6792cb"
+        },
+        {
+          "entityId": "auto:malta#1",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#74d077"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1914,
+          "to": 1994,
+          "span": 80,
+          "gapYears": [
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "bagirmi",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:bagirmi",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1650,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#d07474"
+        },
+        {
+          "entityId": "auto:bagirmi#1",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1800,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#9bbc76"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1650,
+          "to": 1783,
+          "span": 133,
+          "gapYears": [
+            1700,
+            1715
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "caloosahatchee culture",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:caloosahatchee culture",
+          "kind": "auto",
+          "first": 500,
+          "last": 1400,
+          "yearCount": 11,
+          "features": 11,
+          "color": "#8fabd9"
+        },
+        {
+          "entityId": "auto:caloosahatchee culture#1",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1600,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#cb7988"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1400,
+          "to": 1530,
+          "span": 130,
+          "gapYears": [
+            1492,
+            1500
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "cochin china",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:cochin china",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1815,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#cc8a97"
+        },
+        {
+          "entityId": "auto:cochin china#1",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#62d095"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1920,
+          "span": 105,
+          "gapYears": [
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "dutch east indies",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:dutch east indies",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1815,
+          "yearCount": 3,
+          "features": 9,
+          "color": "#a282c2"
+        },
+        {
+          "entityId": "auto:dutch east indies#1",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#d57dd8"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1920,
+          "span": 105,
+          "gapYears": [
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "sardinia",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:sardinia",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1400,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#cb79c3"
+        },
+        {
+          "entityId": "auto:sardinia#1",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1600,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c7948e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1400,
+          "to": 1530,
+          "span": 130,
+          "gapYears": [
+            1492,
+            1500
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "sicily",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:sicily",
+          "kind": "auto",
+          "first": 1279,
+          "last": 1400,
+          "yearCount": 3,
+          "features": 4,
+          "color": "#67cbb4"
+        },
+        {
+          "entityId": "auto:sicily#1",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1600,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c68a7e"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1400,
+          "to": 1530,
+          "span": 130,
+          "gapYears": [
+            1492,
+            1500
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "portuguese east africa",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:portuguese east africa",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1815,
+          "yearCount": 6,
+          "features": 6,
+          "color": "#cb679b"
+        },
+        {
+          "entityId": "auto:portuguese east africa#1",
+          "kind": "auto",
+          "first": 1900,
+          "last": 1900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8fbad9"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1815,
+          "to": 1900,
+          "span": 85,
+          "gapYears": [
+            1878,
+            1880
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "siam",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:siam",
+          "kind": "auto",
+          "first": 1800,
+          "last": 1800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#a48ec7"
+        },
+        {
+          "entityId": "auto:siam#1",
+          "kind": "auto",
+          "first": 1938,
+          "last": 1938,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#82d4cd"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1800,
+          "to": 1938,
+          "span": 138,
+          "gapYears": [
+            1815,
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "trucial oman",
+      "cls": "B",
+      "clsWhy": "有缺口，需人工查史",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:trucial oman",
+          "kind": "auto",
+          "first": 1878,
+          "last": 1900,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#cd9aa3"
+        },
+        {
+          "entityId": "auto:trucial oman#1",
+          "kind": "auto",
+          "first": 1938,
+          "last": 1938,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d074a2"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1900,
+          "to": 1938,
+          "span": 38,
+          "gapYears": [
+            1914,
+            1920,
+            1930
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "guanches",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 400 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:guanches",
+          "kind": "auto",
+          "first": -1500,
+          "last": 400,
+          "yearCount": 14,
+          "features": 14,
+          "color": "#c17195"
+        },
+        {
+          "entityId": "auto:guanches#1",
+          "kind": "auto",
+          "first": 800,
+          "last": 1815,
+          "yearCount": 18,
+          "features": 20,
+          "color": "#a871c1"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 400,
+          "to": 800,
+          "span": 400,
+          "gapYears": [
+            500,
+            600,
+            700
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "nepal",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 292 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:nepal",
+          "kind": "auto",
+          "first": 1200,
+          "last": 1200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#6cc6b5"
+        },
+        {
+          "entityId": "auto:nepal#1",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1492,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#b1cd9a"
+        },
+        {
+          "entityId": "auto:nepal#2",
+          "kind": "auto",
+          "first": 1650,
+          "last": 1650,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#93d5cc"
+        },
+        {
+          "entityId": "auto:nepal#3",
+          "kind": "auto",
+          "first": 1783,
+          "last": 2010,
+          "yearCount": 15,
+          "features": 15,
+          "color": "#d1969f"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1200,
+          "to": 1492,
+          "span": 292,
+          "gapYears": [
+            1279,
+            1300,
+            1400
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1492,
+          "to": 1650,
+          "span": 158,
+          "gapYears": [
+            1500,
+            1530,
+            1600
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1650,
+          "to": 1783,
+          "span": 133,
+          "gapYears": [
+            1700,
+            1715
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "tuʻi tonga empire",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 400 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:tuʻi tonga empire",
+          "kind": "auto",
+          "first": 500,
+          "last": 600,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#847ec6"
+        },
+        {
+          "entityId": "auto:tuʻi tonga empire#1",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1815,
+          "yearCount": 16,
+          "features": 16,
+          "color": "#ad62d0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 600,
+          "to": 1000,
+          "span": 400,
+          "gapYears": [
+            700,
+            800,
+            900
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "papal states",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 300 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:papal states",
+          "kind": "auto",
+          "first": 800,
+          "last": 800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#cb6797"
+        },
+        {
+          "entityId": "auto:papal states#1",
+          "kind": "auto",
+          "first": 1100,
+          "last": 1815,
+          "yearCount": 15,
+          "features": 15,
+          "color": "#9398d5"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 800,
+          "to": 1100,
+          "span": 300,
+          "gapYears": [
+            900,
+            1000
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "papua new guinea",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 215 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:papua new guinea",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#d06272"
+        },
+        {
+          "entityId": "auto:papua new guinea#1",
+          "kind": "auto",
+          "first": 1715,
+          "last": 2010,
+          "yearCount": 14,
+          "features": 14,
+          "color": "#83c282"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1715,
+          "span": 215,
+          "gapYears": [
+            1530,
+            1600,
+            1650,
+            1700
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "korea",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 392 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:korea",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1100,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#8acbcc"
+        },
+        {
+          "entityId": "auto:korea#1",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1900,
+          "yearCount": 13,
+          "features": 13,
+          "color": "#70ccd4"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1100,
+          "to": 1492,
+          "span": 392,
+          "gapYears": [
+            1200,
+            1279,
+            1300,
+            1400
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "hadramaut",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 600 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:hadramaut",
+          "kind": "auto",
+          "first": -323,
+          "last": 400,
+          "yearCount": 9,
+          "features": 9,
+          "color": "#b4c78e"
+        },
+        {
+          "entityId": "auto:hadramaut#1",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1700,
+          "yearCount": 12,
+          "features": 12,
+          "color": "#627fd0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 400,
+          "to": 1000,
+          "span": 600,
+          "gapYears": [
+            500,
+            600,
+            700,
+            800,
+            900
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "hainan",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 300 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:hainan",
+          "kind": "auto",
+          "first": -1,
+          "last": 400,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#c182d4"
+        },
+        {
+          "entityId": "auto:hainan#1",
+          "kind": "auto",
+          "first": 700,
+          "last": 1400,
+          "yearCount": 9,
+          "features": 9,
+          "color": "#67cba0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 400,
+          "to": 700,
+          "span": 300,
+          "gapYears": [
+            500,
+            600
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "dorset",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 300 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:dorset",
+          "kind": "auto",
+          "first": 500,
+          "last": 500,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#cda39a"
+        },
+        {
+          "entityId": "auto:dorset#1",
+          "kind": "auto",
+          "first": 800,
+          "last": 1400,
+          "yearCount": 8,
+          "features": 8,
+          "color": "#8284c2"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 500,
+          "to": 800,
+          "span": 300,
+          "gapYears": [
+            600,
+            700
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "orissa",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 279 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:orissa",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1000,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8fbbd9"
+        },
+        {
+          "entityId": "auto:orissa#1",
+          "kind": "auto",
+          "first": 1279,
+          "last": 1600,
+          "yearCount": 7,
+          "features": 7,
+          "color": "#d48292"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1000,
+          "to": 1279,
+          "span": 279,
+          "gapYears": [
+            1100,
+            1200
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "annam",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 815 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:annam",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1000,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d062b6"
+        },
+        {
+          "entityId": "auto:annam#1",
+          "kind": "auto",
+          "first": 1815,
+          "last": 1880,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#98d196"
+        },
+        {
+          "entityId": "auto:annam#2",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1930,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#d493d5"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1000,
+          "to": 1815,
+          "span": 815,
+          "gapYears": [
+            1100,
+            1200,
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1880,
+          "to": 1920,
+          "span": 40,
+          "gapYears": [
+            1900,
+            1914
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "paleo-inuit",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 399 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:paleo-inuit",
+          "kind": "auto",
+          "first": -500,
+          "last": -400,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#dc8bcc"
+        },
+        {
+          "entityId": "auto:paleo-inuit#1",
+          "kind": "auto",
+          "first": -1,
+          "last": 400,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#b4c66c"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -400,
+          "to": -1,
+          "span": 399,
+          "gapYears": [
+            -323,
+            -300,
+            -200,
+            -100
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "papuans",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 330 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:papuans",
+          "kind": "auto",
+          "first": 800,
+          "last": 900,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#d4b282"
+        },
+        {
+          "entityId": "auto:papuans#1",
+          "kind": "auto",
+          "first": 1200,
+          "last": 1200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#93d5c2"
+        },
+        {
+          "entityId": "auto:papuans#2",
+          "kind": "auto",
+          "first": 1530,
+          "last": 1700,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#cd9aaa"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 900,
+          "to": 1200,
+          "span": 300,
+          "gapYears": [
+            1000,
+            1100
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1200,
+          "to": 1530,
+          "span": 330,
+          "gapYears": [
+            1279,
+            1300,
+            1400,
+            1492,
+            1500
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "scythians",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 200 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:scythians",
+          "kind": "auto",
+          "first": -400,
+          "last": -400,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c17198"
+        },
+        {
+          "entityId": "auto:scythians#1",
+          "kind": "auto",
+          "first": -200,
+          "last": 100,
+          "yearCount": 3,
+          "features": 5,
+          "color": "#d07974"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -400,
+          "to": -200,
+          "span": 200,
+          "gapYears": [
+            -323,
+            -300
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "georgia",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 414 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:georgia",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1500,
+          "yearCount": 7,
+          "features": 7,
+          "color": "#d196ce"
+        },
+        {
+          "entityId": "auto:georgia#1",
+          "kind": "auto",
+          "first": 1914,
+          "last": 1914,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#7677bc"
+        },
+        {
+          "entityId": "auto:georgia#2",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#d0cc62"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1914,
+          "span": 414,
+          "gapYears": [
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900
+          ],
+          "candidates": []
+        },
+        {
+          "from": 1914,
+          "to": 1994,
+          "span": 80,
+          "gapYears": [
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "hejaz",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 1220 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:hejaz",
+          "kind": "auto",
+          "first": 600,
+          "last": 700,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#79cb8d"
+        },
+        {
+          "entityId": "auto:hejaz#1",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1938,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#9697d1"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 700,
+          "to": 1920,
+          "span": 1220,
+          "gapYears": [
+            800,
+            900,
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "moldova",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 594 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:moldova",
+          "kind": "auto",
+          "first": 1400,
+          "last": 1400,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d49d70"
+        },
+        {
+          "entityId": "auto:moldova#1",
+          "kind": "auto",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#ca79cb"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1400,
+          "to": 1994,
+          "span": 594,
+          "gapYears": [
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715,
+            1783,
+            1800,
+            1815,
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "tungus",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 900 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:tungus",
+          "kind": "auto",
+          "first": -200,
+          "last": -200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#b562d0"
+        },
+        {
+          "entityId": "auto:tungus#1",
+          "kind": "auto",
+          "first": 700,
+          "last": 900,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#8ebbc7"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -200,
+          "to": 700,
+          "span": 900,
+          "gapYears": [
+            -100,
+            -1,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "xiongnu",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 200 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:xiongnu",
+          "kind": "auto",
+          "first": -400,
+          "last": -400,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#b5cd9a"
+        },
+        {
+          "entityId": "auto:xiongnu#1",
+          "kind": "auto",
+          "first": -200,
+          "last": -1,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#c28285"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -400,
+          "to": -200,
+          "span": 200,
+          "gapYears": [
+            -323,
+            -300
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "aboriginal tasmanians",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 4783 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:aboriginal tasmanians",
+          "kind": "auto",
+          "first": -10000,
+          "last": -3000,
+          "yearCount": 5,
+          "features": 5,
+          "color": "#d98fa0"
+        },
+        {
+          "entityId": "auto:aboriginal tasmanians#1",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1800,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#70d47a"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -3000,
+          "to": 1783,
+          "span": 4783,
+          "gapYears": [
+            -2000,
+            -1500,
+            -1000,
+            -700,
+            -500,
+            -400,
+            -323,
+            -300,
+            -200,
+            -100,
+            -1,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900,
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400,
+            1492,
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "arabs",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 1692 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:arabs",
+          "kind": "auto",
+          "first": -200,
+          "last": -200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#b662d0"
+        },
+        {
+          "entityId": "auto:arabs#1",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#d4b670"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -200,
+          "to": 1492,
+          "span": 1692,
+          "gapYears": [
+            -100,
+            -1,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900,
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "funj",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 283 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:funj",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#c2a082"
+        },
+        {
+          "entityId": "auto:funj#1",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1800,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#82b1c2"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1500,
+          "to": 1783,
+          "span": 283,
+          "gapYears": [
+            1530,
+            1600,
+            1650,
+            1700,
+            1715
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "kalinga",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 600 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:kalinga",
+          "kind": "auto",
+          "first": -1,
+          "last": 300,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#cd9abc"
+        },
+        {
+          "entityId": "auto:kalinga#1",
+          "kind": "auto",
+          "first": 900,
+          "last": 1000,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#bc7692"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 300,
+          "to": 900,
+          "span": 600,
+          "gapYears": [
+            400,
+            500,
+            600,
+            700,
+            800
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "berbers",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 1600 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:berbers",
+          "kind": "auto",
+          "first": -1500,
+          "last": -700,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#8d82d4"
+        },
+        {
+          "entityId": "auto:berbers#1",
+          "kind": "auto",
+          "first": 900,
+          "last": 900,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#82d498"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -700,
+          "to": 900,
+          "span": 1600,
+          "gapYears": [
+            -500,
+            -400,
+            -323,
+            -300,
+            -200,
+            -100,
+            -1,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "kamarupa",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 600 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:kamarupa",
+          "kind": "auto",
+          "first": 600,
+          "last": 600,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#96a5d1"
+        },
+        {
+          "entityId": "auto:kamarupa#1",
+          "kind": "auto",
+          "first": 1200,
+          "last": 1200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#bd86d0"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 600,
+          "to": 1200,
+          "span": 600,
+          "gapYears": [
+            700,
+            800,
+            900,
+            1000,
+            1100
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "magadha",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 523 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:magadha",
+          "kind": "auto",
+          "first": -500,
+          "last": -323,
+          "yearCount": 3,
+          "features": 5,
+          "color": "#79b2cb"
+        },
+        {
+          "entityId": "auto:magadha#1",
+          "kind": "auto",
+          "first": 200,
+          "last": 200,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#87d470"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -323,
+          "to": 200,
+          "span": 523,
+          "gapYears": [
+            -300,
+            -200,
+            -100,
+            -1,
+            100
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "poverty point culture",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 2000 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:poverty point culture",
+          "kind": "auto",
+          "first": -1500,
+          "last": -1500,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#90c78e"
+        },
+        {
+          "entityId": "auto:poverty point culture#1",
+          "kind": "auto",
+          "first": 500,
+          "last": 500,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#cbad67"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -1500,
+          "to": 500,
+          "span": 2000,
+          "gapYears": [
+            -1000,
+            -700,
+            -500,
+            -400,
+            -323,
+            -300,
+            -200,
+            -100,
+            -1,
+            100,
+            200,
+            300,
+            400
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "samis",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 300 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:samis",
+          "kind": "auto",
+          "first": 1000,
+          "last": 1000,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#c67e96"
+        },
+        {
+          "entityId": "auto:samis#1",
+          "kind": "auto",
+          "first": 1300,
+          "last": 1300,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#ac71c1"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1000,
+          "to": 1300,
+          "span": 300,
+          "gapYears": [
+            1100,
+            1200,
+            1279
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "sind",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 291 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:sind",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1492,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#76bc96"
+        },
+        {
+          "entityId": "auto:sind#1",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1783,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#dc8bbd"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1492,
+          "to": 1783,
+          "span": 291,
+          "gapYears": [
+            1500,
+            1530,
+            1600,
+            1650,
+            1700,
+            1715
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "yayoi",
+      "cls": "C",
+      "clsWhy": "缺口跨度最大 500 年、缺口内无任何近似 key（疑似真实断层）",
+      "priority": false,
+      "manualInvolved": false,
+      "runs": [
+        {
+          "entityId": "auto:yayoi",
+          "kind": "auto",
+          "first": -400,
+          "last": -400,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#d086ab"
+        },
+        {
+          "entityId": "auto:yayoi#1",
+          "kind": "auto",
+          "first": 100,
+          "last": 100,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#cda69a"
+        }
+      ],
+      "gaps": [
+        {
+          "from": -400,
+          "to": 100,
+          "span": 500,
+          "gapYears": [
+            -323,
+            -300,
+            -200,
+            -100,
+            -1
+          ],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "japan",
+      "cls": "M",
+      "clsWhy": "含手工 entityId（periods 已显式声明），不属于自动切分",
+      "priority": false,
+      "manualInvolved": true,
+      "runs": [
+        {
+          "entityId": "auto:japan",
+          "kind": "auto",
+          "first": 800,
+          "last": 800,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#8ba8dc"
+        },
+        {
+          "entityId": "auto:japan#1",
+          "kind": "auto",
+          "first": 1492,
+          "last": 1500,
+          "yearCount": 2,
+          "features": 2,
+          "color": "#94d074"
+        },
+        {
+          "entityId": "auto:japan#2",
+          "kind": "auto",
+          "first": 1783,
+          "last": 1815,
+          "yearCount": 3,
+          "features": 3,
+          "color": "#ad79cb"
+        },
+        {
+          "entityId": "JP-MODERN",
+          "kind": "manual",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#b967cb"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 800,
+          "to": 1492,
+          "span": 692,
+          "gapYears": [
+            900,
+            1000,
+            1100,
+            1200,
+            1279,
+            1300,
+            1400
+          ],
+          "candidates": [
+            {
+              "key": "imperial japan (fujiwara)",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 3
+            },
+            {
+              "key": "shogun japan (kamakura)",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 3
+            }
+          ]
+        },
+        {
+          "from": 1500,
+          "to": 1783,
+          "span": 283,
+          "gapYears": [
+            1530,
+            1600,
+            1650,
+            1700,
+            1715
+          ],
+          "candidates": [
+            {
+              "key": "japan (warring states)",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            }
+          ]
+        },
+        {
+          "from": 1815,
+          "to": 1960,
+          "span": 145,
+          "gapYears": [
+            1878,
+            1880,
+            1900,
+            1914,
+            1920,
+            1930,
+            1938,
+            1945
+          ],
+          "candidates": [
+            {
+              "key": "imperial japan",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 3
+            },
+            {
+              "key": "empire of japan",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ussr",
+      "cls": "M",
+      "clsWhy": "含手工 entityId（periods 已显式声明），不属于自动切分",
+      "priority": false,
+      "manualInvolved": true,
+      "runs": [
+        {
+          "entityId": "auto:ussr",
+          "kind": "auto",
+          "first": 1920,
+          "last": 1920,
+          "yearCount": 1,
+          "features": 4,
+          "color": "#93c3d5"
+        },
+        {
+          "entityId": "RU-USSR",
+          "kind": "manual",
+          "first": 1930,
+          "last": 1960,
+          "yearCount": 4,
+          "features": 9,
+          "color": "#a68acc"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1920,
+          "to": 1930,
+          "span": 10,
+          "gapYears": [],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "china",
+      "cls": "M",
+      "clsWhy": "含手工 entityId（periods 已显式声明），不属于自动切分",
+      "priority": false,
+      "manualInvolved": true,
+      "runs": [
+        {
+          "entityId": "CN-ROC",
+          "kind": "manual",
+          "first": 1945,
+          "last": 1945,
+          "yearCount": 1,
+          "features": 1,
+          "color": "#62d0b5"
+        },
+        {
+          "entityId": "CN-PRC",
+          "kind": "manual",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 5,
+          "color": "#ab76bc"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1945,
+          "to": 1960,
+          "span": 15,
+          "gapYears": [],
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "key": "russia",
+      "cls": "M",
+      "clsWhy": "含手工 entityId（periods 已显式声明），不属于自动切分",
+      "priority": false,
+      "manualInvolved": true,
+      "runs": [
+        {
+          "entityId": "RU-EMPIRE",
+          "kind": "manual",
+          "first": 1783,
+          "last": 1914,
+          "yearCount": 7,
+          "features": 13,
+          "color": "#82c2b8"
+        },
+        {
+          "entityId": "RU-FED",
+          "kind": "manual",
+          "first": 1994,
+          "last": 2010,
+          "yearCount": 3,
+          "features": 5,
+          "color": "#d196b4"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1914,
+          "to": 1994,
+          "span": 80,
+          "gapYears": [
+            1920,
+            1930,
+            1938,
+            1945,
+            1960
+          ],
+          "candidates": [
+            {
+              "key": "white russia",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 2
+            },
+            {
+              "key": "south russia",
+              "score": 0.9,
+              "kind": "包含",
+              "years": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "germany",
+      "cls": "M",
+      "clsWhy": "含手工 entityId（periods 已显式声明），不属于自动切分",
+      "priority": false,
+      "manualInvolved": true,
+      "runs": [
+        {
+          "entityId": "DE-REICH",
+          "kind": "manual",
+          "first": 1878,
+          "last": 1938,
+          "yearCount": 7,
+          "features": 10,
+          "color": "#8298d4"
+        },
+        {
+          "entityId": "DE-FRG",
+          "kind": "manual",
+          "first": 1960,
+          "last": 2010,
+          "yearCount": 4,
+          "features": 4,
+          "color": "#79c3cb"
+        }
+      ],
+      "gaps": [
+        {
+          "from": 1938,
+          "to": 1960,
+          "span": 22,
+          "gapYears": [
+            1945
+          ],
+          "candidates": []
+        }
+      ]
+    }
+  ]
+}

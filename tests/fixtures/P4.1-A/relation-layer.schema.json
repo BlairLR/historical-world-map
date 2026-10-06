@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://historical-world-map.local/schema/P4.1-A/relation-layer.schema.json",
+  "title": "P4.1-A 关系层 schema（设计稿，未实施）",
+  "description": "本文件是 P4.1-A 设计阶段产出的机器可读 schema，用于描述 sovereignId / authorityId / relationship / resolutionStatus 四个关系层字段，以及其规则来源。它不描述 entityId 的解析（既有实现），也不包含任何历史值。status = DESIGN ONLY。",
+  "$defs": {
+    "relationship": {
+      "title": "relationship（第一版冻结枚举，11 项，单值，恒非空）",
+      "description": "本设计不新增、不改名、不重定义任何枚举值。表达力不足时必须记为 OPEN QUESTION，不得选近似值。",
+      "type": "string",
+      "enum": [
+        "sovereign-territory",
+        "colony",
+        "protectorate",
+        "occupied",
+        "dependency",
+        "mandate",
+        "trusteeship",
+        "autonomous",
+        "condominium",
+        "administered",
+        "unknown"
+      ]
+    },
+    "resolutionStatus": {
+      "title": "resolutionStatus（构建期派生，2 值）",
+      "description": "resolved = 该 feature 的 (year, key, name) 证据单元命中了一条规则（包含显式断言 relationship=unknown 的规则）；unresolved = 未命中任何规则，或证据冲突。禁止第三态落地（见 OQ-12）。",
+      "type": "string",
+      "enum": ["resolved", "unresolved"]
+    },
+    "polityEntityId": {
+      "title": "polity 命名空间 id",
+      "description": "必须存在于 public/data/entities.json，或为哨兵 UNNAMED。禁止伪造 id（如 'unknown'）。",
+      "type": "string",
+      "minLength": 1,
+      "not": { "const": "unknown" }
+    },
+    "authorityEntityId": {
+      "title": "authority 命名空间 id",
+      "description": "独立命名空间，结构性护栏：占领当局 / 军管当局 / 多国管制机构不是 polity，绝不可写入 polity 命名空间。",
+      "type": "string",
+      "pattern": "^auth:[A-Z0-9][A-Z0-9-]*$"
+    },
+    "evidenceSelector": {
+      "title": "规则选择器（关系 resolver 的唯一输入粒度）",
+      "description": "只允许证据字段。禁止出现 entityId、禁止出现几何、禁止出现邻国或年份插值。",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "key": { "type": ["string", "null"], "description": "归一化后的 raw key（= normalizeKey(SUBJECTO || NAME)）" },
+        "name": { "type": ["string", "null"], "description": "归一化后的 NAME；空/全空白归一化为 null，并作为合法选择器值" },
+        "years": {
+          "type": "array",
+          "description": "真实纪年的闭区间 [from, to]，公元前为负数",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "integer" }
+        }
+      }
+    },
+    "relationOutput": {
+      "title": "规则输出（不含 entityId —— 出现 entityId 即为构建错误）",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relationship"],
+      "properties": {
+        "sovereignId": {
+          "description": "法理主权主体。null 本身是双重语义，必须与 relationship + resolutionStatus + 规则 source 一起读：情形 A（证据不足）= null + relationship=unknown + resolutionStatus=unresolved；情形 B（已确认不存在单一法理主权主体，如军事管理当局治下）= null + relationship≠unknown + resolutionStatus=resolved。禁止新增字段/第三态/新枚举来表达该差别（设计报告 §4.4.1、§6.2）。",
+          "oneOf": [{ "$ref": "#/$defs/polityEntityId" }, { "type": "null" }]
+        },
+        "authorityId": {
+          "description": "实际控制 / 占领 / 军管 / 行政管理主体；null = 证据不足或不适用",
+          "oneOf": [{ "$ref": "#/$defs/authorityEntityId" }, { "type": "null" }]
+        },
+        "relationship": { "$ref": "#/$defs/relationship" }
+      }
+    },
+    "relationRule": {
+      "title": "关系规则",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "match", "output", "source", "confidence"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9-]*$" },
+        "match": { "$ref": "#/$defs/evidenceSelector" },
+        "output": { "$ref": "#/$defs/relationOutput" },
+        "source": { "type": "string", "minLength": 1, "description": "证据出处（报告章节 / 文件路径 / 文献），必填以保证可审计、可反驳" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "openQuestion": { "type": "string", "pattern": "^OQ-[0-9]+$", "description": "若该规则表达的是「枚举无法表达」的情形，指向设计报告 §13 的 OQ 编号" }
+      }
+    },
+    "relationConfig": {
+      "title": "data/relations/relations.json（关系层目录；本阶段不创建）",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "rules"],
+      "properties": {
+        "version": { "const": 1 },
+        "_note": { "type": "string" },
+        "rules": { "type": "array", "items": { "$ref": "#/$defs/relationRule" } }
+      }
+    },
+    "authorityRegistry": {
+      "title": "data/relations/authorities.json（关系层目录；本阶段不创建；命名空间与注册表已在 OQ-2 ✅ 冻结）",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "authorities"],
+      "properties": {
+        "version": { "const": 1 },
+        "authorities": {
+          "type": "object",
+          "propertyNames": { "pattern": "^auth:[A-Z0-9][A-Z0-9-]*$" },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "labelEn"],
+            "properties": {
+              "label": { "type": "string" },
+              "labelEn": { "type": "string" },
+              "controllerEntityId": {
+                "description": "说明性元数据（authority → polity 单向）。代码中不存在由它推导 entityId 或颜色的路径。",
+                "$ref": "#/$defs/polityEntityId"
+              },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "featureRelationRecord": {
+      "title": "feature 层关系记录（P4.1-A v1）",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entityId", "sovereignId", "authorityId", "relationship", "resolutionStatus"],
+      "properties": {
+        "entityId": {
+          "description": "由 identity resolver 产出，语义与 P4.1 现状完全一致（本 schema 不规定其解析过程）",
+          "oneOf": [{ "$ref": "#/$defs/polityEntityId" }, { "type": "null" }]
+        },
+        "sovereignId": { "oneOf": [{ "$ref": "#/$defs/polityEntityId" }, { "type": "null" }] },
+        "authorityId": { "oneOf": [{ "$ref": "#/$defs/authorityEntityId" }, { "type": "null" }] },
+        "relationship": { "$ref": "#/$defs/relationship" },
+        "resolutionStatus": { "$ref": "#/$defs/resolutionStatus" }
+      },
+      "allOf": [
+        {
+          "description": "一致性规则 1：unresolved 的关系层必须是「空 + unknown」的形状",
+          "if": { "properties": { "resolutionStatus": { "const": "unresolved" } }, "required": ["resolutionStatus"] },
+          "then": {
+            "properties": {
+              "sovereignId": { "type": "null" },
+              "authorityId": { "type": "null" },
+              "relationship": { "const": "unknown" }
+            }
+          }
+        },
+        {
+          "description": "一致性规则 2：occupied 与 administered 通常要求 authority 与 sovereign 不同或 sovereign 为空（此处只强制 authorityId 非空）",
+          "if": { "properties": { "relationship": { "enum": ["occupied", "administered", "mandate", "trusteeship"] } }, "required": ["relationship"] },
+          "then": { "properties": { "authorityId": { "$ref": "#/$defs/authorityEntityId" } } }
+        }
+      ]
+    },
+    "yearRelationsFile": {
+      "title": "public/data/relations/<year>.json（推荐形态，OQ-10 尚未批准，本阶段不创建、不生成）",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["year", "file", "relations"],
+      "properties": {
+        "year": { "type": "integer" },
+        "file": { "type": "string", "description": "对应的年份文件相对 public/data 的路径，例如 years/world_1945.json" },
+        "relations": {
+          "type": "object",
+          "description": "键 = 年份文件内 feature 的 id（文件内唯一且连续）；注意 id 不是跨年份稳定标识",
+          "propertyNames": { "pattern": "^[0-9]+$" },
+          "additionalProperties": { "$ref": "#/$defs/featureRelationRecord" }
+        }
+      }
+    }
+  },
+  "oneOf": [
+    { "$ref": "#/$defs/featureRelationRecord" },
+    { "$ref": "#/$defs/yearRelationsFile" },
+    { "$ref": "#/$defs/relationConfig" },
+    { "$ref": "#/$defs/authorityRegistry" }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "_note": "DESIGN ILLUSTRATION ONLY（P4.1-A 设计稿，禁止进入构建流程）。本文件不是可用的规则集：它是用 §9 的历史案例演示 data/relations/relations.json 的形态、选择器粒度、命名空间纪律与 unresolved 形状。所有历史值均未经裁决；confidence = low 的规则表示「还需要人工历史判断」，openQuestion 表示「现有 11 项 relationship 枚举无法表达」。本文件不含任何 entityId（关系层输出禁止出现 entityId）。P4.1-B 必须从空规则集开始，不得复制本文件。注意 sovereignId = null 的双重语义：本文件里 relationship ≠ unknown 的 null（如德国占领区、厄立特里亚军管）属于情形 B（已确认无单一法理主权者）；relationship = unknown 的 null 属于情形 A（证据不足），二者不得混用（设计报告 §4.4.1、§6.2）。",
+  "rules": [
+    {
+      "id": "US-MAINLAND-1945",
+      "match": { "key": "usa", "name": "united states", "years": [1945, 1945] },
+      "output": { "sovereignId": "US-USA", "authorityId": "auth:US", "relationship": "sovereign-territory" },
+      "source": "上游 1945 年份文件 feature id=178（NAME=\"United States\", SUBJECTO=\"USA\"）；m02063 §8.2 标准 sovereign territory 示例",
+      "confidence": "high"
+    },
+    {
+      "id": "JP-OCCUPIED-1945",
+      "match": { "key": "usa", "name": "japan (usa)", "years": [1945, 1945] },
+      "output": { "sovereignId": "JP-EMPIRE", "authorityId": "auth:SCAP", "relationship": "occupied" },
+      "source": "上游 1945 年份文件 feature id=5（NAME=\"Japan (USA)\"）；m02063 §8.1 明确要求「美国占领日本不得导致日本自动变成 US-USA」",
+      "confidence": "medium"
+    },
+    {
+      "id": "DE-OCCUPIED-1945-US",
+      "match": { "key": "usa", "name": "germany (usa)", "years": [1945, 1945] },
+      "output": { "sovereignId": null, "authorityId": "auth:US", "relationship": "occupied" },
+      "source": "上游 1945 年份文件 feature id=144；四个占领区在上游是 4 个独立 feature（id=144/137/143/145）。1945 年后德国不存在单一法理主权者，故 sovereignId = null 表示「无单一法理主权者」，不是「未知」",
+      "confidence": "low"
+    },
+    {
+      "id": "DE-OCCUPIED-1945-SOVIET",
+      "match": { "key": "ussr", "name": "germany (soviet)", "years": [1945, 1945] },
+      "output": { "sovereignId": null, "authorityId": "auth:USSR", "relationship": "occupied" },
+      "source": "上游 1945 年份文件 feature id=137",
+      "confidence": "low"
+    },
+    {
+      "id": "KR-OCCUPIED-1945-US",
+      "match": { "key": "usa", "name": "korea (usa)", "years": [1945, 1945] },
+      "output": { "sovereignId": null, "authorityId": "auth:US", "relationship": "occupied" },
+      "source": "上游 1945 年份文件 feature id=218；1945 年朝鲜半岛无被上游建模的本土 polity 实体，故 sovereignId = null（是否需要一个 polity 实体属于 identity 层问题，见 OQ-9）",
+      "confidence": "low"
+    },
+    {
+      "id": "KR-OCCUPIED-1945-USSR",
+      "match": { "key": "ussr", "name": "korea (ussr)", "years": [1945, 1945] },
+      "output": { "sovereignId": null, "authorityId": "auth:USSR", "relationship": "occupied" },
+      "source": "上游 1945 年份文件 feature id=3",
+      "confidence": "low"
+    },
+    {
+      "id": "UK-METROPOLE-1945",
+      "match": { "key": "united kingdom", "name": "united kingdom", "years": [1945, 1945] },
+      "output": { "sovereignId": "UK-UNITED-KINGDOM", "authorityId": "auth:UK", "relationship": "sovereign-territory" },
+      "source": "上游 1945 年份文件 feature id=4 —— 1945 年 `united kingdom` key 下 25 个 feature 中唯一的本土",
+      "confidence": "high"
+    },
+    {
+      "id": "SL-COLONIAL",
+      "match": { "name": "sierra leone", "years": [1808, 1960] },
+      "output": { "sovereignId": "UK-UNITED-KINGDOM", "authorityId": "auth:UK", "relationship": "colony" },
+      "source": "上游 1815–1960 年份文件（key 随年份变化：`sierra leone` 到 1930 为止，1938/1945 位于 `united kingdom` key 下），因此本规则只用 name 选择器。1896 年起的保护地性质差异未在此表达 —— 单值 relationship 无法同时表达海岸殖民地与腹地保护地（见 OQ-3），不得用复合枚举或拆 entity 绕过",
+      "confidence": "medium"
+    },
+    {
+      "id": "GH-COLONIAL-GOLD-COAST",
+      "match": { "key": "great britain", "name": "gold coast (gb)", "years": [1878, 1880] },
+      "output": { "sovereignId": "UK-UNITED-KINGDOM", "authorityId": "auth:UK", "relationship": "colony" },
+      "source": "上游 1878/1880 年份文件；该 feature 的 raw key 是 `great britain`（SUBJECTO=\"GB\"），说明 raw key 只是证据，不是 identity —— 关系层的 sovereign 指向英国本体，而 identity 层不得因此把它并入 UK-UNITED-KINGDOM",
+      "confidence": "medium"
+    },
+    {
+      "id": "ER-BMA-1941-1952",
+      "match": { "name": "eritrea", "years": [1941, 1952] },
+      "output": { "sovereignId": null, "authorityId": "auth:UK-BMA", "relationship": "administered" },
+      "source": "上游 1945 年份文件 feature id=113（NAME=\"Eritrea\", SUBJECTO=\"United Kingdom\", PARTOF=\"Eritrea\"）；m02063 §8.4 明确要求「British Military Administration 不能自动等价于 Eritrea = United Kingdom」。注意本规则只用 name：该 feature 的 raw key 是 `united kingdom`，若用 key 选择器会误伤英国本土与其它殖民地",
+      "confidence": "medium"
+    },
+    {
+      "id": "ER-FEDERATION-1952-1993",
+      "match": { "key": "eritrea", "years": [1952, 1993] },
+      "output": { "sovereignId": null, "authorityId": null, "relationship": "unknown" },
+      "source": "1952–1962 联邦自治与 1962–1993 埃塞俄比亚直辖都必须与 1941–1952 及 1993 以后区分，但 11 项 relationship 枚举中没有 federation / annexation 类取值；按 m02063 §3 不得自选近似枚举，按 m02288 更不得倾向任何候选：federation 不在 P4.1-A / P4.1-B 自行加入，不得用 autonomous 偷换，亦不得修改 ER-ETHIOPIA.periods。本规则只固定输出 unresolved 形状，历史裁决留待 P4.1-C（OQ-4 保持 OPEN QUESTION）",
+      "confidence": "low",
+      "openQuestion": "OQ-4"
+    },
+    {
+      "id": "ER-INDEPENDENT-1994",
+      "match": { "key": "eritrea", "years": [1994, 2010] },
+      "output": { "sovereignId": "ER-ERITREA", "authorityId": "auth:ER", "relationship": "sovereign-territory" },
+      "source": "上游 1994/2000/2010 年份文件；1993 年独立后（1994 是第一个 ≥1993 的快照年）",
+      "confidence": "high"
+    },
+    {
+      "id": "NF-DOMINION",
+      "match": { "name": "dominion of newfoundland", "years": [1920, 1938] },
+      "output": { "sovereignId": null, "authorityId": null, "relationship": "unknown" },
+      "source": "上游 1920/1930 年份文件（PARTOF=\"United Kingdom of Great Britain and Ireland\"）与 1938 年份文件；dominion 地位无法用 11 项枚举表达，而 m01778 已明确 dominion 不属于第一版枚举（见 OQ-5）",
+      "confidence": "low",
+      "openQuestion": "OQ-5"
+    },
+    {
+      "id": "HANOVER-PERSONAL-UNION",
+      "match": { "key": "uk", "name": "hanover", "years": [1715, 1815] },
+      "output": { "sovereignId": null, "authorityId": null, "relationship": "unknown" },
+      "source": "上游 1715/1783/1815 年份文件与 `uk` 1800（Hanover 与 Kingdom of Ireland 同处 `uk` key 下）；君合国无法用 11 项枚举表达（见 OQ-6）。此规则只写 unknown，不改变任何 entityId",
+      "confidence": "low",
+      "openQuestion": "OQ-6"
+    },
+    {
+      "id": "BEIC-CHARTERED",
+      "match": { "key": "british east india company", "years": [1783, 1815] },
+      "output": { "sovereignId": null, "authorityId": null, "relationship": "unknown" },
+      "source": "上游 1783/1815 年份文件（4 个 feature）；chartered company 的统治形态无法用 11 项枚举表达（见 OQ-7）",
+      "confidence": "low",
+      "openQuestion": "OQ-7"
+    },
+    {
+      "id": "DUAL-CLAIM-KURIL",
+      "match": { "key": "(russian and japanese claim)", "years": [1800, 1815] },
+      "output": { "sovereignId": null, "authorityId": null, "relationship": "unknown" },
+      "source": "上游 1800 年份文件 feature id=610、1815 年份文件 feature id=368（NAME=\"Kuril Islands\", PARTOF=\"\"）—— 单个 feature 同时属于两个声索方，单值 sovereignId 无法表达（见 OQ-8）",
+      "confidence": "low",
+      "openQuestion": "OQ-8"
+    },
+    {
+      "id": "NON-POLITY-KEYS",
+      "match": { "key": "3", "years": [1783, 1783] },
+      "output": { "sovereignId": null, "authorityId": null, "relationship": "unknown" },
+      "source": "上游 1783 年份文件：key `3` 下混有 Lombardy、Bhutan 与一个 NAME=null 的 feature（当前都落在 `auto:3`）。非政权形态 raw key 必须落成 unresolved，而不是继承 key 的关系（见 OQ-9 / §7.5）",
+      "confidence": "low",
+      "openQuestion": "OQ-9"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "_note": "地理实体配置（D1 配置驱动）。地理实体是「固定地理事实」，不是历史政权：它们不参与政权身份解析、不参与配色演化，一律归入 UNNAMED 中性灰；缺失年份由 scripts/build-data.mjs 自动补全（未来新增年份同样适用）。判据与资产都由本文件声明，新增地理实体只需在此追加一条。",
+  "poleLatitude": -89.9,
+  "_poleLatitude_note": "极地判据：要素自身最南纬度 ≤ 该值即视为极地要素。用「含南极点」而不是 -60° 纬度带——后者会误吞 5 个亚南极岛屿（-72.75…-80.94）。",
+  "nameMatch": ["antarctica"],
+  "_nameMatch_note": "名称判据：name / subject / partOf / abbrev 任一字段去空白 + 小写后精确等于列表中的值。用精确匹配而不是子串，避免未来出现「French Southern and Antarctic Lands」这类政权时被误判。",
+  "entities": [
+    {
+      "id": "geo:antarctica",
+      "label": "南极洲",
+      "labelEn": "Antarctica",
+      "entityId": "UNNAMED",
+      "color": "#9aa0a6",
+      "asset": "antarctica.geojson",
+      "enforcePresence": true,
+      "_note": "南极洲：上游 world_bc5000 完全没有南极几何（唯一缺失年份），其余 53 年有；1945/1960 曾被身份解析成 auto:antarctica / #bbd086。本配置把三种形态统一为 UNNAMED 中性灰，并在缺失时按资产补全。"
+    }
+  ]
+}

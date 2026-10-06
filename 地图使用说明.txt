@@ -1,0 +1,18 @@
+历史世界地图 
+
+
+打开
+
+cd D:\dsh-workspace\historical-world-map
+npm run dev -- --host 127.0.0.1
+
+浏览器打开：
+http://127.0.0.1:5180/
+
+
+
+关闭服务器（1和2都可以）
+1.
+Ctrl + C
+2.
+Stop-Process -Id (Get-NetTCPConnection -LocalPort 5180 -State Listen).OwningProcess -Force

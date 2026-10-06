@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "p4.1-c-case1-japan-usa-1945",
+      "match": {
+        "key": "usa",
+        "name": "japan (usa)",
+        "years": [
+          1945,
+          1945
+        ]
+      },
+      "output": {
+        "sovereignId": null,
+        "authorityId": "auth:SCAP",
+        "relationship": "occupied"
+      },
+      "source": "SCAP as sole executive authority for Allied Powers. Japan not annexed. Historical fact: Japanese sovereignty exists but exercise suspended during occupation. Schema limitation: sovereignId=null means 'no single state exercised sovereignty', NOT 'Japanese sovereignty ceased'. entityId unchanged.",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-case2-germany-usa-1945",
+      "match": {
+        "key": "usa",
+        "name": "germany (usa)",
+        "years": [
+          1945,
+          1945
+        ]
+      },
+      "output": {
+        "sovereignId": null,
+        "authorityId": "auth:US-OCCUPATION-ZONE",
+        "relationship": "occupied"
+      },
+      "source": "US occupation zone. Supreme authority exercised by US Commander-in-Chief in zone. Germany as a whole under quadripartite supreme authority; no annexation. Schema limitation: sovereignId=null means 'no single state exercised sovereignty'.",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-case2-germany-soviet-1945",
+      "match": {
+        "key": "ussr",
+        "name": "germany (soviet)",
+        "years": [
+          1945,
+          1945
+        ]
+      },
+      "output": {
+        "sovereignId": null,
+        "authorityId": "auth:SOVIET-OCCUPATION-ZONE",
+        "relationship": "occupied"
+      },
+      "source": "Soviet occupation zone. Supreme authority exercised by Soviet Commander-in-Chief in zone.",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-case2-germany-uk-1945",
+      "match": {
+        "key": "united kingdom",
+        "name": "germany (uk)",
+        "years": [
+          1945,
+          1945
+        ]
+      },
+      "output": {
+        "sovereignId": null,
+        "authorityId": "auth:UK-OCCUPATION-ZONE",
+        "relationship": "occupied"
+      },
+      "source": "UK occupation zone. Supreme authority exercised by UK Commander-in-Chief in zone.",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-case2-germany-france-1945",
+      "match": {
+        "key": "france",
+        "name": "germany (france)",
+        "years": [
+          1945,
+          1945
+        ]
+      },
+      "output": {
+        "sovereignId": null,
+        "authorityId": "auth:FR-OCCUPATION-ZONE",
+        "relationship": "occupied"
+      },
+      "source": "French occupation zone. Supreme authority exercised by French Commander-in-Chief in zone.",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-case4-eritrea-bma",
+      "match": {
+        "key": "united kingdom",
+        "name": "eritrea",
+        "years": [
+          1945,
+          1945
+        ]
+      },
+      "output": {
+        "sovereignId": null,
+        "authorityId": "auth:UK-BMA",
+        "relationship": "occupied"
+      },
+      "source": "International law qualifies Eritrea under British administration as 'occupied territory' (MPEPIL). British Administration does not possess title. Not a colony, protectorate, mandate, or trusteeship. Historical fact: underlying sovereignty remains with Italy, exercise suspended. Schema limitation: sovereignId=null means 'no single state exercised sovereignty', NOT 'Italian sovereignty ceased'. IT-ITALY NOT written in this batch.",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r1-tanzania",
+      "match": {
+        "key": "tanzania, united republic of",
+        "years": [
+          1994,
+          2010
+        ]
+      },
+      "output": {
+        "sovereignId": "TZ-TANZANIA",
+        "authorityId": null,
+        "relationship": "sovereign-territory"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r2-tanganyika-mandate",
+      "match": {
+        "key": "tanzania, united republic of",
+        "years": [
+          1920,
+          1930
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": null,
+        "relationship": "mandate"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r3-tanganyika-trusteeship",
+      "match": {
+        "key": "tanzania, united republic of",
+        "years": [
+          1960,
+          1960
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": null,
+        "relationship": "trusteeship"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r4-kenya-colony",
+      "match": {
+        "key": "kenya",
+        "years": [
+          1920,
+          1960
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": null,
+        "relationship": "colony"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r5-fiji-colony",
+      "match": {
+        "key": "fiji",
+        "years": [
+          1874,
+          1969
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": null,
+        "relationship": "colony"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r6-fiji-sovereign",
+      "match": {
+        "key": "fiji",
+        "years": [
+          1970,
+          2010
+        ]
+      },
+      "output": {
+        "sovereignId": "auto:fiji",
+        "authorityId": null,
+        "relationship": "sovereign-territory"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r7-nz-autonomous",
+      "match": {
+        "key": "new zealand",
+        "years": [
+          1907,
+          1946
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": null,
+        "relationship": "autonomous"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r8-nz-sovereign",
+      "match": {
+        "key": "new zealand",
+        "years": [
+          1947,
+          2010
+        ]
+      },
+      "output": {
+        "sovereignId": "auto:new zealand",
+        "authorityId": null,
+        "relationship": "sovereign-territory"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r9-hawaii",
+      "match": {
+        "key": "kingdom of hawaii",
+        "years": [
+          1815,
+          1897
+        ]
+      },
+      "output": {
+        "sovereignId": "auto:kingdom of hawaii",
+        "authorityId": null,
+        "relationship": "sovereign-territory"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r10-beic-india-1783",
+      "match": {
+        "key": "british east india company",
+        "name": "india",
+        "years": [
+          1783,
+          1783
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": "auth:BEIC",
+        "relationship": "administered"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r11-beic-madras-1783",
+      "match": {
+        "key": "british east india company",
+        "name": "madras",
+        "years": [
+          1783,
+          1783
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": "auth:BEIC",
+        "relationship": "administered"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r12-beic-bengal-1783",
+      "match": {
+        "key": "british east india company",
+        "name": "bengal",
+        "years": [
+          1783,
+          1783
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": "auth:BEIC",
+        "relationship": "administered"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    },
+    {
+      "id": "p4.1-c-batch2-r13-beic-1815",
+      "match": {
+        "key": "british east india company",
+        "name": "british east india company",
+        "years": [
+          1815,
+          1815
+        ]
+      },
+      "output": {
+        "sovereignId": "UK-UNITED-KINGDOM",
+        "authorityId": "auth:BEIC",
+        "relationship": "administered"
+      },
+      "source": "P4.1-C Batch 2 v1 实施",
+      "confidence": "high"
+    }
+  ]
+}

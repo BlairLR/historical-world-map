@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "authorities": [
+    {
+      "id": "auth:SCAP",
+      "label": "Supreme Commander for the Allied Powers",
+      "scope": "feature-level"
+    },
+    {
+      "id": "auth:US-OCCUPATION-ZONE",
+      "label": "United States Occupation Zone in Germany",
+      "scope": "feature-level"
+    },
+    {
+      "id": "auth:SOVIET-OCCUPATION-ZONE",
+      "label": "Soviet Occupation Zone in Germany",
+      "scope": "feature-level"
+    },
+    {
+      "id": "auth:UK-OCCUPATION-ZONE",
+      "label": "United Kingdom Occupation Zone in Germany",
+      "scope": "feature-level"
+    },
+    {
+      "id": "auth:FR-OCCUPATION-ZONE",
+      "label": "French Occupation Zone in Germany",
+      "scope": "feature-level"
+    },
+    {
+      "id": "auth:UK-BMA",
+      "label": "British Military Administration (Eritrea)",
+      "scope": "feature-level"
+    },
+    {
+      "id": "auth:ALLIED-CONTROL-COUNCIL",
+      "label": "Allied Control Council for Germany",
+      "scope": "historical-background"
+    },
+    {
+      "id": "auth:BEIC",
+      "label": "British East India Company",
+      "scope": "feature-level"
+    }
+  ]
+}

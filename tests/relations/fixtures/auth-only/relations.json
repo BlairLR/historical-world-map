@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "t3-authority-only",
+      "match": { "key": "uk", "years": [1783, 1800] },
+      "output": { "sovereignId": null, "authorityId": "auth:TEST-ADMIN", "relationship": "administered" },
+      "source": "P4.1-B 测试夹具（T3：只改 authorityId）。非历史赋值，仅用于验证隔离性。",
+      "confidence": "low"
+    }
+  ]
+}

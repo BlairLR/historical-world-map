@@ -1,0 +1,438 @@
+{
+  "version": 1,
+  "gapSplitThreshold": 2,
+  "_note": "颜色绑定的是历史政权（entityId），不是现代国家，也不是 territory。政权变了才换颜色；疆域变化、名称/正式国名变化本身都不换颜色。gapSplitThreshold=2 表示某 key 连续缺失 ≥2 个快照即视为政权断层并自动切成新实体；只缺 1 个快照视为数据噪声，保持连续。periods 为真实纪年的闭区间，公元前为负数，可给多个区间来表达「中断后再统一」；两个区间允许首尾相接（如 [[1894,1961]] 与 [[1962,2010]]），但不允许真正重叠。空 periods 表示不限年份。【E 类约定】同一个归一化 key 在不同时期代表不同政权时（例如殖民政权 → 独立共和国），建立多个手工实体并为每个实体各自指定 periods，由按年 claim 的 resolver 自动分流；因此同一个 key 会被多个实体共享，这是合法的，AR3 会保证它们异色。绝不为了『territory 连续』而合并不同政权。",
+
+  "entities": {
+    "CN-MING": {
+      "label": "明",
+      "labelEn": "Ming dynasty",
+      "keys": ["Ming Empire", "Ming Chinese Empire"],
+      "periods": [[1368, 1644]],
+      "color": null
+    },
+    "CN-QING": {
+      "label": "清",
+      "labelEn": "Qing dynasty",
+      "keys": ["Manchu Empire", "Qing Empire"],
+      "periods": [[1636, 1914]],
+      "color": null
+    },
+    "CN-WARLORDS": {
+      "label": "北洋军阀",
+      "labelEn": "Chinese Warlords",
+      "keys": ["Chinese Warlords", "Chinese warlords"],
+      "periods": [[1912, 1949]],
+      "color": null
+    },
+    "CN-ROC": {
+      "label": "中华民国",
+      "labelEn": "Republic of China",
+      "keys": ["China"],
+      "periods": [[1912, 1949]],
+      "color": null
+    },
+    "CN-PRC": {
+      "label": "中华人民共和国",
+      "labelEn": "People's Republic of China",
+      "keys": ["China"],
+      "periods": [[1949, 2010]],
+      "color": null
+    },
+
+    "RU-EMPIRE": {
+      "label": "俄罗斯帝国",
+      "labelEn": "Russian Empire",
+      "keys": ["Russian Empire", "Russia"],
+      "periods": [[1721, 1917]],
+      "color": null
+    },
+    "RU-USSR": {
+      "label": "苏联",
+      "labelEn": "Soviet Union",
+      "keys": ["USSR"],
+      "periods": [[1922, 1991]],
+      "color": null
+    },
+    "RU-FED": {
+      "label": "俄罗斯联邦",
+      "labelEn": "Russian Federation",
+      "keys": ["Russia"],
+      "periods": [[1991, 2010]],
+      "color": null
+    },
+
+    "RO-REPUBLIC": {
+      "label": "罗马共和国",
+      "labelEn": "Roman Republic",
+      "keys": ["Rome", "Roman Republic"],
+      "periods": [[-509, -27]],
+      "color": null
+    },
+    "RO-EMPIRE": {
+      "label": "罗马帝国",
+      "labelEn": "Roman Empire",
+      "keys": ["Roman Empire"],
+      "periods": [[-27, 395]],
+      "color": null
+    },
+    "RO-WEST": {
+      "label": "西罗马帝国",
+      "labelEn": "Western Roman Empire",
+      "keys": ["Western Roman Empire"],
+      "periods": [[395, 500]],
+      "color": null
+    },
+    "RO-EAST": {
+      "label": "东罗马帝国（拜占庭）",
+      "labelEn": "Eastern Roman / Byzantine Empire",
+      "keys": ["Eastern Roman Empire", "Byzantine Empire"],
+      "periods": [[395, 1453]],
+      "color": null
+    },
+
+    "JP-FUJIWARA": {
+      "label": "平安时代",
+      "labelEn": "Imperial Japan (Fujiwara)",
+      "keys": ["Imperial Japan (Fujiwara)"],
+      "periods": [[794, 1200]],
+      "color": null
+    },
+    "JP-KAMAKURA": {
+      "label": "镰仓幕府",
+      "labelEn": "Shogun Japan (Kamakura)",
+      "keys": ["Shogun Japan (Kamakura)"],
+      "periods": [[1185, 1400]],
+      "color": null
+    },
+    "JP-SENGOKU": {
+      "label": "战国时代",
+      "labelEn": "Japan (Warring States)",
+      "keys": ["Japan (Warring States)"],
+      "periods": [[1467, 1603]],
+      "color": null
+    },
+    "JP-EMPIRE": {
+      "label": "大日本帝国",
+      "labelEn": "Empire of Japan",
+      "keys": ["Imperial Japan", "Empire of Japan"],
+      "periods": [[1868, 1947]],
+      "color": null
+    },
+    "JP-MODERN": {
+      "label": "日本国",
+      "labelEn": "Japan",
+      "keys": ["Japan"],
+      "periods": [[1947, 2010]],
+      "color": null
+    },
+
+    "DE-PRUSSIA": {
+      "label": "普鲁士",
+      "labelEn": "Prussia",
+      "keys": ["Prussia"],
+      "periods": [[1525, 1871]],
+      "color": null
+    },
+    "DE-REICH": {
+      "label": "德意志帝国～第三帝国",
+      "labelEn": "German Reich",
+      "keys": ["Germany", "German Empire"],
+      "periods": [[1871, 1945]],
+      "color": null
+    },
+    "DE-FRG": {
+      "label": "联邦德国（西德→统一德国）",
+      "labelEn": "Federal Republic of Germany",
+      "keys": ["West Germany", "Germany"],
+      "periods": [[1949, 2010]],
+      "color": null
+    },
+    "DE-GDR": {
+      "label": "民主德国（东德）",
+      "labelEn": "German Democratic Republic",
+      "keys": ["East Germany"],
+      "periods": [[1949, 1990]],
+      "color": null
+    },
+
+    "UK-UNITED-KINGDOM": {
+      "label": "英国（联合王国／大英帝国）",
+      "labelEn": "United Kingdom / British Empire",
+      "keys": ["United Kingdom", "United Kingdom of Great Britain and Ireland", "UK"],
+      "periods": [[1707, 2010]],
+      "color": null
+    },
+    "US-USA": {
+      "label": "美国",
+      "labelEn": "United States",
+      "keys": ["United States", "United States of America", "USA"],
+      "periods": [[1776, 2010]],
+      "color": null
+    },
+    "RU-RSFSR": {
+      "label": "俄罗斯苏维埃联邦社会主义共和国",
+      "labelEn": "Russian SFSR",
+      "keys": ["USSR"],
+      "periods": [[1917, 1922]],
+      "color": null
+    },
+    "DK-NORWAY": {
+      "label": "丹麦-挪威联合王国",
+      "labelEn": "Denmark-Norway",
+      "keys": ["Denmark-Norway"],
+      "periods": [[1397, 1814]],
+      "color": null
+    },
+    "SE-NORWAY": {
+      "label": "瑞典-挪威联合王国",
+      "labelEn": "Sweden-Norway",
+      "keys": ["Sweden-Norway"],
+      "periods": [[1814, 1905]],
+      "color": null
+    },
+
+    "DZ-FRENCH": {
+      "label": "法属阿尔及利亚",
+      "labelEn": "French Algeria",
+      "keys": ["Algeria"],
+      "periods": [[1830, 1961]],
+      "color": null
+    },
+    "DZ-ALGERIA": {
+      "label": "阿尔及利亚",
+      "labelEn": "Algeria",
+      "keys": ["Algeria"],
+      "periods": [[1962, 2010]],
+      "color": null
+    },
+    "UG-PROTECTORATE": {
+      "label": "乌干达保护国",
+      "labelEn": "Uganda Protectorate",
+      "keys": ["Uganda"],
+      "periods": [[1894, 1961]],
+      "color": null
+    },
+    "UG-REPUBLIC": {
+      "label": "乌干达共和国",
+      "labelEn": "Republic of Uganda",
+      "keys": ["Uganda"],
+      "periods": [[1962, 2010]],
+      "color": null
+    },
+    "ZM-NRHODESIA": {
+      "label": "北罗得西亚",
+      "labelEn": "Northern Rhodesia",
+      "keys": ["Zambia"],
+      "periods": [[1911, 1963]],
+      "color": null
+    },
+    "ZM-ZAMBIA": {
+      "label": "赞比亚共和国",
+      "labelEn": "Republic of Zambia",
+      "keys": ["Zambia"],
+      "periods": [[1964, 2010]],
+      "color": null
+    },
+    "NG-COLONY": {
+      "label": "尼日利亚殖民地与保护国",
+      "labelEn": "Colonial Nigeria",
+      "keys": ["Nigeria"],
+      "periods": [[1914, 1959]],
+      "color": null
+    },
+    "NG-NIGERIA": {
+      "label": "尼日利亚联邦共和国",
+      "labelEn": "Federal Republic of Nigeria",
+      "keys": ["Nigeria"],
+      "periods": [[1960, 2010]],
+      "color": null
+    },
+    "SZ-KINGDOM": {
+      "label": "斯威士兰王国（独立时期）",
+      "labelEn": "Kingdom of Swaziland (independent)",
+      "keys": ["Swaziland"],
+      "periods": [[1750, 1902]],
+      "color": null
+    },
+    "SZ-PROTECTORATE": {
+      "label": "斯威士兰保护国",
+      "labelEn": "Swaziland Protectorate",
+      "keys": ["Swaziland"],
+      "periods": [[1903, 1967]],
+      "color": null
+    },
+    "SZ-ESWATINI": {
+      "label": "斯威士兰王国（独立后，今埃斯瓦蒂尼）",
+      "labelEn": "Kingdom of Eswatini",
+      "keys": ["Swaziland"],
+      "periods": [[1968, 2010]],
+      "color": null
+    },
+    "BW-BECHUANALAND": {
+      "label": "贝专纳保护地",
+      "labelEn": "Bechuanaland Protectorate",
+      "keys": ["Botswana"],
+      "periods": [[1885, 1965]],
+      "color": null
+    },
+    "BW-BOTSWANA": {
+      "label": "博茨瓦纳共和国",
+      "labelEn": "Republic of Botswana",
+      "keys": ["Botswana"],
+      "periods": [[1966, 2010]],
+      "color": null
+    },
+    "KE-COLONY": {
+      "label": "肯尼亚殖民地与保护国",
+      "labelEn": "Kenya Colony and Protectorate",
+      "keys": ["Kenya"],
+      "periods": [[1920, 1963]],
+      "color": null
+    },
+    "KE-KENYA": {
+      "label": "肯尼亚共和国",
+      "labelEn": "Republic of Kenya",
+      "keys": ["Kenya"],
+      "periods": [[1964, 2010]],
+      "color": null
+    },
+    "LS-BASUTOLAND": {
+      "label": "巴苏陀兰",
+      "labelEn": "Basutoland",
+      "keys": ["Lesotho"],
+      "periods": [[1868, 1965]],
+      "color": null
+    },
+    "LS-LESOTHO": {
+      "label": "莱索托王国",
+      "labelEn": "Kingdom of Lesotho",
+      "keys": ["Lesotho"],
+      "periods": [[1966, 2010]],
+      "color": null
+    },
+    "MZ-PORTUGUESE": {
+      "label": "葡属莫桑比克",
+      "labelEn": "Portuguese Mozambique",
+      "keys": ["Mozambique"],
+      "periods": [[1752, 1974]],
+      "color": null
+    },
+    "MZ-MOZAMBIQUE": {
+      "label": "莫桑比克共和国",
+      "labelEn": "Republic of Mozambique",
+      "keys": ["Mozambique"],
+      "periods": [[1975, 2010]],
+      "color": null
+    },
+    "SL-COLONY": {
+      "label": "塞拉利昂殖民地与保护地",
+      "labelEn": "Sierra Leone Colony and Protectorate",
+      "keys": ["Sierra Leone"],
+      "periods": [[1808, 1960]],
+      "color": null
+    },
+    "SL-SIERRA-LEONE": {
+      "label": "塞拉利昂共和国",
+      "labelEn": "Republic of Sierra Leone",
+      "keys": ["Sierra Leone"],
+      "periods": [[1961, 2010]],
+      "color": null
+    },
+    "TZ-TANGANYIKA": {
+      "label": "坦噶尼喀",
+      "labelEn": "Tanganyika",
+      "keys": ["Tanzania, United Republic of"],
+      "periods": [[1919, 1963]],
+      "color": null
+    },
+    "TZ-TANZANIA": {
+      "label": "坦桑尼亚联合共和国",
+      "labelEn": "United Republic of Tanzania",
+      "keys": ["Tanzania, United Republic of"],
+      "periods": [[1964, 2010]],
+      "color": null
+    },
+    "ZW-SRHODESIA": {
+      "label": "南罗得西亚",
+      "labelEn": "Southern Rhodesia",
+      "keys": ["Zimbabwe"],
+      "periods": [[1890, 1979]],
+      "color": null
+    },
+    "ZW-ZIMBABWE": {
+      "label": "津巴布韦共和国",
+      "labelEn": "Republic of Zimbabwe",
+      "keys": ["Zimbabwe"],
+      "periods": [[1980, 2010]],
+      "color": null
+    },
+    "ER-COLONY": {
+      "label": "意属厄立特里亚",
+      "labelEn": "Italian Eritrea",
+      "keys": ["Eritrea"],
+      "periods": [[1890, 1941]],
+      "color": null
+    },
+    "ER-ETHIOPIA": {
+      "label": "厄立特里亚（埃塞俄比亚联邦／省）",
+      "labelEn": "Eritrea (Ethiopian federation / province)",
+      "keys": ["Eritrea"],
+      "periods": [[1952, 1992]],
+      "color": null
+    },
+    "ER-ERITREA": {
+      "label": "厄立特里亚国",
+      "labelEn": "State of Eritrea",
+      "keys": ["Eritrea"],
+      "periods": [[1993, 2010]],
+      "color": null
+    },
+    "VI-DANISH": {
+      "label": "丹属西印度群岛",
+      "labelEn": "Danish West Indies",
+      "keys": ["United States Virgin Islands"],
+      "periods": [[1672, 1917]],
+      "color": null
+    },
+    "VI-US": {
+      "label": "美属维尔京群岛",
+      "labelEn": "United States Virgin Islands",
+      "keys": ["United States Virgin Islands"],
+      "periods": [[1918, 2010]],
+      "color": null
+    }
+  },
+
+  "succession": [
+    ["CN-MING", "CN-QING"],
+    ["CN-QING", "CN-WARLORDS"],
+    ["CN-WARLORDS", "CN-ROC"],
+    ["CN-ROC", "CN-PRC"],
+    ["RU-EMPIRE", "RU-USSR"],
+    ["RU-USSR", "RU-FED"],
+    ["RO-REPUBLIC", "RO-EMPIRE"],
+    ["RO-EMPIRE", "RO-WEST"],
+    ["RO-EMPIRE", "RO-EAST"],
+    ["JP-FUJIWARA", "JP-KAMAKURA"],
+    ["JP-KAMAKURA", "JP-SENGOKU"],
+    ["JP-SENGOKU", "JP-EMPIRE"],
+    ["JP-EMPIRE", "JP-MODERN"],
+    ["DE-PRUSSIA", "DE-REICH"],
+    ["DE-REICH", "DE-FRG"],
+    ["DE-REICH", "DE-GDR"]
+  ],
+
+  "overrides": {
+    "mergeRuns": [
+      "Pagan",
+      "Pandya state"
+    ],
+    "_reviewQueue": [
+      "Denmark",
+      "Norway",
+      "Bhutan",
+      "Cyprus"
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "_note": "政治 feature 连续性补全（L1 / D4）：上游在同一身份 run 的邻年画过该疆域，个别快照却完全没有绘制（raw 与 built 都没有覆盖要素）。这里只声明「该 key 在这些年份由哪个既有实体认领、几何取自哪个年份」——不新增身份、不新增颜色、不做历史裁定；几何与身份同源（claim 必须是 geometryFrom 年实际认领该 key 的实体 id，且必须已在 data/identity/colors.json 冻结注册表中）。本文件不修改 data/raw/**。",
+  "entries": [
+    {
+      "key": "malta",
+      "claim": "auto:malta",
+      "years": [1920, 1930, 1938, 1945, 1960],
+      "geometryFrom": 1914,
+      "note": "上游 1878–1914 有 Malta，1920–1960 五次快照完全没有（1994 起是 auto:malta#1）；沿用 1914 的自身几何（2 多边形 / 44 顶点）"
+    },
+    {
+      "key": "guanches",
+      "claim": "auto:guanches",
+      "years": [500, 600, 700],
+      "geometryFrom": 400,
+      "note": "上游 -1500..400 与 800.. （#1）都有；500/600/700 完全没有；沿用 400 的自身几何（3 多边形 / 21 顶点）"
+    },
+    {
+      "key": "tuʻi tonga empire",
+      "claim": "auto:tuʻi tonga empire",
+      "years": [700, 800, 900],
+      "geometryFrom": 600,
+      "note": "上游 500/600 与 1000.. （#1）都有；700/800/900 完全没有；沿用 600 的自身几何（60 多边形 / 1379 顶点）"
+    },
+    {
+      "key": "guadeloupe",
+      "claim": "auto:guadeloupe",
+      "years": [1783, 1800],
+      "geometryFrom": 1715,
+      "note": "上游 1715 有 Guadeloupe，1815 起是 auto:guadeloupe#1；1783/1800 完全没有；沿用 1715 的自身几何（4 多边形 / 135 顶点）"
+    },
+    {
+      "key": "haiti",
+      "claim": "auto:haiti",
+      "years": [1783, 1800],
+      "geometryFrom": 1715,
+      "note": "上游 1715 有 Haiti，1815 起是 auto:haiti#1；1783/1800 完全没有；沿用 1715 的自身几何（1 多边形 / 42 顶点）"
+    },
+    {
+      "key": "martinique",
+      "claim": "auto:martinique",
+      "years": [1783, 1800],
+      "geometryFrom": 1715,
+      "note": "上游 1715 有 Martinique，1815 起是 auto:martinique#1；1783/1800 完全没有；沿用 1715 的自身几何（1 多边形 / 32 顶点）"
+    },
+    {
+      "key": "cree",
+      "claim": "auto:cree",
+      "years": [1500],
+      "geometryFrom": 1492,
+      "note": "上游 1492/1530 都有 Cree；1500 快照完全没有；沿用 1492 的自身几何（1 多边形 / 130 顶点）"
+    },
+    {
+      "key": "anguilla",
+      "claim": "auto:anguilla",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1715..1945 有 Anguilla；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（1 多边形 / 21 顶点）"
+    },
+    {
+      "key": "antigua and barbuda",
+      "claim": "auto:antigua and barbuda#1",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1815..1945 由 auto:antigua and barbuda#1 认领；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（2 多边形 / 48 顶点）"
+    },
+    {
+      "key": "barbados",
+      "claim": "auto:barbados#1",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1914..1945 由 auto:barbados#1 认领；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（1 多边形 / 49 顶点）"
+    },
+    {
+      "key": "dominica",
+      "claim": "auto:dominica",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1715..1945 有 Dominica；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（1 多边形 / 36 顶点）"
+    },
+    {
+      "key": "grenada",
+      "claim": "auto:grenada#2",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1914..1945 由 auto:grenada#2 认领；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（3 多边形 / 55 顶点）"
+    },
+    {
+      "key": "montserrat",
+      "claim": "auto:montserrat#1",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1815..1945 由 auto:montserrat#1 认领；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（1 多边形 / 19 顶点）"
+    },
+    {
+      "key": "netherlands antilles",
+      "claim": "auto:netherlands antilles",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1715..1945 有 Netherlands Antilles；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（3 多边形 / 89 顶点）"
+    },
+    {
+      "key": "saint barthelemy",
+      "claim": "auto:saint barthelemy",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1715..1945 有 Saint Barthelemy；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（1 多边形 / 14 顶点）"
+    },
+    {
+      "key": "saint kitts and nevis",
+      "claim": "auto:saint kitts and nevis",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1815..1945 有 Saint Kitts and Nevis；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（2 多边形 / 55 顶点）"
+    },
+    {
+      "key": "saint lucia",
+      "claim": "auto:saint lucia#2",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1914..1945 由 auto:saint lucia#2 认领；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（1 多边形 / 35 顶点）"
+    },
+    {
+      "key": "saint martin",
+      "claim": "auto:saint martin",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1715..1945 有 Saint Martin；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（1 多边形 / 15 顶点）"
+    },
+    {
+      "key": "saint vincent and the grenadines",
+      "claim": "auto:saint vincent and the grenadines#2",
+      "years": [1960],
+      "geometryFrom": 1945,
+      "note": "上游 1914..1945 由 auto:saint vincent and the grenadines#2 认领；1960 快照整体缺失 12 个加勒比微型属地；沿用 1945 的自身几何（4 多边形 / 63 顶点）"
+    }
+  ]
+}

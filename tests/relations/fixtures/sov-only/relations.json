@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "t2-sovereign-only",
+      "match": { "key": "uk", "years": [1783, 1800] },
+      "output": { "sovereignId": "UK-UNITED-KINGDOM", "authorityId": null, "relationship": "sovereign-territory" },
+      "source": "P4.1-B 测试夹具（T2：只改 sovereignId）。非历史赋值，仅用于验证隔离性。",
+      "confidence": "low"
+    }
+  ]
+}

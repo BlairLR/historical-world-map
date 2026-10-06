@@ -1,0 +1,22 @@
+node_modules/
+dist/
+
+# 上游原始数据（可由 npm run data:fetch 重新下载）
+data/raw/
+
+# 构建产物（可由 npm run data:build 重新生成）
+public/data/
+
+# 本地 npm 缓存（如果启用了 .npmrc 的本地 cache）
+.npm-cache/
+
+*.local
+.DS_Store
+
+# 开发环境临时产物（临时探针脚本、浏览器 profile、日志、增量编译缓存）
+.tmp*
+*.log
+*.tsbuildinfo
+
+# 操作系统
+Thumbs.db

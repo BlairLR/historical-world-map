@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "authorities": [
+    {
+      "id": "auth:TEST-ADMIN",
+      "label": "测试用行政管理方（非历史实体，仅用于 P4.1-B 隔离性测试）",
+      "controllerEntityId": null
+    }
+  ]
+}
