@@ -95,14 +95,15 @@ function renderTooltip(el: HTMLElement, props: Record<string, unknown>, relation
   swatch.style.background = color;
   const title = document.createElement('span');
   title.className = name ? 'tip-name' : 'tip-name is-muted';
-  title.textContent = name ?? '未命名区域';
+  title.textContent = name ?? text(props.geographicName) ?? '未命名区域';
   head.append(swatch, title);
   el.appendChild(head);
 
   const rows: [string, string | HTMLElement][] = [];
   if (subject && subject !== name) rows.push(['政权', subject]);
   if (abbrev && abbrev !== name && abbrev !== subject) rows.push(['简称', abbrev]);
-  if (precision != null && PRECISION_LABEL[precision]) rows.push(['边界', PRECISION_LABEL[precision]]);
+  if (text(props.geographicName)) rows.push(['范围', '地理参考，非主权裁定']);
+  else if (precision != null && PRECISION_LABEL[precision]) rows.push(['边界', PRECISION_LABEL[precision]]);
 
   // 关系层（旁挂 sidecar）：仅对已裁定（resolved）的 feature 追加两行；
   // unresolved 与无记录时提示框完全保持原样（V1：颜色/身份不受关系层影响）

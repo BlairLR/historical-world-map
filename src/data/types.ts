@@ -13,6 +13,8 @@ export type HistProperties = {
    */
   entityId: string;
   name: string | null;
+  /** 地理参考名称；与政权身份分开保存，不据此推断主权。 */
+  geographicName?: string;
   abbrev: string | null;
   subject: string | null;
   partOf: string | null;

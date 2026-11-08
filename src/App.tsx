@@ -16,9 +16,9 @@ export default function App() {
   const [manifest, setManifest] = useState<Manifest | null>(null);
   /** yearIndex 是状态真相；year 只用于显示与 URL */
   const [yearIndex, setYearIndex] = useState<number | null>(null);
-  const [data, setData] = useState<YearData | null>(null);
+  const [loadedSnapshot, setLoadedSnapshot] = useState<{ year: number; data: YearData } | null>(null);
   /** 关系层（旁挂 sidecar）：与年份数据并行加载，加载失败不影响地图 */
-  const [relations, setRelations] = useState<RelationSidecar | null>(null);
+  const [loadedRelations, setLoadedRelations] = useState<{ year: number; data: RelationSidecar | null } | null>(null);
   const [booting, setBooting] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -58,7 +58,7 @@ export default function App() {
     loadYear(snapshot)
       .then((d) => {
         if (!alive) return;
-        setData(d);
+        setLoadedSnapshot({ year: snapshot.year, data: d });
         setError(null);
       })
       .catch((err: unknown) => {
@@ -71,12 +71,12 @@ export default function App() {
     // 关系层只是旁挂信息：失败或缺失都不影响地图，只记一条警告
     loadRelations(snapshot)
       .then((r) => {
-        if (alive) setRelations(r);
+        if (alive) setLoadedRelations({ year: snapshot.year, data: r });
       })
       .catch((err: unknown) => {
         if (!alive) return;
         console.warn('[relations] 加载失败，已降级为无关系信息：', err);
-        setRelations(null);
+        setLoadedRelations({ year: snapshot.year, data: null });
       });
     return () => {
       alive = false;
@@ -167,7 +167,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="map-wrap">
-        <MapView data={data} relations={relations} />
+        <MapView data={loadedSnapshot?.data ?? null} relations={loadedRelations?.year === loadedSnapshot?.year ? loadedRelations?.data ?? null : null} />
 
         {booting && <div className="overlay">正在加载数据索引…</div>}
 

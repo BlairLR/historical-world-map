@@ -29,6 +29,17 @@ npm run preview         # 预览生产构建
 
 `data/raw/`（上游原始数据）与 `public/data/`（构建产物）均可由上述命令重新生成，因此不随仓库分发。
 
+构建会先校验上游名称字段，再进行身份解析与几何拓扑归一：数字／布尔占位符不能成为政权名；无名陆地背景会消除内部重叠，并让位于具名政权；同一身份和证据的重复轮廓在构建阶段合并，不依赖前端年份特例。
+
+`data/geo/land-regions.json` 将地理参考与历史控制关系分开声明。参考仅提取完整陆地组件，带有来源版本、几何校验和、适用年代；只计算快照缺少的陆地，不复制邻年整个国家，也不自动推断有争议的归属。来源发生变化会停止构建，要求重新核查。所有修正记录在生成的 `public/data/normalization-audit.json`，上游原始文件保持不变。
+
+地理与拓扑回归可运行：
+
+```bash
+node --test tests/map/source-normalization.test.mjs
+node tests/relations/run.mjs
+```
+
 ## 目录结构
 
 ```

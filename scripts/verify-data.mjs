@@ -41,6 +41,7 @@ import {
 } from './lib/identity.mjs';
 import { yearToSourceFile } from './lib/snapshots.mjs';
 import { UNNAMED_COLOR } from './lib/color.mjs';
+import { validLabel } from './lib/source-normalization.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'public', 'data');
@@ -261,6 +262,11 @@ async function main() {
         fail(`${file}：feature ${f.id} 的 precision 非法（${p.precision}）`);
       }
       if (!p.name) unnamedCount++;
+      for (const field of ['name', 'subject', 'partOf', 'abbrev']) {
+        if (p[field] !== null && p[field] !== undefined && validLabel(p[field]) === null) {
+          fail(`${file}：feature ${f.id} 的 ${field} 是非法名称 ${JSON.stringify(p[field])}`);
+        }
+      }
 
       // AR11：连续性补全的 (key, year) 必须由声明的 claim 画出
       {

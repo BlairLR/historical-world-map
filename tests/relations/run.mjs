@@ -195,13 +195,15 @@ async function main() {
       const doc = prodSidecars.get(snap.year);
       assert(doc, `缺少 ${snap.year} 的 sidecar`);
       const file = loadYearFile(snap);
+      assert(file.features.length === snap.features, `${snap.year}：manifest 与年份文件 feature 数不符`);
       assert(doc.features && typeof doc.features === 'object', `${snap.year} 的 sidecar 缺少 features 对象`);
       const n = Object.keys(doc.features).length;
       assert(n === file.features.length, `${snap.year}：sidecar ${n} 个 feature，年份文件 ${file.features.length} 个`);
       total += n;
     }
-    assert(total === 17469, `feature 合计 ${total}，期望 17469`);
-    return `54 个 sidecar 合计 ${total} 个 feature，逐年与年份文件一致`;
+    const expected = manifest.snapshots.reduce((n, snap) => n + snap.features, 0);
+    assert(total === expected, `feature 合计 ${total}，manifest 声明 ${expected}`);
+    return `${manifest.snapshots.length} 个 sidecar 合计 ${total} 个 feature，逐年与年份文件及 manifest 一致`;
   });
 
   await test('R2', 'feature id 一一对应（集合相等）', () => {
@@ -332,7 +334,7 @@ async function main() {
   });
 
   // ── T9：保守性（无 key / NAME 缺失） ───────────────────────────────
-  await test('T9', 'Conservatism：7,046 无 key + 12 有 key 无 NAME 全部保守', () => {
+  await test('T9', 'Conservatism：无 key / 无 NAME 的全部输入记录均保持保守', () => {
     let noKey = 0;
     let nameEmpty = 0;
     let bad = 0;
@@ -348,8 +350,12 @@ async function main() {
       }
     }
     assert(bad === 0, `${bad} 个证据不足的 feature 得到非保守结果`);
-    assert(noKey === 7046, `无 key feature 应为 7046，实测 ${noKey}`);
-    assert(nameEmpty === 12, `有 key 无 NAME feature 应为 12，实测 ${nameEmpty}`);
+    const usable = value => value !== null && value !== undefined && String(value).trim() !== '';
+    const inputs = manifest.snapshots.flatMap(snap => loadYearFile(snap).features);
+    const expectedNoKey = inputs.filter(f => !usable(f.properties.subject) && !usable(f.properties.name)).length;
+    const expectedNameEmpty = inputs.filter(f => usable(f.properties.subject) && !usable(f.properties.name)).length;
+    assert(noKey === expectedNoKey && noKey > 0, `无 key 输入覆盖不完整：${noKey}/${expectedNoKey}`);
+    assert(nameEmpty === expectedNameEmpty && nameEmpty > 0, `无 NAME 输入覆盖不完整：${nameEmpty}/${expectedNameEmpty}`);
     return `无 key ${noKey} 个 + 有 key 无 NAME ${nameEmpty} 个，全部为保守形状`;
   });
 
@@ -522,9 +528,14 @@ async function main() {
     assert(prodRun.audit.unresolvedCells.length === c.evidenceCellsUnresolved, '未覆盖清单长度与未解析单元数不符');
     const sum = prodRun.audit.unresolvedCells.reduce((n, x) => n + x.features, 0);
     assert(sum === c.unresolvedCellFeatures, `未覆盖单元 feature 合计 ${sum} ≠ ${c.unresolvedCellFeatures}`);
+    // 独立遍历输入证据字段，不能从 audit 本身推导预期值，也不能绑定某次上游快照总量。
+    const hasText = (v) => v !== null && v !== undefined && String(v).trim() !== '';
+    const keyedFeatures = manifest.snapshots.reduce((n, snap) => n + loadYearFile(snap).features.filter(
+      (f) => hasText(f.properties?.subject) || hasText(f.properties?.name),
+    ).length, 0);
     assert(
-      sum + c.resolved === 10423,
-      `有 key 的 feature 应为 10423，实测 未覆盖 ${sum} + resolved ${c.resolved} = ${sum + c.resolved}`,
+      sum + c.resolved === keyedFeatures,
+      `有 key 的 feature 应为 ${keyedFeatures}，实测 未覆盖 ${sum} + resolved ${c.resolved} = ${sum + c.resolved}`,
     );
 
     const fixture = await buildRelations({ write: false, configPath: path.join(FIXTURES, 'sov-only', 'relations.json'), authoritiesPath: path.join(FIXTURES, 'sov-only', 'authorities.json') });
@@ -579,7 +590,7 @@ async function main() {
       authorityNamespaceOk: true,
       sovereignRegistryOk: true,
       recordsOk: true,
-      recordsChecked: 17469,
+      recordsChecked: [...prodSidecars.values()].reduce((n, doc) => n + Object.keys(doc.features).length, 0),
       polityCount: polityIds.size,
     },
     summary: { total: results.length, passed: results.length - failed.length, failed: failed.length },

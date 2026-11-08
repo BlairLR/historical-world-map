@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "description": "Physical land references are independent of political continuity. Components are selected whole, never cut to a bounding rectangle; missing coverage is computed against each snapshot. Ownership is explicit and time bounded; null means geographical land only, not an inferred polity.",
+  "regions": [
+    {
+      "id": "solomon-archipelago",
+      "name": "Solomon archipelago",
+      "sourceYear": 1938,
+      "sourceSubject": null,
+      "bounds": [
+        155,
+        -12,
+        163,
+        -5
+      ],
+      "from": 1938,
+      "ownership": [],
+      "note": "Archipelago includes territories of more than one modern state. Do not assign the whole archipelago to a single country.",
+      "geometrySha256": "10eb0fdb5b940e0187abf73a44f73aec318bfe06d51e72ed3e345ed2dea704df"
+    },
+    {
+      "id": "vanuatu",
+      "name": "Vanuatu / New Hebrides",
+      "sourceYear": 1938,
+      "sourceName": "New Hebrides",
+      "bounds": [
+        165,
+        -21,
+        171,
+        -12
+      ],
+      "from": 1938,
+      "ownership": [
+        {
+          "from": 1980,
+          "to": 2010,
+          "subject": "Vanuatu"
+        }
+      ],
+      "note": "Before independence on 1980-07-30 this was an Anglo-French condominium; leave sovereignty unspecified rather than copying the upstream France-only claim.",
+      "geometrySha256": "c76b7f06d8b29f3a5ecf8e514a21bde911c6b58433d4c7066873e977d314c23e",
+      "normalizeSourceOwnership": true
+    },
+    {
+      "id": "new-caledonia",
+      "name": "New Caledonia",
+      "sourceYear": 1938,
+      "sourceName": "New Caledonia",
+      "bounds": [
+        163,
+        -24,
+        169,
+        -19
+      ],
+      "from": 1938,
+      "ownership": [
+        {
+          "from": 1938,
+          "to": 2010,
+          "subject": "France"
+        }
+      ],
+      "note": "French administration across the selected modern snapshots; geographical identity is distinct from the controlling polity.",
+      "geometrySha256": "988e7ca2c485a10a8bfcf21576ca0a044e503a72d0961ac9ece845ba6eb62e56"
+    },
+    {
+      "id": "russian-arctic-islands",
+      "name": "Russian Arctic islands",
+      "sourceYear": 1920,
+      "sourceSubject": "USSR",
+      "bounds": [
+        35,
+        70,
+        180,
+        84
+      ],
+      "from": 1938,
+      "ownership": [
+        {
+          "from": 1938,
+          "to": 1991,
+          "subject": "USSR"
+        },
+        {
+          "from": 1992,
+          "to": 2010,
+          "subject": "Russia"
+        }
+      ],
+      "note": "Whole island components only; mainland components extending outside the window are excluded. Does not extend historical ownership back to 1920 or earlier.",
+      "geometrySha256": "e1abaf52d9824494b6846c73c21f81779e8752bd763eec76477d4547861170d5"
+    },
+    {
+      "id": "chukotka-dateline",
+      "name": "Chukotka east of the date line",
+      "sourceYear": 1945,
+      "sourceSubject": "USSR",
+      "bounds": [
+        -180,
+        61,
+        -168,
+        75
+      ],
+      "from": 1938,
+      "ownership": [
+        {
+          "from": 1938,
+          "to": 1991,
+          "subject": "USSR"
+        },
+        {
+          "from": 1992,
+          "to": 2010,
+          "subject": "Russia"
+        }
+      ],
+      "note": "The western-longitude component is a separate GeoJSON polygon, not a missing arbitrary corner to be drawn by hand.",
+      "geometrySha256": "762ae669cb732aa88f33abecdb584a04e7c209926d2ef519ffe94418a42b2ac6"
+    },
+    {
+      "id": "southern-kurils",
+      "name": "Southern Kuril Islands",
+      "sourceYear": 1994,
+      "sourceSubject": "Russia",
+      "bounds": [
+        145,
+        43,
+        149,
+        45.55
+      ],
+      "from": 1960,
+      "ownership": [],
+      "note": "Physical islands only. These four southern island groups have disputed sovereignty; keep the missing 1960 coverage neutral rather than invent a sovereign claim.",
+      "geometrySha256": "c4e3b6c3a2dbc18e90eb0454f187c93d57c0aa33a620fb57ca9def6d118e7e3a"
+    },
+    {
+      "id": "northern-kurils",
+      "name": "Northern Kuril Islands",
+      "sourceYear": 1994,
+      "sourceSubject": "Russia",
+      "bounds": [
+        145,
+        45.55,
+        157,
+        51
+      ],
+      "from": 1960,
+      "ownership": [
+        {
+          "from": 1960,
+          "to": 1991,
+          "subject": "USSR"
+        },
+        {
+          "from": 1992,
+          "to": 2010,
+          "subject": "Russia"
+        }
+      ],
+      "note": "Northern chain, outside the four southern groups claimed by Japan. USSR control in 1960; Russian Federation after 1991.",
+      "geometrySha256": "9e57ceca752cc4007c5d50464e5a5a8f42be81bdbad8f66aa935976597bfcb6c"
+    },
+    {
+      "id": "joseon-southern-coast",
+      "name": "Southern Korean peninsula and coastal islands",
+      "sourceYear": 1600,
+      "bounds": [
+        124,
+        33,
+        132,
+        39
+      ],
+      "from": 1404,
+      "to": 1897,
+      "existingUnnamedControl": true,
+      "controlRequiresNative": true,
+      "ownership": [
+        {
+          "from": 1404,
+          "to": 1897,
+          "subject": "Korea"
+        }
+      ],
+      "note": "Joseon-era coastal land, after Tamna incorporation. The reference is the detailed unnamed southern-peninsula geometry already present in the 1600 source, corroborated by the later southern-peninsula geometry. Assign only geometrically identical existing unnamed coverage AND only when the snapshot already identifies Korea. Preserve that snapshot native political evidence; do not copy any modern-state identity or change the northern land border.",
+      "sourceSubject": null,
+      "geometrySha256": "6459ad8d4822c009ee6c901901705c24c53c1c2ace87a860a553d65bacf1eb4d"
+    }
+  ],
+  "sourceRevision": "aourednik/historical-basemaps@4b5039e50d8d2464b065bd76ad6086cd4597108d"
+}

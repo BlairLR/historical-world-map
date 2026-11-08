@@ -34,6 +34,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { yearToSourceFile, yearToOutputName, parseYearsArg } from './lib/snapshots.mjs';
 import { colorForKey, UNNAMED_COLOR } from './lib/color.mjs';
+import { sanitizeFeature, normalizeTopology } from './lib/source-normalization.mjs';
+import { prepareReferenceLand, addMissingLand } from './lib/reference-land.mjs';
 import {
   UNNAMED_ENTITY,
   normalizeKey,
@@ -158,6 +160,28 @@ function main() {
     const index = JSON.parse(await fs.readFile(path.join(RAW_DIR, 'index.json'), 'utf8'));
     const allYears = index.years.map((y) => y.year);
     const indexOfYear = new Map(allYears.map((y, i) => [y, i]));
+    // One validated input model feeds identity planning, geometry and continuity.
+    // Keep upstream bytes intact; corrections are reproducible derived data.
+    const sourceDocuments = new Map();
+    const normalizationAudit = { schema: [], geography: [], topology: [] };
+    for (const year of allYears) {
+      try {
+        const raw = JSON.parse(await fs.readFile(path.join(GEOJSON_DIR, yearToSourceFile(year)), 'utf8'));
+        sourceDocuments.set(year, { ...raw, features: raw.features.map((f, sourceIndex) => {
+          const clean = sanitizeFeature(f);
+          if (JSON.stringify(clean.properties) !== JSON.stringify(f.properties)) normalizationAudit.schema.push({ year, sourceIndex, before: f.properties, after: clean.properties });
+          return clean;
+        }) });
+      } catch (e) { if (e.code !== 'ENOENT') throw e; }
+    }
+    const landCatalog = await readJsonIfExists(path.join(GEO_DIR, 'land-regions.json'));
+    const references = prepareReferenceLand(sourceDocuments, landCatalog);
+    const documents = new Map();
+    for (const [year, raw] of sourceDocuments) {
+      const prepared = addMissingLand(raw, year, references);
+      documents.set(year, prepared.document);
+      normalizationAudit.geography.push(...prepared.audit);
+    }
 
     // 决定要「写出」哪些年份
     let years;
@@ -186,7 +210,7 @@ function main() {
     let noKeyFeatures = 0;
 
     for (const year of presentYears) {
-      const raw = JSON.parse(await fs.readFile(path.join(GEOJSON_DIR, yearToSourceFile(year)), 'utf8'));
+      const raw = documents.get(year);
       const cellMap = new Map();
       for (const f of raw.features) {
         scannedFeatures++;
@@ -473,8 +497,7 @@ function main() {
     const continuitySourceYears = new Set();
     for (const entry of continuity?.entries ?? []) {
       const nk = normalizeKey(entry.key);
-      const srcPath = path.join(GEOJSON_DIR, yearToSourceFile(entry.geometryFrom));
-      const doc = JSON.parse(await fs.readFile(srcPath, 'utf8'));
+      const doc = documents.get(entry.geometryFrom);
       const matches = doc.features.filter(
         (f) => normalizeKey(f.properties?.SUBJECTO || f.properties?.NAME || '') === nk,
       );
@@ -519,10 +542,10 @@ function main() {
 
     for (const year of years) {
       const srcPath = path.join(GEOJSON_DIR, yearToSourceFile(year));
-      const raw = JSON.parse(await fs.readFile(srcPath, 'utf8'));
+      const raw = documents.get(year);
 
       const bbox = [Infinity, Infinity, -Infinity, -Infinity];
-      const features = [];
+      let features = [];
       const colorsInFile = new Map(); // color -> count
       let dropped = 0;
       let vertices = 0;
@@ -638,6 +661,7 @@ function main() {
             partOf: p.PARTOF ?? null,
             precision: p.BORDERPRECISION ?? null,
             color,
+            ...(p.GEOGRAPHIC_NAME ? { geographicName: p.GEOGRAPHIC_NAME } : {}),
           },
           geometry: { type: 'MultiPolygon', coordinates: polys },
         });
@@ -753,6 +777,15 @@ function main() {
       }
       totalGeographic += geographicFeatures;
 
+      const normalized = normalizeTopology(features);
+      normalizationAudit.topology.push(...normalized.audit.map(item => ({ year, ...item })));
+      features = normalized.features.map(f => ({ ...f, geometry: {
+        type: 'MultiPolygon', coordinates: f.geometry.coordinates.map(poly => poly.map(quantizeRing).filter(Boolean)).filter(poly => poly.length),
+      } }));
+      vertices = features.reduce((n, f) => n + countVertices(f.geometry.coordinates), 0);
+      unnamed = features.filter(f => !f.properties.name).length;
+      colorsInFile.clear();
+      for (const f of features) colorsInFile.set(f.properties.color, (colorsInFile.get(f.properties.color) ?? 0) + 1);
       const fc = {
         type: 'FeatureCollection',
         name: `world_${year}`,
@@ -863,6 +896,7 @@ function main() {
     };
     const manifestJson = JSON.stringify(manifest, null, 2);
     await fs.writeFile(path.join(OUT_DIR, 'manifest.json'), manifestJson, 'utf8');
+    await fs.writeFile(path.join(OUT_DIR, 'normalization-audit.json'), JSON.stringify(normalizationAudit, null, 2));
 
     console.log('');
     console.log(`快照数：${snapshots.length} / 上游共 ${allYears.length} 个年份`);
